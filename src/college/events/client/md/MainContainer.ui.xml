@@ -3,7 +3,7 @@
 
     <ui:style>
         .headerText a {
-            color: gold;
+            color: #fc0;
         }
     </ui:style>
 
@@ -17,5 +17,8 @@
         <m:MaterialSideNavPush m:id="sideNav" width="300" showOnAttach="false">
 
         </m:MaterialSideNavPush>
+
+        <m:MaterialPanel ui:field="widgetContainer" padding="0" marginTop="64">
+        </m:MaterialPanel>
     </m:MaterialPanel>
 </ui:UiBinder>

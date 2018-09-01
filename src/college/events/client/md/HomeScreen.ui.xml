@@ -1,6 +1,13 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
-    <g:MaterialPanel>
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
 
-    </g:MaterialPanel>
+    <ui:style>
+
+    </ui:style>
+
+    <m:MaterialPanel>
+        <m:MaterialRow addStyleNames="valign-wrapper" height="100%" style="background-color= #fc0;">
+
+        </m:MaterialRow>
+    </m:MaterialPanel>
 </ui:UiBinder>

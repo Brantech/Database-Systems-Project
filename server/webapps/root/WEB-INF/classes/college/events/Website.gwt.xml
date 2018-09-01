@@ -7,6 +7,9 @@
     <inherits name='gwt.material.design.GwtMaterialWithJQuery'/>
     <inherits name="gwt.material.design.addins.GwtMaterialAddins" />
 
+    <source path='client'/>
+    <source path='shared'/>
+
     <entry-point class='college.events.client.Website'/>
     <servlet path="/CEWService" class="college.events.server.CEWServiceImpl"/>
 

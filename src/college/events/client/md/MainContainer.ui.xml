@@ -1,0 +1,21 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+        .headerText a {
+            color: gold;
+        }
+    </ui:style>
+
+    <m:MaterialPanel padding="0" margin="0">
+        <m:MaterialHeader>
+            <m:MaterialNavBar backgroundColor="BLACK" activates="sideNav" addStyleNames="{style.headerText}">
+                <m:MaterialNavBrand marginLeft="60" text="College Events Website"/>
+            </m:MaterialNavBar>
+        </m:MaterialHeader>
+
+        <m:MaterialSideNavPush m:id="sideNav" width="300" showOnAttach="false">
+
+        </m:MaterialSideNavPush>
+    </m:MaterialPanel>
+</ui:UiBinder>

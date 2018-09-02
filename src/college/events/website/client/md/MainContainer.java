@@ -1,4 +1,4 @@
-package college.events.client.md;
+package college.events.website.client.md;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.uibinder.client.UiBinder;

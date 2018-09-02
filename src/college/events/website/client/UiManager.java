@@ -1,8 +1,8 @@
-package college.events.client;
+package college.events.website.client;
 
-import college.events.client.md.HomeScreen;
-import college.events.client.md.MainContainer;
-import college.events.shared.ScreenEnum;
+import college.events.website.client.md.HomeScreen;
+import college.events.website.client.md.MainContainer;
+import college.events.website.shared.ScreenEnum;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**

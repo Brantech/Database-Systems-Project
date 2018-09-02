@@ -10,7 +10,7 @@
     <source path='client'/>
     <source path='shared'/>
 
-    <entry-point class='college.events.client.Website'/>
-    <servlet path="/CEWService" class="college.events.server.CEWServiceImpl"/>
+    <entry-point class='college.events.website.client.Website'/>
+    <servlet path="/CEWService" class="college.events.website.server.CEWServiceImpl"/>
 
 </module>

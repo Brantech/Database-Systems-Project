@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <servlet>
-        <servlet-name>college.events.Website CEWService</servlet-name>
-        <servlet-class>college.events.server.CEWServiceImpl</servlet-class>
+        <servlet-name>CEWService</servlet-name>
+        <servlet-class>college.events.website.server.CEWServiceImpl</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>college.events.Website CEWService</servlet-name>
-        <url-pattern>/college.events.Website/CEWService</url-pattern>
+        <servlet-name>CEWService</servlet-name>
+        <url-pattern>/college.events.website.Website/CEWService</url-pattern>
     </servlet-mapping>
 </web-app>

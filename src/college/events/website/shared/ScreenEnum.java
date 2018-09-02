@@ -1,4 +1,4 @@
-package college.events.shared;
+package college.events.website.shared;
 
 /**
  * Used for transitioning between the available screens

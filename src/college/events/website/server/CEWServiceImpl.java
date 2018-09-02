@@ -1,7 +1,7 @@
-package college.events.server;
+package college.events.website.server;
 
+import college.events.website.client.CEWService;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
-import college.events.client.CEWService;
 
 public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
 

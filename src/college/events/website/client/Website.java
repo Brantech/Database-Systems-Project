@@ -1,8 +1,7 @@
-package college.events.client;
+package college.events.website.client;
 
-import college.events.shared.ScreenEnum;
+import college.events.website.shared.ScreenEnum;
 import com.google.gwt.core.client.EntryPoint;
-import com.google.gwt.user.client.ui.*;
 
 public class Website implements EntryPoint {
     public void onModuleLoad() {

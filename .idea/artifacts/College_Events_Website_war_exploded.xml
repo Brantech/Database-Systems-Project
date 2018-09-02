@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="College Events Website:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="College Events Website:war exploded">
     <output-path>$PROJECT_DIR$/server/webapps/root</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
@@ -9,6 +9,7 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="gwt-user" />
           <element id="library" level="project" name="gwtmaterial" />
+          <element id="library" level="project" name="Hibernate 5.3.2-5.3.2" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="College Events Website/web/Web" />

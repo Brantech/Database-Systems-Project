@@ -7,401 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfbe703-54d9-4332-a259-90c34a775872" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/College_Events_Website_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/College_Events_Website_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/COPYRIGHT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/README.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/README.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/THIRDPARTYLICENSEREADME-JAVAFX.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/THIRDPARTYLICENSEREADME-JAVAFX.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/THIRDPARTYLICENSEREADME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/THIRDPARTYLICENSEREADME.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/3RDPARTY" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/3RDPARTY" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/README-JDK.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/README-JDK.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/NetworkServerControl" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/NetworkServerControl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/dblook" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/dblook" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/ij" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/ij" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/setEmbeddedCP" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/setEmbeddedCP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/setNetworkClientCP" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/setNetworkClientCP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/setNetworkServerCP" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/setNetworkServerCP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/startNetworkServer" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/startNetworkServer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/stopNetworkServer" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/stopNetworkServer" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/sysinfo" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/db/bin/sysinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/classfile_constants.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/classfile_constants.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jawt.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jawt.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jdwpTransport.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jdwpTransport.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jni.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jni.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jvmti.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jvmti.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jvmticmlr.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/jvmticmlr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgeCallbacks.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgeCallbacks.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgeCalls.c" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgeCalls.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgeCalls.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgeCalls.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgePackages.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/bridge/AccessBridgePackages.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/jawt_md.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/jawt_md.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/jni_md.h" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/include/win32/jni_md.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/COPYRIGHT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/THIRDPARTYLICENSEREADME-JAVAFX.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/THIRDPARTYLICENSEREADME-JAVAFX.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/THIRDPARTYLICENSEREADME.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/THIRDPARTYLICENSEREADME.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/Welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/Welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/bin/server/Xusage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/bin/server/Xusage.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/accessibility.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/accessibility.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/amd64/jvm.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/amd64/jvm.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/calendars.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/calendars.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/content-types.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/content-types.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_de.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_de.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_es.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_es.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_it.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_it.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_ja.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_ja.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_ko.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_ko.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_pt_BR.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_pt_BR.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_sv.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_sv.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_zh_CN.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_zh_CN.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_zh_HK.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_zh_HK.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_zh_TW.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/deploy/messages_zh_TW.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/flavormap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/flavormap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/fontconfig.properties.src" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/fontconfig.properties.src" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/hijrah-config-umalqura.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/hijrah-config-umalqura.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/images/cursors/cursors.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/images/cursors/cursors.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/javafx.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/javafx.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/jfr/default.jfc" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/jfr/default.jfc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/jfr/profile.jfc" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/jfr/profile.jfc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/jvm.hprof.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/jvm.hprof.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/logging.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/logging.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/jmxremote.access" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/jmxremote.access" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/jmxremote.password.template" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/jmxremote.password.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/management.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/management.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/snmp.acl.template" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/management/snmp.acl.template" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/net.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/net.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/psfont.properties.ja" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/psfont.properties.ja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/psfontj2d.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/psfontj2d.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/blacklist" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/blacklist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/blacklisted.certs" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/blacklisted.certs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/java.policy" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/java.policy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/javaws.policy" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/security/javaws.policy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/sound.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/sound.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/tzmappings" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/jre/lib/tzmappings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/ir.idl" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/ir.idl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_ja_4.4.0.v20140623020002/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.babel.nls_eclipse_zh_4.4.0.v20140623020002/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.e4.rcp_1.3.100.v20141007-2033/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.e4.rcp_1.3.100.v20141007-2033/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.e4.rcp_1.3.100.v20141007-2033/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.e4.rcp_1.3.100.v20141007-2033/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.e4.rcp_1.3.100.v20141007-2033/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.e4.rcp_1.3.100.v20141007-2033/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.feature_1.1.0.v20140827-1444/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.core.ssl.feature_1.0.0.v20140827-1444/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/asl-v20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/asl-v20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.feature_3.9.0.v20140827-1444/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/asl-v20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/asl-v20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.feature_3.9.1.v20140827-1444/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/asl-v20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/asl-v20.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.httpclient4.ssl.feature_1.0.0.v20140827-1444/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.ecf.filetransfer.ssl.feature_1.0.0.v20140827-1444/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.common_2.10.1.v20140901-1043/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/META-INF/eclipse.inf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/META-INF/eclipse.inf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.emf.ecore_2.10.1.v20140901-1043/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/feature.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/feature.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.core.feature_1.3.0.v20140523-0116/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.equinox.p2.rcp.feature_1.2.0.v20140523-0116/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.help_2.0.102.v20141007-2301/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.help_2.0.102.v20141007-2301/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.help_2.0.102.v20141007-2301/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.help_2.0.102.v20141007-2301/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.help_2.0.102.v20141007-2301/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.help_2.0.102.v20141007-2301/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.rcp_4.4.0.v20141007-2301/epl-v10.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.rcp_4.4.0.v20141007-2301/epl-v10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.rcp_4.4.0.v20141007-2301/feature.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.rcp_4.4.0.v20141007-2301/feature.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.rcp_4.4.0.v20141007-2301/license.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/features/org.eclipse.rcp_4.4.0.v20141007-2301/license.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20141007-2033/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20141007-2033/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20141007-2033/launcher.win32.win32.x86_64.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.200.v20141007-2033/launcher.win32.win32.x86_64.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_basestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_basestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_globalstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_globalstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_partstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_partstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_preferencestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/dark/e4-dark_preferencestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4-dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4-dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4-dark_mac.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4-dark_mac.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4-dark_win.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4-dark_win.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_basestyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_basestyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_classic_win7.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_classic_win7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_classic_winxp.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_classic_winxp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_gtk.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_gtk.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_mac.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_mac.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_mru_on_win7.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_mru_on_win7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_win7.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_win7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_winxp_blu.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_winxp_blu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_winxp_olv.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/e4_default_winxp_olv.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/high-contrast.css" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/css/high-contrast.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/plugin.properties" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/plugin.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/missioncontrol/plugins/org.eclipse.ui.themes_1.0.1.v20140819-1717/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/orb.idl" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/orb.idl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/etc/visualvm.clusters" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/etc/visualvm.clusters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/etc/visualvm.conf" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/etc/visualvm.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/VERSION.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/VERSION.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-netbeans-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-netbeans-core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-netbeans-modules-options-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-netbeans-modules-options-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-netbeans-modules-queries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-netbeans-modules-queries.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-execution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-execution.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-explorer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-explorer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-filesystems.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-filesystems.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-loaders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-loaders.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-nodes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-nodes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-text.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-util.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/ModuleAutoDeps/org-openide-util.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-annotations-common.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-annotations-common.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-progress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-progress.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-visual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-api-visual.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-execution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-execution.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-io-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-io-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-multitabs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-multitabs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-multiview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-multiview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-output2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-output2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core-windows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-lib-uihandler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-lib-uihandler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-applemenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-applemenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-autoupdate-cli.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-autoupdate-cli.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-autoupdate-services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-autoupdate-services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-autoupdate-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-autoupdate-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-core-kit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-core-kit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-editor-mimelookup-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-editor-mimelookup-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-editor-mimelookup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-editor-mimelookup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-favorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-favorites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-javahelp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-javahelp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-keyring-fallback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-keyring-fallback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-keyring-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-keyring-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-keyring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-keyring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-masterfs-nio2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-masterfs-nio2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-masterfs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-masterfs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-options-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-options-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-options-keymap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-options-keymap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-print.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-print.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-progress-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-progress-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-queries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-queries.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-sampler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-sampler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-sendopts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-sendopts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-spi-actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-spi-actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-templates.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-uihandler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-modules-uihandler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-spi-quicksearch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-spi-quicksearch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-swing-outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-swing-outline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-swing-plaf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-swing-plaf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-swing-tabcontrol.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-netbeans-swing-tabcontrol.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-awt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-awt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-compat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-compat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-dialogs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-dialogs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-execution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-execution.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-explorer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-explorer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-io.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-io.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-loaders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-loaders.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-nodes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-nodes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-options.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-text.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-util-enumerations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-util-enumerations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/config/Modules/org-openide-windows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-annotations-common.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-annotations-common.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-progress.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-progress.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-visual.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-api-visual.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-bootstrap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-bootstrap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-execution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-execution.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-io-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-io-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-multitabs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-multitabs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-multiview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-multiview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-output2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-output2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-startup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-startup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core-windows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-lib-uihandler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-lib-uihandler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-applemenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-applemenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-autoupdate-cli.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-autoupdate-cli.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-autoupdate-services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-autoupdate-services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-autoupdate-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-autoupdate-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-core-kit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-core-kit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-editor-mimelookup-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-editor-mimelookup-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-editor-mimelookup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-editor-mimelookup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-favorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-favorites.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-javahelp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-javahelp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-keyring-fallback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-keyring-fallback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-keyring-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-keyring-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-keyring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-keyring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-masterfs-nio2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-masterfs-nio2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-masterfs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-masterfs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-options-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-options-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-options-keymap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-options-keymap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-print.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-print.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-progress-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-progress-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-queries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-queries.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-sampler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-sampler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-sendopts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-sendopts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-spi-actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-spi-actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-templates.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-uihandler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-modules-uihandler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-spi-quicksearch.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-spi-quicksearch.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-swing-outline.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-swing-outline.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-swing-plaf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-swing-plaf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-swing-tabcontrol.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-netbeans-swing-tabcontrol.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-actions.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-actions.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-awt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-awt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-compat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-compat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-dialogs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-dialogs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-execution.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-execution.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-explorer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-explorer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-filesystems.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-filesystems.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-io.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-io.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-loaders.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-loaders.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-nodes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-nodes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-options.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-options.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-text.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-util-enumerations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-util-enumerations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-util-lookup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-util-lookup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-util.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-util.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-windows.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/platform/update_tracking/org-openide-windows.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/VERSION.txt" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/VERSION.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler-charts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler-charts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler-common.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler-common.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-lib-profiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-attach.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-attach.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-heapwalker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-heapwalker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-oql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-oql.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-selector-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-selector-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-selector-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-selector-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-snaptracer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-snaptracer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-utilities.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler-utilities.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/config/Modules/org-netbeans-modules-profiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler-charts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler-charts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler-common.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler-common.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-lib-profiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-attach.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-attach.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-heapwalker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-heapwalker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-oql.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-oql.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-selector-api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-selector-api.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-selector-ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-selector-ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-snaptracer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-snaptracer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-utilities.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler-utilities.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/profiler/update_tracking/org-netbeans-modules-profiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-api-caching.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-api-caching.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-application-views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-application-views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-attach.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-attach.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-charts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-charts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-coredump.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-coredump.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-heapdump.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-heapdump.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-host-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-host-remote.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-host-views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-host-views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-host.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-host.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-jmx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-jmx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-jvm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-jvm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-jvmstat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-jvmstat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-modules-appui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-modules-appui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-profiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-profiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-profiling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-profiling.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-sa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-sa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-sampler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-sampler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-threaddump.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-threaddump.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-tools.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-uisupport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/config/Modules/com-sun-tools-visualvm-uisupport.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-api-caching.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-api-caching.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-application-views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-application-views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-application.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-application.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-attach.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-attach.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-charts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-charts.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-core.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-core.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-coredump.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-coredump.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-heapdump.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-heapdump.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-host-remote.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-host-remote.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-host-views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-host-views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-host.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-host.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-jmx.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-jmx.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-jvm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-jvm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-jvmstat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-jvmstat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-modules-appui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-modules-appui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-modules-startup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-modules-startup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-profiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-profiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-profiling.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-profiling.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-sa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-sa.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-sampler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-sampler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-threaddump.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-threaddump.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-tools.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-uisupport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/lib/visualvm/visualvm/update_tracking/com-sun-tools-visualvm-uisupport.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/jdk1.8.0_121/release" beforeDir="false" afterPath="$PROJECT_DIR$/external/jdk1.8.0_121/release" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/CollegeEventsWebsite.devmode.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/CollegeEventsWebsite.devmode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/CollegeEventsWebsite.nocache.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/CollegeEventsWebsite.nocache.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/compilation-mappings.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/compilation-mappings.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/webapps/root/WEB-INF/classes/college/events/Website.gwt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/webapps/root/WEB-INF/classes/college/events/Website.gwt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/webapps/root/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/webapps/root/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/Website.gwt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/Website.gwt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/CEWService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/CEWServiceAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/UiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/Website.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/Website.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/md/HomeScreen.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/md/MainContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/client/md/MainContainer.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/server/CEWServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/shared/ScreenEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/war/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/war/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/College Events Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/College Events Website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -409,6 +27,25 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-486011720">
@@ -462,22 +99,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="xml" value="2" />
+          <entry key="java" value="5" />
+          <entry key="properties" value="1" />
+          <entry key="sql" value="9" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="5" />
+          <entry key="Properties" value="1" />
+          <entry key="SQL" value="6" />
+          <entry key="Scratch" value="3" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="xml" value="9" />
+          <entry key="java" value="909" />
+          <entry key="sql" value="558" />
+          <entry key="xml" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="XML" value="9" />
+          <entry key="JAVA" value="909" />
+          <entry key="SQL" value="558" />
+          <entry key="XML" value="30" />
         </counts>
       </usages-collector>
     </session>
@@ -487,7 +135,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/Website.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state>
               <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
             </state>
           </provider>
@@ -496,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/UiManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="283">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;field#mainContainer#0;class#UiManager#0" />
@@ -513,19 +161,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
+        <entry file="file://$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="85">
+              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -561,6 +227,14 @@
         <option value="$PROJECT_DIR$/src/college/events/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/users.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
       </list>
     </option>
   </component>
@@ -621,6 +295,34 @@
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="war" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -638,22 +340,33 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="derby&#10;derby.embedded" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="2080a462-a330-4030-bd30-04551257e95f" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535904765860" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535915629608" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="GwtCreateUiBinderDialog.RecentRootElementType">
       <recent name="gwt.material.design.client.ui.MaterialPanel" />
     </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="college.hibernate.entities" />
+      <recent name="college.hibernate" />
+      <recent name="" />
+      <recent name="college.events.hibernate.Entities" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Brandon\Desktop\Database-Systems-Project" />
+      <recent name="C:\Users\Brandon\Desktop\Database-Systems-Project\src\college\events\database\data" />
       <recent name="C:\Users\Brandon\Desktop\College Events Website\war" />
     </key>
   </component>
@@ -1448,12 +1161,12 @@
       <option name="presentableId" value="Default" />
       <updated>1535828738651</updated>
       <workItem from="1535828742365" duration="11663000" />
-      <workItem from="1535903801709" duration="787000" />
+      <workItem from="1535903801709" duration="9309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12450000" />
+    <option name="totallyTimeSpent" value="20972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1465,28 +1178,28 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.20402685" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info id="Persistence" order="8" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.20402685" />
+      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" visible="true" weight="0.20402685" />
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32907802" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="right" id="Properties" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24362417" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
@@ -1537,24 +1250,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1625,28 +1324,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/Website.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-          </folding>
+        <state>
+          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/Website.java">
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bb28127-7aa5-4c25-9e41-1cbc6d25e440/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b8ddf56-7b57-46a3-847f-bd3ebe3205c0/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/service.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/users.table.create.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/UiManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="283">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;field#mainContainer#0;class#UiManager#0" />
@@ -1660,17 +1381,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
+    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/config/lms/sql/run.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/config/lms/sql/commandersintent.table.create.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="34">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
+          <folding>
+            <element signature="docComment;class#GenericRPCResponse#0" />
+            <element signature="method#GenericRPCResponse#0;class#GenericRPCResponse#0" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="docComment;method#setObj#0;class#GenericRPCResponse#0" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+            <element signature="docComment;method#isSuccess#0;class#GenericRPCResponse#0" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="docComment;method#setSuccess#0;class#GenericRPCResponse#0" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -1752,7 +1536,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>gwtmaterial</last-edited>
+          <last-edited>gwt-user</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

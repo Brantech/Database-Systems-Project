@@ -8,6 +8,6 @@ public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
 
     @Override
     public GenericRPCResponse<String> createAccount(String username, String password, String firstName, String lastName) {
-        return null;
+        return new GenericRPCResponse<>(true);
     }
 }

@@ -2,12 +2,106 @@
              xmlns:m='urn:import:gwt.material.design.client.ui'>
 
     <ui:style>
+        .mainContainer {
+            height: 100%;
+            margin: 0;
+        }
 
+        .textField_IBorder input {
+            border: 1px solid black !important;
+        }
+
+        .textField_ABorder input:focus {
+            border: 2px solid black !important;
+            box-shadow: none !important;
+        }
+
+        .textFieldText label {
+            color: black !important;
+        }
     </ui:style>
 
-    <m:MaterialPanel>
-        <m:MaterialRow addStyleNames="valign-wrapper" height="100%" style="background-color= #fc0;">
+    <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
+        <m:MaterialColumn ui:field="loginContainer" offset="s4" grid="s4" height="60%">
+            <m:MaterialCard height="100%" verticalAlign="MIDDLE">
+                <m:MaterialCardContent height="80%">
+                    <m:MaterialCardTitle text="Login"/>
+                    <m:MaterialTextBox
+                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                            fieldType="OUTLINED" width="100%" label="Username"/>
+                    <m:MaterialTextBox
+                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                            fieldType="OUTLINED" width="100%" label="Password"/>
+                </m:MaterialCardContent>
+                <m:MaterialCardAction height="20%">
+                    <m:MaterialColumn grid="s6" paddingLeft="0" paddingRight="5">
+                        <m:MaterialButton ui:field="loginButton"
+                                          style="color: black; background-color: #fc0; width: 100%;"
+                                          waves="LIGHT" text="Login"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6" paddingLeft="5" paddingRight="0">
+                        <m:MaterialButton ui:field="registerButton"
+                                          waves="LIGHT" text="Register" backgroundColor="BLACK"
+                                          style="color: #fc0; width: 100%"/>
+                    </m:MaterialColumn>
+                </m:MaterialCardAction>
+            </m:MaterialCard>
+        </m:MaterialColumn>
 
-        </m:MaterialRow>
-    </m:MaterialPanel>
+        <m:MaterialColumn ui:field="registerContainer" offset="s3" grid="s6" height="90%" display="NONE">
+            <m:MaterialCard height="100%" verticalAlign="MIDDLE">
+                <m:MaterialCardContent height="85%">
+                    <m:MaterialTitle title="Register"/>
+
+                    <m:MaterialPanel margin="0" padding="0" overflow="AUTO" height="90%">
+                        <m:MaterialRow margin="0">
+                            <m:MaterialColumn grid="s6">
+                                <m:MaterialTextBox
+                                        addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                        fieldType="OUTLINED" width="100%" label="First Name" validateOnBlur="true"/>
+                            </m:MaterialColumn>
+                            <m:MaterialColumn grid="s6">
+                                <m:MaterialTextBox
+                                        addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                        fieldType="OUTLINED" width="100%" label="Last Name" validateOnBlur="true"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+
+                        <m:MaterialRow margin="0">
+                            <m:MaterialTextBox
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Username"
+                                    validateOnBlur="true"/>
+                        </m:MaterialRow>
+
+                        <m:MaterialRow margin="0">
+                            <m:MaterialTextBox
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Password" type="PASSWORD"
+                                    validateOnBlur="true"/>
+                            <m:MaterialTextBox
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Password"
+                                    type="PASSWORD" validateOnBlur="true"/>
+                        </m:MaterialRow>
+
+                        <m:MaterialRow margin="0">
+                            <m:MaterialTextBox
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="email" validateOnBlur="true"/>
+                            <m:MaterialTextBox
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type email"
+                                    validateOnBlur="true"/>
+                        </m:MaterialRow>
+                    </m:MaterialPanel>
+                </m:MaterialCardContent>
+                <m:MaterialCardAction height="15%" addStyleNames="valign-wrapper">
+                    <m:MaterialButton ui:field="submitButton" verticalAlign="MIDDLE"
+                                      style="color: black; background-color: #fc0; width: 100%;"
+                                      waves="LIGHT" text="Submit"/>
+                </m:MaterialCardAction>
+            </m:MaterialCard>
+        </m:MaterialColumn>
+    </m:MaterialRow>
 </ui:UiBinder>

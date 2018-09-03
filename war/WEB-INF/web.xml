@@ -9,6 +9,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>CEWService</servlet-name>
-        <url-pattern>/college.events.website.Website/CEWService</url-pattern>
+        <url-pattern>/CollegeEventsWebsite/CEWService</url-pattern>
     </servlet-mapping>
 </web-app>

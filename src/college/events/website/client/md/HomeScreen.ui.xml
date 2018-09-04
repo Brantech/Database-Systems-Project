@@ -56,42 +56,42 @@
                     <m:MaterialPanel margin="0" padding="0" overflow="AUTO" height="90%">
                         <m:MaterialRow margin="0">
                             <m:MaterialColumn grid="s6">
-                                <m:MaterialTextBox
+                                <m:MaterialTextBox ui:field="firstName"
                                         addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                         fieldType="OUTLINED" width="100%" label="First Name" validateOnBlur="true"/>
                             </m:MaterialColumn>
                             <m:MaterialColumn grid="s6">
-                                <m:MaterialTextBox
+                                <m:MaterialTextBox ui:field="lastName"
                                         addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                         fieldType="OUTLINED" width="100%" label="Last Name" validateOnBlur="true"/>
                             </m:MaterialColumn>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
-                            <m:MaterialTextBox
+                            <m:MaterialTextBox ui:field="rUsername"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                     grid="s12" fieldType="OUTLINED" width="100%" label="Username"
                                     validateOnBlur="true"/>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
-                            <m:MaterialTextBox
+                            <m:MaterialTextBox ui:field="rPassword"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                     grid="s12" fieldType="OUTLINED" width="100%" label="Password" type="PASSWORD"
                                     validateOnBlur="true"/>
-                            <m:MaterialTextBox
+                            <m:MaterialTextBox ui:field="rPassword2"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                     grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Password"
                                     type="PASSWORD" validateOnBlur="true"/>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
-                            <m:MaterialTextBox
+                            <m:MaterialTextBox ui:field="email"
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} "
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Email" validateOnBlur="true"/>
+                            <m:MaterialTextBox ui:field="email2"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                    grid="s12" fieldType="OUTLINED" width="100%" label="email" validateOnBlur="true"/>
-                            <m:MaterialTextBox
-                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                    grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type email"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Email"
                                     validateOnBlur="true"/>
                         </m:MaterialRow>
                     </m:MaterialPanel>

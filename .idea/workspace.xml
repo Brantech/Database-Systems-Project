@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/war/Website.html" beforeDir="false" afterPath="$PROJECT_DIR$/war/Website.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,13 +141,48 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1133069222">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="10" />
+          <entry key="java" value="528" />
+          <entry key="xml" value="389" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="10" />
+          <entry key="JAVA" value="528" />
+          <entry key="XML" value="382" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="204">
               <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -158,33 +194,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+            <state relative-caret-position="901">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="docComment;method#HomeScreen#0;class#HomeScreen#0" />
+                <element signature="method#addValidators#0;class#HomeScreen#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/AbstractValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1003">
-              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="89" column="99" selection-start-line="89" selection-start-column="99" selection-end-line="89" selection-end-column="99" />
-              <folding>
-                <element signature="n#m:MaterialColumn#0;n#m:MaterialPanel#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialCardAction#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="-393">
+              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -205,7 +232,21 @@
       <find>type=t</find>
       <find>type=tex</find>
       <find>validat</find>
+      <find>lastName</find>
+      <find>rUsername</find>
+      <find>rPassword1</find>
+      <find>rPassword</find>
+      <find>rPassword2</find>
     </findStrings>
+    <replaceStrings>
+      <replace>username</replace>
+      <replace>rUsername</replace>
+      <replace>rPassword1</replace>
+      <replace>rPassword</replace>
+      <replace>rPassword2</replace>
+      <replace>email</replace>
+      <replace>email2</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Brandon\Desktop\Database-Systems-Project\external\gwtmaterial\gwt-material-2.1.jar!\gwt\material</dir>
     </dirStrings>
@@ -219,7 +260,6 @@
         <option value="$PROJECT_DIR$/src/college/events/client/CEWService.java" />
         <option value="$PROJECT_DIR$/src/college/events/server/CEWServiceImpl.java" />
         <option value="$PROJECT_DIR$/war/index.html" />
-        <option value="$PROJECT_DIR$/war/Website.html" />
         <option value="$PROJECT_DIR$/src/college/events/shared/ScreenEnum.java" />
         <option value="$PROJECT_DIR$/src/college/events/client/UiManager.java" />
         <option value="$PROJECT_DIR$/src/college/events/client/md/MainContainer.java" />
@@ -241,8 +281,9 @@
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" />
         <option value="$PROJECT_DIR$/war/Website.css" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/Validator.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java" />
+        <option value="$PROJECT_DIR$/war/Website.html" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
       </list>
     </option>
@@ -267,7 +308,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,49 +334,6 @@
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="md" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="war" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,6 +347,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -359,8 +357,8 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="2080a462-a330-4030-bd30-04551257e95f" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535937522241" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536033681003" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1191,14 +1189,15 @@
       <updated>1535828738651</updated>
       <workItem from="1535828742365" duration="11663000" />
       <workItem from="1535903801709" duration="31243000" />
+      <workItem from="1536021322213" duration="6871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42906000" />
+    <option name="totallyTimeSpent" value="49777000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" order="0" />
@@ -1207,17 +1206,17 @@
       <window_info id="UI Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.20402685" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
       <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
       <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32883242" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32883242" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.18665607" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -1228,7 +1227,7 @@
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
       <window_info anchor="right" id="Properties" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.24362417" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24324325" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
@@ -1236,6 +1235,42 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Nl-Palette" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
+      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32883242" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.18665607" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Properties" order="2" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24324325" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1265,37 +1300,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="docComment;field#value#0;class#ScreenEnum#0" />
-            <element signature="docComment;method#ScreenEnum#0;class#ScreenEnum#0" />
-            <element signature="method#ScreenEnum#0;class#ScreenEnum#0" />
-            <element signature="docComment;method#valueOf#0;class#ScreenEnum#0" />
-            <element signature="method#valueOf#0;class#ScreenEnum#0" />
-            <element signature="docComment;method#equals#0;class#ScreenEnum#0" />
-            <element signature="docComment;method#equals#1;class#ScreenEnum#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bb28127-7aa5-4c25-9e41-1cbc6d25e440/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b8ddf56-7b57-46a3-847f-bd3ebe3205c0/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bb28127-7aa5-4c25-9e41-1cbc6d25e440/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b8ddf56-7b57-46a3-847f-bd3ebe3205c0/console.sql" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql" />
     <entry file="file://$PROJECT_DIR$/data/service.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/users.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/users.table.create.sql" />
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/UiManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1313,19 +1327,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/config/lms/sql/run.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/config/lms/sql/run.table.create.sql" />
     <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/config/lms/sql/commandersintent.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/config/lms/sql/commandersintent.table.create.sql" />
     <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1351,30 +1357,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-          <folding>
-            <element signature="docComment;class#GenericRPCResponse#0" />
-            <element signature="method#GenericRPCResponse#0;class#GenericRPCResponse#0" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
-            <element signature="docComment;method#setObj#0;class#GenericRPCResponse#0" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1056#1057#0" expanded="true" />
-            <element signature="docComment;method#isSuccess#0;class#GenericRPCResponse#0" />
-            <element signature="e#1094#1095#0" expanded="true" />
-            <element signature="e#1124#1125#0" expanded="true" />
-            <element signature="docComment;method#setSuccess#0;class#GenericRPCResponse#0" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1322#1323#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/CollegeEventsWebsite.nocache.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/clear.cache.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/CollegeEventsWebsite.nocache.js" />
+    <entry file="file://$PROJECT_DIR$/server/webapps/root/CollegeEventsWebsite/clear.cache.gif" />
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/Website.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1403,30 +1390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/Website.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MainContainer#0" />
-            <element signature="docComment;method#MainContainer#0;class#MainContainer#0" />
-            <element signature="docComment;method#setDisplayedScreen#0;class#MainContainer#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1450,255 +1417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="1532" column="47" lean-forward="true" selection-start-line="1532" selection-start-column="47" selection-end-line="1532" selection-end-column="47" />
-          <folding>
-            <element signature="e#28#398#0" />
-            <element signature="e#402#421#0" />
-            <element signature="e#434#472#0" />
-            <element signature="e#493#562#0" />
-            <element signature="e#571#602#0" />
-            <element signature="e#608#652#0" />
-            <element signature="e#670#693#0" />
-            <element signature="e#695#849#0" />
-            <element signature="e#862#882#0" />
-            <element signature="e#918#994#0" />
-            <element signature="e#1013#1049#0" />
-            <element signature="e#1065#1254#0" />
-            <element signature="e#1270#1559#0" />
-            <element signature="e#1586#1610#0" />
-            <element signature="e#1649#1706#0" />
-            <element signature="e#1748#1994#0" />
-            <element signature="e#2033#2113#0" />
-            <element signature="e#2155#2270#0" />
-            <element signature="e#2288#2435#0" />
-            <element signature="e#2471#2526#0" />
-            <element signature="e#2545#2573#0" />
-            <element signature="e#2607#2629#0" />
-            <element signature="e#2666#2696#0" />
-            <element signature="e#2751#2809#0" />
-            <element signature="e#2835#2875#0" />
-            <element signature="e#2902#2949#0" />
-            <element signature="e#2974#3021#0" />
-            <element signature="e#3068#3090#0" />
-            <element signature="e#3115#3134#0" />
-            <element signature="e#3214#3260#0" />
-            <element signature="e#3281#3345#0" />
-            <element signature="e#3366#3430#0" />
-            <element signature="e#3452#3674#0" />
-            <element signature="e#3686#3792#0" />
-            <element signature="e#3817#3926#0" />
-            <element signature="e#3947#4363#0" />
-            <element signature="e#4373#4525#0" />
-            <element signature="e#4550#4588#0" />
-            <element signature="e#4701#4772#0" />
-            <element signature="e#4812#4849#0" />
-            <element signature="e#4911#4971#0" />
-            <element signature="e#4997#5124#0" />
-            <element signature="e#5189#5261#0" />
-            <element signature="e#5315#5341#0" />
-            <element signature="e#5431#5454#0" />
-            <element signature="e#5499#5519#0" />
-            <element signature="e#5577#5622#0" />
-            <element signature="e#5643#5695#0" />
-            <element signature="e#5723#5752#0" />
-            <element signature="e#5790#5914#0" />
-            <element signature="e#5995#6074#0" />
-            <element signature="e#6102#6199#0" />
-            <element signature="e#6226#6255#0" />
-            <element signature="e#6290#6434#0" />
-            <element signature="e#6475#6532#0" />
-            <element signature="e#6561#6713#0" />
-            <element signature="e#6739#6761#0" />
-            <element signature="e#6797#6874#0" />
-            <element signature="e#6909#6998#0" />
-            <element signature="e#7038#7081#0" />
-            <element signature="e#7101#7131#0" />
-            <element signature="e#7179#7198#0" />
-            <element signature="e#7237#7273#0" />
-            <element signature="e#7304#7374#0" />
-            <element signature="e#7405#7451#0" />
-            <element signature="e#7509#7529#0" />
-            <element signature="e#7562#7596#0" />
-            <element signature="e#7635#7671#0" />
-            <element signature="e#7693#7725#0" />
-            <element signature="e#7782#7880#0" />
-            <element signature="e#7923#8005#0" />
-            <element signature="e#8028#8062#0" />
-            <element signature="e#8084#8166#0" />
-            <element signature="e#8212#8310#0" />
-            <element signature="e#8444#8548#0" />
-            <element signature="e#8579#8628#0" />
-            <element signature="e#8693#8712#0" />
-            <element signature="e#8742#8770#0" />
-            <element signature="e#8793#8928#0" />
-            <element signature="e#8965#9022#0" />
-            <element signature="e#9056#9187#0" />
-            <element signature="e#9215#9234#0" />
-            <element signature="e#9267#9551#0" />
-            <element signature="e#9590#9745#0" />
-            <element signature="e#9775#9862#0" />
-            <element signature="e#9903#9930#0" />
-            <element signature="e#9956#9974#0" />
-            <element signature="e#9998#10047#0" />
-            <element signature="e#10080#10107#0" />
-            <element signature="e#10137#10164#0" />
-            <element signature="e#10192#10225#0" />
-            <element signature="e#10227#10306#0" />
-            <element signature="e#10264#10304#0" />
-            <element signature="e#10388#10410#0" />
-            <element signature="e#10473#10544#0" />
-            <element signature="e#10563#10584#0" />
-            <element signature="e#10609#10712#0" />
-            <element signature="e#10909#10957#0" />
-            <element signature="e#11000#11035#0" />
-            <element signature="e#11086#11251#0" />
-            <element signature="e#11281#11327#0" />
-            <element signature="e#11384#11476#0" />
-            <element signature="e#11552#11748#0" />
-            <element signature="e#11893#11919#0" />
-            <element signature="e#11976#12073#0" />
-            <element signature="e#12130#12156#0" />
-            <element signature="e#12227#12252#0" />
-            <element signature="e#12330#12429#0" />
-            <element signature="e#12492#12574#0" />
-            <element signature="e#12608#12648#0" />
-            <element signature="e#12683#12871#0" />
-            <element signature="e#12931#13054#0" />
-            <element signature="e#13098#13124#0" />
-            <element signature="e#13248#13275#0" />
-            <element signature="e#13439#13509#0" />
-            <element signature="e#13555#13582#0" />
-            <element signature="e#13630#13741#0" />
-            <element signature="e#13866#13922#0" />
-            <element signature="e#14013#14163#0" />
-            <element signature="e#14322#14356#0" />
-            <element signature="e#14639#14719#0" />
-            <element signature="e#14994#15050#0" />
-            <element signature="e#15180#15206#0" />
-            <element signature="e#15280#15314#0" />
-            <element signature="e#15369#15467#0" />
-            <element signature="e#15541#15714#0" />
-            <element signature="e#15771#15999#0" />
-            <element signature="e#16070#16091#0" />
-            <element signature="e#16157#16223#0" />
-            <element signature="e#16319#16361#0" />
-            <element signature="e#16392#16464#0" />
-            <element signature="e#16529#16627#0" />
-            <element signature="e#16694#16792#0" />
-            <element signature="e#16868#16966#0" />
-            <element signature="e#16968#17142#0" />
-            <element signature="e#17165#17303#0" />
-            <element signature="e#17335#17537#0" />
-            <element signature="e#17557#17628#0" />
-            <element signature="e#17701#17784#0" />
-            <element signature="e#17814#17854#0" />
-            <element signature="e#17873#17961#0" />
-            <element signature="e#18000#18022#0" />
-            <element signature="e#18053#18116#0" />
-            <element signature="e#18158#18259#0" />
-            <element signature="e#18281#18321#0" />
-            <element signature="e#18372#18505#0" />
-            <element signature="e#18537#18583#0" />
-            <element signature="e#18597#18618#0" />
-            <element signature="e#18648#18668#0" />
-            <element signature="e#18694#18761#0" />
-            <element signature="e#18798#18828#0" />
-            <element signature="e#18862#18883#0" />
-            <element signature="e#18911#19132#0" />
-            <element signature="e#19148#19321#0" />
-            <element signature="e#19356#19394#0" />
-            <element signature="e#19450#19504#0" />
-            <element signature="e#19544#19637#0" />
-            <element signature="e#19656#19847#0" />
-            <element signature="e#19883#19916#0" />
-            <element signature="e#19973#20003#0" />
-            <element signature="e#20059#20102#0" />
-            <element signature="e#20119#20285#0" />
-            <element signature="e#20304#20389#0" />
-            <element signature="e#20413#20438#0" />
-            <element signature="e#20492#20526#0" />
-            <element signature="e#20549#20713#0" />
-            <element signature="e#20743#20789#0" />
-            <element signature="e#20812#20863#0" />
-            <element signature="e#20889#20953#0" />
-            <element signature="e#20990#21079#0" />
-            <element signature="e#21096#21126#0" />
-            <element signature="e#21142#21208#0" />
-            <element signature="e#21241#21266#0" />
-            <element signature="e#21329#21385#0" />
-            <element signature="e#21420#21445#0" />
-            <element signature="e#21487#21532#0" />
-            <element signature="e#21560#21590#0" />
-            <element signature="e#21633#21657#0" />
-            <element signature="e#21727#21754#0" />
-            <element signature="e#21773#21868#0" />
-            <element signature="e#21924#21974#0" />
-            <element signature="e#22005#22169#0" />
-            <element signature="e#22239#22337#0" />
-            <element signature="e#22363#22415#0" />
-            <element signature="e#22444#22466#0" />
-            <element signature="e#22510#22530#0" />
-            <element signature="e#22596#22625#0" />
-            <element signature="e#22670#22730#0" />
-            <element signature="e#22780#22824#0" />
-            <element signature="e#22865#22999#0" />
-            <element signature="e#23044#23071#0" />
-            <element signature="e#23108#23443#0" />
-            <element signature="e#23470#23576#0" />
-            <element signature="e#23654#23688#0" />
-            <element signature="e#23837#23859#0" />
-            <element signature="e#23895#23940#0" />
-            <element signature="e#23963#23999#0" />
-            <element signature="e#24018#24066#0" />
-            <element signature="e#24101#24121#0" />
-            <element signature="e#24145#24166#0" />
-            <element signature="e#24204#24287#0" />
-            <element signature="e#24306#24330#0" />
-            <element signature="e#24380#24488#0" />
-            <element signature="e#24545#24639#0" />
-            <element signature="e#24663#24860#0" />
-            <element signature="e#24877#24968#0" />
-            <element signature="e#24983#25020#0" />
-            <element signature="e#25028#25066#0" />
-            <element signature="e#25099#25299#0" />
-            <element signature="e#25312#25435#0" />
-            <element signature="e#25461#25506#0" />
-            <element signature="e#25530#29116#0" />
-            <element signature="e#25621#25804#0" />
-            <element signature="e#25815#25863#0" />
-            <element signature="e#25947#25994#0" />
-            <element signature="e#26017#26044#0" />
-            <element signature="e#26061#26100#0" />
-            <element signature="e#26140#26168#0" />
-            <element signature="e#26204#26265#0" />
-            <element signature="e#26326#26454#0" />
-            <element signature="e#26500#26540#0" />
-            <element signature="e#26561#26619#0" />
-            <element signature="e#26777#26895#0" />
-            <element signature="e#26930#26992#0" />
-            <element signature="e#27015#27041#0" />
-            <element signature="e#27078#27411#0" />
-            <element signature="e#27434#27491#0" />
-            <element signature="e#27535#27568#0" />
-            <element signature="e#27613#27654#0" />
-            <element signature="e#27675#27730#0" />
-            <element signature="e#27777#27817#0" />
-            <element signature="e#27865#28007#0" />
-            <element signature="e#28040#28071#0" />
-            <element signature="e#28110#28177#0" />
-            <element signature="e#28213#28348#0" />
-            <element signature="e#28387#28454#0" />
-            <element signature="e#28487#28572#0" />
-            <element signature="e#28615#28653#0" />
-            <element signature="e#28696#28824#0" />
-            <element signature="e#28860#28927#0" />
-            <element signature="e#28966#29026#0" />
-            <element signature="e#29062#29114#0" />
-            <element signature="e#29118#29443#0" />
-            <element signature="e#29213#29283#0" />
-            <element signature="e#29328#29382#0" />
-            <element signature="e#29406#29441#0" />
-            <element signature="e#29445#29680#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1716,151 +1434,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/src/mil/arl/gift/tools/reportgenerator/client/md/RgMainContainer.java">
+    <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/src/mil/arl/gift/tools/reportgenerator/client/md/RgMainContainer.java" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/Validator.java" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="700" column="67" selection-start-line="700" selection-start-column="67" selection-end-line="700" selection-end-column="67" />
+        <state relative-caret-position="204">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="docComment;class#RgMainContainer#0" />
-            <element signature="e#6335#6419#0" />
-            <element signature="e#6425#6532#0" />
-            <element signature="e#6572#6621#0" />
-            <element signature="e#6572#6698#0" />
-            <element signature="e#6884#6952#0" />
-            <element signature="e#7002#7075#0" />
-            <element signature="e#7123#7379#0" />
-            <element signature="e#7385#7643#0" />
-            <element signature="e#7649#7721#0" />
-            <element signature="e#7649#8657#0" />
-            <element signature="e#8663#8756#0" />
-            <element signature="e#8663#9815#0" />
-            <element signature="class#9138:9797" />
-            <element signature="method#onSuccess#0;class#9138:9797" />
-            <element signature="method#onFailure#0;class#9138:9797" />
-            <element signature="e#9821#9909#0" />
-            <element signature="e#9821#10644#0" />
-            <element signature="e#10650#10690#0" />
-            <element signature="e#10789#10829#0" />
-            <element signature="e#10929#11009#0" />
-            <element signature="e#10929#11594#0" />
-            <element signature="e#11600#11789#0" />
-            <element signature="e#11600#12644#0" />
-            <element signature="e#12650#12726#0" />
-            <element signature="e#12650#13227#0" />
-            <element signature="e#13233#13348#0" />
-            <element signature="e#13233#14192#0" />
-            <element signature="class#13774:14184" />
-            <element signature="method#onFailure#0;class#13774:14184" />
-            <element signature="method#onSuccess#0;class#13774:14184" />
-            <element signature="e#14198#14274#0" />
-            <element signature="e#14198#14747#0" />
-            <element signature="e#14753#14826#0" />
-            <element signature="e#14753#15433#0" />
-            <element signature="e#15439#15510#0" />
-            <element signature="e#15439#15686#0" />
-            <element signature="e#15692#15760#0" />
-            <element signature="e#15692#16163#0" />
-            <element signature="e#16169#16235#0" />
-            <element signature="e#16377#16445#0" />
-            <element signature="e#16377#16725#0" />
-            <element signature="e#16731#16803#0" />
-            <element signature="e#16731#17384#0" />
-            <element signature="e#17390#17463#0" />
-            <element signature="e#17390#18102#0" />
-            <element signature="e#18108#18179#0" />
-            <element signature="e#18108#18816#0" />
-            <element signature="e#18822#18891#0" />
-            <element signature="e#18822#19524#0" />
-            <element signature="e#19530#19659#0" />
-            <element signature="e#19530#20235#0" />
-            <element signature="e#20443#20562#0" />
-            <element signature="e#20644#20746#0" />
-            <element signature="e#20824#20890#0" />
-            <element signature="e#20824#21100#0" />
-            <element signature="e#21107#21192#0" />
-            <element signature="class#22164:23035" />
-            <element signature="method#onFailure#0;class#22164:23035" />
-            <element signature="method#onSuccess#0;class#22164:23035" />
-            <element signature="e#23410#23488#0" />
-            <element signature="e#23410#23779#0" />
-            <element signature="e#23785#24633#0" />
-            <element signature="class#24123:24592" />
-            <element signature="method#onFailure#0;class#24123:24592" />
-            <element signature="method#onSuccess#0;class#24123:24592" />
-            <element signature="e#24639#24709#0" />
-            <element signature="e#24639#25145#0" />
-            <element signature="e#25152#25218#0" />
-            <element signature="e#25152#25339#0" />
-            <element signature="e#25381#25462#0" />
-            <element signature="e#25381#27390#0" />
-            <element signature="class#26226:27012" />
-            <element signature="method#onFailure#0;class#26226:27012" />
-            <element signature="method#onSuccess#0;class#26226:27012" />
-            <element signature="e#27396#28247#0" />
-            <element signature="class#27801:28239" />
-            <element signature="method#onFailure#0;class#27801:28239" />
-            <element signature="e#28253#28301#0" />
-            <element signature="e#28253#28471#0" />
-            <element signature="e#28477#28555#0" />
-            <element signature="e#28692#28762#0" />
-            <element signature="e#28692#29189#0" />
-            <element signature="e#29195#29365#0" />
-            <element signature="e#29371#29716#0" />
-            <element signature="e#29722#30775#0" />
-            <element signature="e#30781#31512#0" />
-            <element signature="e#31518#32763#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MainContainer#0" />
+            <element signature="docComment;method#MainContainer#0;class#MainContainer#0" />
+            <element signature="docComment;method#setDisplayedScreen#0;class#MainContainer#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/Validator.java">
+    <entry file="file://$PROJECT_DIR$/war/Website.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="docComment;field#MAX_USERNAME_LENGTH#0;class#Validator#0" />
-            <element signature="docComment;field#MAX_EMAIL_LENGTH#0;class#Validator#0" />
-            <element signature="method#validateName#0;class#Validator#0" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/PastValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/Validator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="187">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
+    <entry file="jar://$PROJECT_DIR$/external/gwt-2.8.2/gwt-user.jar!/com/google/gwt/editor/client/EditorError.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="89" column="99" selection-start-line="89" selection-start-column="99" selection-end-line="89" selection-end-column="99" />
-          <folding>
-            <element signature="n#m:MaterialColumn#0;n#m:MaterialPanel#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialCardAction#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/gwt-2.8.2/gwt-user.jar!/com/google/gwt/editor/client/impl/SimpleError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/error/BasicEditorError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/AbstractValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1003">
-          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="401">
+          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        <state relative-caret-position="901">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="docComment;method#HomeScreen#0;class#HomeScreen#0" />
+            <element signature="method#addValidators#0;class#HomeScreen#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-393">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>

@@ -66,6 +66,9 @@ public class HomeScreen extends Composite {
 
     private static CEWServiceAsync cewServiceAsync = GWT.create(CEWService.class);
 
+    private static final String INVALID_BORDER = "border: 1px solid red !important";
+
+
     /**
      * Default constructor
      */
@@ -80,9 +83,89 @@ public class HomeScreen extends Composite {
             loginContainer.setDisplay(Display.NONE);
             registerContainer.setDisplay(Display.BLOCK);
         });
+
+        addValidators();
     }
 
     private void addValidators() {
+        firstName.addFocusHandler(e -> firstName.getWidget(0).getElement().setAttribute("style", ""));
+        firstName.addBlurHandler(e -> {
+            if(firstName.getText() == null
+                    || firstName.getText().isEmpty()) {
+                firstName.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                firstName.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
 
+        lastName.addFocusHandler(e -> lastName.getWidget(0).getElement().setAttribute("style", ""));
+        lastName.addBlurHandler(e -> {
+            if(lastName.getText() == null
+                    || lastName.getText().isEmpty()) {
+                lastName.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                lastName.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
+
+        rUsername.addFocusHandler(e -> rUsername.getWidget(0).getElement().setAttribute("style", ""));
+        rUsername.addBlurHandler(e -> {
+            if(rUsername.getText() == null
+                    || rUsername.getText().isEmpty()
+                    || rUsername.getText().length() < 5
+                    || rUsername.getText().length() > 20) {
+                rUsername.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                rUsername.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
+
+        rPassword.addFocusHandler(e -> rPassword.getWidget(0).getElement().setAttribute("style", ""));
+        rPassword.addBlurHandler(e -> {
+            if(rPassword.getText() == null
+                    || rPassword.getText().isEmpty()
+                    || rPassword.getText().length() < 5
+                    || rPassword.getText().length() > 20) {
+                rPassword.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                rPassword.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
+
+        rPassword2.addFocusHandler(e -> rPassword2.getWidget(0).getElement().setAttribute("style", ""));
+        rPassword2.addBlurHandler(e -> {
+            if(rPassword2.getText() == null
+                    || rPassword2.getText().isEmpty()
+                    || rPassword2.getText().length() < 5
+                    || rPassword2.getText().length() > 20
+                    || !rPassword2.getText().equals(rPassword.getText())) {
+                rPassword2.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                rPassword2.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
+
+        email.addFocusHandler(e -> email.getWidget(0).getElement().setAttribute("style", ""));
+        email.addBlurHandler(e -> {
+            if(email.getText() == null
+                    || email.getText().isEmpty()
+                    || email.getText().length() < 5) {
+                email.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                email.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
+
+        email2.addFocusHandler(e -> email2.getWidget(0).getElement().setAttribute("style", ""));
+        email2.addBlurHandler(e -> {
+            if(email2.getText() == null
+                    || email2.getText().isEmpty()
+                    || email2.getText().length() < 5
+                    || !email2.getText().equals(email.getText())) {
+                email2.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
+            } else {
+                email2.getWidget(0).getElement().setAttribute("style", "");
+            }
+        });
     }
 }

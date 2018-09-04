@@ -2,6 +2,7 @@
              xmlns:m='urn:import:gwt.material.design.client.ui'>
 
     <ui:style>
+
         .mainContainer {
             height: 100%;
             margin: 0;
@@ -33,16 +34,16 @@
                             addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                             fieldType="OUTLINED" width="100%" label="Password"/>
                 </m:MaterialCardContent>
-                <m:MaterialCardAction height="20%">
-                    <m:MaterialColumn grid="s6" paddingLeft="0" paddingRight="5">
+                <m:MaterialCardAction addStyleNames="valign-wrapper" height="20%">
+                    <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="0" paddingRight="5">
                         <m:MaterialButton ui:field="loginButton"
-                                          style="color: black; background-color: #fc0; width: 100%;"
+                                          style="color: black; background-color: #fc0; width: 100%; height: 60%"
                                           waves="LIGHT" text="Login"/>
                     </m:MaterialColumn>
-                    <m:MaterialColumn grid="s6" paddingLeft="5" paddingRight="0">
+                    <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="5" paddingRight="0">
                         <m:MaterialButton ui:field="registerButton"
                                           waves="LIGHT" text="Register" backgroundColor="BLACK"
-                                          style="color: #fc0; width: 100%"/>
+                                          style="color: #fc0; width: 100%; height: 60%"/>
                     </m:MaterialColumn>
                 </m:MaterialCardAction>
             </m:MaterialCard>
@@ -51,54 +52,54 @@
         <m:MaterialColumn ui:field="registerContainer" offset="s3" grid="s6" height="90%" display="NONE">
             <m:MaterialCard height="100%" verticalAlign="MIDDLE">
                 <m:MaterialCardContent height="85%">
-                    <m:MaterialTitle title="Register"/>
+                    <m:MaterialRow margin="0">
+                        <m:MaterialTitle title="Register" display="INLINE_BLOCK"/>
+                        <m:MaterialButton type="FLOATING" waves="LIGHT" iconType="ARROW_BACK" size="MEDIUM" backgroundColor="BLACK" style="float: right;"/>
+                    </m:MaterialRow>
 
                     <m:MaterialPanel margin="0" padding="0" overflow="AUTO" height="90%">
                         <m:MaterialRow margin="0">
                             <m:MaterialColumn grid="s6">
                                 <m:MaterialTextBox ui:field="firstName"
                                         addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                        fieldType="OUTLINED" width="100%" label="First Name" validateOnBlur="true"/>
+                                        fieldType="OUTLINED" width="100%" label="First Name"/>
                             </m:MaterialColumn>
                             <m:MaterialColumn grid="s6">
                                 <m:MaterialTextBox ui:field="lastName"
                                         addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                        fieldType="OUTLINED" width="100%" label="Last Name" validateOnBlur="true"/>
+                                        fieldType="OUTLINED" width="100%" label="Last Name"/>
                             </m:MaterialColumn>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
                             <m:MaterialTextBox ui:field="rUsername"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                    grid="s12" fieldType="OUTLINED" width="100%" label="Username"
-                                    validateOnBlur="true"/>
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Username"/>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
                             <m:MaterialTextBox ui:field="rPassword"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                    grid="s12" fieldType="OUTLINED" width="100%" label="Password" type="PASSWORD"
-                                    validateOnBlur="true"/>
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Password" type="PASSWORD"/>
                             <m:MaterialTextBox ui:field="rPassword2"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                     grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Password"
-                                    type="PASSWORD" validateOnBlur="true"/>
+                                    type="PASSWORD"/>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
                             <m:MaterialTextBox ui:field="email"
-                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} "
-                                    grid="s12" fieldType="OUTLINED" width="100%" label="Email" validateOnBlur="true"/>
+                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Email"/>
                             <m:MaterialTextBox ui:field="email2"
                                     addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                    grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Email"
-                                    validateOnBlur="true"/>
+                                    grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Email"/>
                         </m:MaterialRow>
                     </m:MaterialPanel>
                 </m:MaterialCardContent>
                 <m:MaterialCardAction height="15%" addStyleNames="valign-wrapper">
                     <m:MaterialButton ui:field="submitButton" verticalAlign="MIDDLE"
-                                      style="color: black; background-color: #fc0; width: 100%;"
+                                      style="color: black; background-color: #fc0; width: 100%; height: 60%;"
                                       waves="LIGHT" text="Submit"/>
                 </m:MaterialCardAction>
             </m:MaterialCard>

@@ -2,25 +2,25 @@ package college.events.website.client.md;
 
 import college.events.website.client.CEWService;
 import college.events.website.client.CEWServiceAsync;
+import college.events.website.client.utils.BooleanCallback;
 import college.events.website.shared.rpc.GenericRPCResponse;
+import college.events.website.shared.validators.EmptyValidator;
+import college.events.website.shared.validators.MatchValidator;
+import college.events.website.shared.validators.NameValidator;
+import college.events.website.shared.validators.PasswordValidator;
+import college.events.website.shared.validators.UsernameValidator;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.editor.client.Editor;
-import com.google.gwt.editor.client.EditorError;
+import com.google.gwt.event.dom.client.FocusEvent;
+import com.google.gwt.event.dom.client.FocusHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
-import gwt.material.design.client.base.validator.SizeValidator;
-import gwt.material.design.client.base.validator.Validator;
 import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.ui.MaterialButton;
 import gwt.material.design.client.ui.MaterialColumn;
-import gwt.material.design.client.ui.MaterialPanel;
 import gwt.material.design.client.ui.MaterialTextBox;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 
 public class HomeScreen extends Composite {
@@ -28,13 +28,22 @@ public class HomeScreen extends Composite {
     MaterialColumn loginContainer;
 
     @UiField
+    MaterialTextBox username;
+
+    @UiField
+    MaterialTextBox password;
+
+    @UiField
     MaterialButton loginButton;
+
+    @UiField
+    MaterialButton registerButton;
 
     @UiField
     MaterialColumn registerContainer;
 
     @UiField
-    MaterialButton registerButton;
+    MaterialButton backButton;
 
     @UiField
     MaterialTextBox firstName;
@@ -57,16 +66,17 @@ public class HomeScreen extends Composite {
     @UiField
     MaterialTextBox email2;
 
-    private static Logger logger = Logger.getLogger(HomeScreen.class.getName());
+    @UiField
+    MaterialButton submitButton;
 
+    private static Logger logger = Logger.getLogger(HomeScreen.class.getName());
     interface HomeScreenUiBinder extends UiBinder<Widget, HomeScreen> {
+
     }
 
     private static HomeScreenUiBinder ourUiBinder = GWT.create(HomeScreenUiBinder.class);
 
     private static CEWServiceAsync cewServiceAsync = GWT.create(CEWService.class);
-
-    private static final String INVALID_BORDER = "border: 1px solid red !important";
 
 
     /**
@@ -84,88 +94,89 @@ public class HomeScreen extends Composite {
             registerContainer.setDisplay(Display.BLOCK);
         });
 
+        backButton.addClickHandler(e -> {
+            loginContainer.setDisplay(Display.BLOCK);
+            registerContainer.setDisplay(Display.NONE);
+        });
+
+        submitButton.addClickHandler(event -> {
+            boolean valid = true;
+            valid &= firstName.validate();
+            valid &= lastName.validate();
+            valid &= rUsername.validate();
+            valid &= rPassword.validate();
+            valid &= rPassword2.validate();
+            valid &= email.validate();
+            valid &= email2.validate();
+            if(valid) {
+                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
+                    @Override
+                    public void onFailure(Throwable caught) {
+                        logger.warning("Failed to create new account");
+                        //TODO: Tell user why
+                    }
+
+                    @Override
+                    public void onSuccess(GenericRPCResponse<String> result) {
+                        logger.warning("New user has been created");
+                        //TODO: Transition to next screen
+                    }
+                });
+            }
+        });
+
         addValidators();
     }
 
+    /**
+     * Add validators for the text input
+     */
     private void addValidators() {
-        firstName.addFocusHandler(e -> firstName.getWidget(0).getElement().setAttribute("style", ""));
-        firstName.addBlurHandler(e -> {
-            if(firstName.getText() == null
-                    || firstName.getText().isEmpty()) {
-                firstName.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                firstName.getWidget(0).getElement().setAttribute("style", "");
-            }
-        });
 
-        lastName.addFocusHandler(e -> lastName.getWidget(0).getElement().setAttribute("style", ""));
-        lastName.addBlurHandler(e -> {
-            if(lastName.getText() == null
-                    || lastName.getText().isEmpty()) {
-                lastName.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                lastName.getWidget(0).getElement().setAttribute("style", "");
-            }
-        });
+        firstName.addFocusHandler(getFieldFocusHandler(firstName));
+        firstName.addValidator(new NameValidator(getValidatorCallback(firstName)));
 
-        rUsername.addFocusHandler(e -> rUsername.getWidget(0).getElement().setAttribute("style", ""));
-        rUsername.addBlurHandler(e -> {
-            if(rUsername.getText() == null
-                    || rUsername.getText().isEmpty()
-                    || rUsername.getText().length() < 5
-                    || rUsername.getText().length() > 20) {
-                rUsername.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                rUsername.getWidget(0).getElement().setAttribute("style", "");
-            }
-        });
+        lastName.addFocusHandler(getFieldFocusHandler(lastName));
+        lastName.addValidator(new NameValidator(getValidatorCallback(lastName)));
 
-        rPassword.addFocusHandler(e -> rPassword.getWidget(0).getElement().setAttribute("style", ""));
-        rPassword.addBlurHandler(e -> {
-            if(rPassword.getText() == null
-                    || rPassword.getText().isEmpty()
-                    || rPassword.getText().length() < 5
-                    || rPassword.getText().length() > 20) {
-                rPassword.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                rPassword.getWidget(0).getElement().setAttribute("style", "");
-            }
-        });
+        rUsername.addFocusHandler(getFieldFocusHandler(rUsername));
+        rUsername.addValidator(new UsernameValidator(getValidatorCallback(rUsername)));
 
-        rPassword2.addFocusHandler(e -> rPassword2.getWidget(0).getElement().setAttribute("style", ""));
-        rPassword2.addBlurHandler(e -> {
-            if(rPassword2.getText() == null
-                    || rPassword2.getText().isEmpty()
-                    || rPassword2.getText().length() < 5
-                    || rPassword2.getText().length() > 20
-                    || !rPassword2.getText().equals(rPassword.getText())) {
-                rPassword2.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                rPassword2.getWidget(0).getElement().setAttribute("style", "");
-            }
-        });
+        rPassword.addFocusHandler(getFieldFocusHandler(rPassword));
+        rPassword.addValidator(new PasswordValidator(getValidatorCallback(rPassword)));
 
-        email.addFocusHandler(e -> email.getWidget(0).getElement().setAttribute("style", ""));
-        email.addBlurHandler(e -> {
-            if(email.getText() == null
-                    || email.getText().isEmpty()
-                    || email.getText().length() < 5) {
-                email.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                email.getWidget(0).getElement().setAttribute("style", "");
-            }
-        });
+        rPassword2.addFocusHandler(getFieldFocusHandler(rPassword2));
+        rPassword2.addValidator(new MatchValidator(rPassword, "Password 1", "Password 2", getValidatorCallback(rPassword2)));
 
-        email2.addFocusHandler(e -> email2.getWidget(0).getElement().setAttribute("style", ""));
-        email2.addBlurHandler(e -> {
-            if(email2.getText() == null
-                    || email2.getText().isEmpty()
-                    || email2.getText().length() < 5
-                    || !email2.getText().equals(email.getText())) {
-                email2.getWidget(0).getElement().setAttribute("style", INVALID_BORDER);
-            } else {
-                email2.getWidget(0).getElement().setAttribute("style", "");
+        email.addFocusHandler(getFieldFocusHandler(email));
+        email.addValidator(new EmptyValidator(getValidatorCallback(email)));
+
+        email2.addFocusHandler(getFieldFocusHandler(email2));
+        email2.addValidator(new MatchValidator(email, "Email 1", "Email 2", getValidatorCallback(email2)));
+    }
+
+    private FocusHandler getFieldFocusHandler(MaterialTextBox widget) {
+        return event -> {
+            widget.getWidget(0).getElement().removeAttribute("style");
+            widget.getWidget(1).getElement().removeAttribute("style");
+        };
+    }
+
+    private BooleanCallback getValidatorCallback(MaterialTextBox widget) {
+        return new BooleanCallback() {
+            @Override
+            public void onFalse() {
+                widget.getWidget(0).getElement().setAttribute("style", "border: 2px solid red !important;");
+                widget.getWidget(1).getElement().setAttribute("style", "color: red !important;");
+                logger.severe("False");
             }
-        });
+
+            @Override
+            public void onTrue() {
+                widget.getWidget(0).getElement().removeAttribute("syle");
+                widget.getWidget(1).getElement().removeAttribute("style");
+                logger.severe("true");
+            }
+        };
     }
 }

@@ -7,13 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfbe703-54d9-4332-a259-90c34a775872" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/client/utils/BooleanCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/errors/GenericError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/errors/LengthError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2080a462-a330-4030-bd30-04551257e95f.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/data/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/war/Website.html" beforeDir="false" afterPath="$PROJECT_DIR$/war/Website.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,17 +51,6 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
-        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
-        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
-        <item name="USERS: table" type="3b012a07:DerbyImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -179,39 +185,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainContainer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="272">
               <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#MainContainer#0" />
-                <element signature="docComment;method#MainContainer#0;class#MainContainer#0" />
-                <element signature="docComment;method#setDisplayedScreen#0;class#MainContainer#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+            <state relative-caret-position="2431">
+              <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
               <folding>
-                <element signature="docComment;method#HomeScreen#0;class#HomeScreen#0" />
-                <element signature="method#addValidators#0;class#HomeScreen#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="class#HomeScreenUiBinder#0;class#HomeScreen#0" expanded="true" />
+                <element signature="method#HomeScreen#0;class#HomeScreen#0" expanded="true" />
+                <element signature="method#initialize#0;class#HomeScreen#0" expanded="true" />
+                <element signature="docComment;method#addValidators#0;class#HomeScreen#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmptyValidator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#EmptyValidator#0" expanded="true" />
+                <element signature="docComment;field#callback#0;class#EmptyValidator#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchValidator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#MatchValidator#0" expanded="true" />
+                <element signature="method#MatchValidator#1;class#MatchValidator#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeScreen.ui.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-393">
-              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            <state relative-caret-position="1377">
+              <caret line="115" column="55" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+              <folding>
+                <element signature="n#m:MaterialRow#0;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialRow#1;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialRow#2;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialRow#3;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -222,6 +264,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -278,13 +321,28 @@
         <option value="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" />
         <option value="$PROJECT_DIR$/war/Website.css" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/Validator.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/FormatError.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/EmailFormatError.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/AbstractError.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/GenericError.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/LengthError.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/Website.gwt.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/EmailValidator.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/utils/Callback.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/utils/BooleanCallback.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidartor.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java" />
         <option value="$PROJECT_DIR$/war/Website.html" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java" />
       </list>
     </option>
   </component>
@@ -293,6 +351,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="261" />
@@ -305,20 +366,18 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="external" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -330,6 +389,69 @@
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="college" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="validators" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -346,9 +468,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -358,10 +478,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536033681003" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
@@ -397,13 +517,13 @@
   <component name="RunManager" selected="GWT Configuration.CEW">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -412,15 +532,28 @@
       <option name="USE_SUPER_DEV_MODE" value="true" />
       <option name="WORKING_DIRECTORY" value="" />
       <module name="College Events Website" />
-      <method v="2">
+      <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="College Events Website:war exploded" />
         </option>
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -1149,17 +1282,34 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
+      <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="College Events Website:war exploded" />
         </option>
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -1168,7 +1318,7 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -1190,86 +1340,91 @@
       <workItem from="1535828742365" duration="11663000" />
       <workItem from="1535903801709" duration="31243000" />
       <workItem from="1536021322213" duration="6871000" />
+      <workItem from="1536070475147" duration="16975000" />
+      <workItem from="1536088796766" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49777000" />
+    <option name="totallyTimeSpent" value="66772000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Nl-Palette" order="0" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
+      <window_info anchor="right" id="Database" order="3" weight="0.24307036" />
       <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32883242" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.18627451" />
       <window_info anchor="bottom" id="Version Control" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info active="true" anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32883242" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.18665607" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="right" id="Properties" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.24324325" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="14" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.16257995" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="JProfiler" order="14" />
+      <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="14" />
+      <window_info id="Nl-Palette" order="0" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="right" id="Properties" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.3278867" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" weight="0.32883242" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
     </layout>
     <layout-to-restore>
-      <window_info id="Nl-Palette" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
-      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
       <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info id="Image Layers" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.18665607" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Properties" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32883242" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.18665607" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info id="Nl-Palette" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="right" id="Properties" order="2" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
       <window_info anchor="right" id="Database" order="3" weight="0.24324325" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1278,34 +1433,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/webapps/README.TXT">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3bb28127-7aa5-4c25-9e41-1cbc6d25e440/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1b8ddf56-7b57-46a3-847f-bd3ebe3205c0/console.sql" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql" />
     <entry file="file://$PROJECT_DIR$/data/service.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1390,28 +1523,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/public/css/overridecss.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#2652#2933#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/public/css/overridecss.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -1437,37 +1550,10 @@
     <entry file="file://$PROJECT_DIR$/../IAAR/GIFT/src/mil/arl/gift/tools/reportgenerator/client/md/RgMainContainer.java" />
     <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/Validator.java" />
     <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java" />
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MainContainer#0" />
-            <element signature="docComment;method#MainContainer#0;class#MainContainer#0" />
-            <element signature="docComment;method#setDisplayedScreen#0;class#MainContainer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/Website.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/PastValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1499,21 +1585,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="272">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="docComment;method#HomeScreen#0;class#HomeScreen#0" />
-            <element signature="method#addValidators#0;class#HomeScreen#0" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/routines/EmailValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/EmailValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/Validator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/GenericValidator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/errors/EmailFormatError.java" />
+    <entry file="jar://$PROJECT_DIR$/external/gwt-2.8.2/gwt-user.jar!/com/google/gwt/user/client/ui/HasValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/FieldMatchValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/errors/GenericError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#AbstractError#0" expanded="true" />
+            <element signature="docComment;method#GenericError#0;class#GenericError#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/EmailValidator.java" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/utils/BooleanCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/errors/LengthError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#LengthError#0" expanded="true" />
+            <element signature="class#Mode#0;class#LengthError#0" expanded="true" />
+            <element signature="docComment;method#LengthError#0;class#LengthError#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="docComment;method#LengthError#1;class#LengthError#0" expanded="true" />
+            <element signature="method#LengthError#1;class#LengthError#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/Website.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#UsernameValidator#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="method#validate#0;class#UsernameValidator#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#NameValidator#0" expanded="true" />
+            <element signature="docComment;method#NameValidator#0;class#NameValidator#0" expanded="true" />
+            <element signature="docComment;method#NameValidator#1;class#NameValidator#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="method#validate#0;class#NameValidator#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="72" column="127" selection-start-line="72" selection-start-column="127" selection-end-line="72" selection-end-column="127" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#PasswordValidator#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <marker date="1536086717290" expanded="false" signature="1745:2112" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-393">
-          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        <state relative-caret-position="1377">
+          <caret line="115" column="55" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+          <folding>
+            <element signature="n#m:MaterialRow#0;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialRow#1;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialRow#2;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialRow#3;n#m:MaterialPanel#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#HomeScreenUiBinder#0;class#HomeScreen#0" expanded="true" />
+            <element signature="method#HomeScreen#0;class#HomeScreen#0" expanded="true" />
+            <element signature="method#initialize#0;class#HomeScreen#0" expanded="true" />
+            <element signature="docComment;method#addValidators#0;class#HomeScreen#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#EmptyValidator#0" expanded="true" />
+            <element signature="docComment;field#callback#0;class#EmptyValidator#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MatchValidator#0" expanded="true" />
+            <element signature="method#MatchValidator#1;class#MatchValidator#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

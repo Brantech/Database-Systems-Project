@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "USERS", schema = "APP", catalog = "")
+@Table(name = "USERS", schema = "APP")
 public class UsersEntity {
     private int pk;
     private String firstname;
@@ -20,7 +20,7 @@ public class UsersEntity {
     private String email;
 
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="USERS_SEQUENCE")
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APP.USERS_SEQUENCE")
     @Column(name = "PK", nullable = false)
     public int getPk() {
         return pk;

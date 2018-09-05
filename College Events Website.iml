@@ -41,5 +41,6 @@
     <orderEntry type="library" name="gwt-user" level="project" />
     <orderEntry type="library" name="gwtmaterial" level="project" />
     <orderEntry type="library" name="Hibernate 5.3.2-5.3.2" level="project" />
+    <orderEntry type="library" name="derby" level="project" />
   </component>
 </module>

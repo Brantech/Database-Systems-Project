@@ -7,5 +7,5 @@ import com.google.gwt.core.client.GWT;
 
 @RemoteServiceRelativePath("CEWService")
 public interface CEWService extends RemoteService {
-    public GenericRPCResponse<String> createAccount(String username, String password, String firstName, String lastName);
+    public GenericRPCResponse<String> createAccount(String username, String password, String firstName, String lastName, String email);
 }

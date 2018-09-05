@@ -109,7 +109,7 @@ public class HomeScreen extends Composite {
             valid &= email.validate();
             valid &= email2.validate();
             if(valid) {
-                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
+                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), email.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
                     @Override
                     public void onFailure(Throwable caught) {
                         logger.warning("Failed to create new account");

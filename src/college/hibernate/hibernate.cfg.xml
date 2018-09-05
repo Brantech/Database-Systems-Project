@@ -3,15 +3,15 @@
     "-//Hibernate/Hibernate Configuration DTD//EN"
     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-  <session-factory>
-    <property name="connection.url">jdbc:derby:C:/Users/Brandon/Desktop/Database-Systems-Project/data</property>
-    <property name="connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
-      <mapping class="college.hibernate.entities.UsersEntity"/>
-      <mapping resource="college/hibernate/entities/UsersEntity.hbm.xml"/>
-    <property name="connection.username">admin</property>
-    <property name="connection.password">password</property>
+  <session-factory >
+      <property name="connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+      <property name="connection.url">jdbc:derby:C:/Users/bgotay/Desktop/Database-Systems-Project/data;create=true</property>
+      <property name="connection.username">admin</property>
+      <property name="connection.password">password</property>
+      <property name="hibernate.dialect">org.hibernate.dialect.DerbyDialect</property>
+      <property name="connection.pool_size">2</property>
 
-    <!-- DB schema will be updated if needed -->
-    <<property name="hbm2ddl.auto">update</property>
+      <mapping class="college.hibernate.entities.UsersEntity"/>
+
   </session-factory>
 </hibernate-configuration>

@@ -9,10 +9,10 @@
             <column name="PK" sql-type="integer"/>
         </id>
         <property name="firstname">
-            <column name="FIRSTNAME" sql-type="varchar(20)" length="20"/>
+            <column name="FIRSTNAME" sql-type="varchar(255)" length="255"/>
         </property>
         <property name="lastname">
-            <column name="LASTNAME" sql-type="varchar(20)" length="20"/>
+            <column name="LASTNAME" sql-type="varchar(255)" length="255"/>
         </property>
         <property name="username">
             <column name="USERNAME" sql-type="varchar(20)" length="20"/>

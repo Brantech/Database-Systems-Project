@@ -20,5 +20,8 @@
         <property name="password">
             <column name="PASSWORD" sql-type="varchar(20)" length="20"/>
         </property>
+        <property name="email">
+            <column name="EMAIL" sql-type="varchar(255)" length="255"/>
+        </property>
     </class>
 </hibernate-mapping>

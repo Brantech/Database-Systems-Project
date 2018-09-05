@@ -17,6 +17,7 @@ public class UsersEntity {
     private String lastname;
     private String username;
     private String password;
+    private String email;
 
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="USERS_SEQUENCE")
@@ -30,7 +31,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "FIRSTNAME", nullable = false, length = 20)
+    @Column(name = "FIRSTNAME", nullable = false)
     public String getFirstname() {
         return firstname;
     }
@@ -40,7 +41,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "LASTNAME", nullable = false, length = 20)
+    @Column(name = "LASTNAME", nullable = false)
     public String getLastname() {
         return lastname;
     }
@@ -50,7 +51,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "USERNAME", nullable = false, length = 20)
+    @Column(name = "USERNAME", nullable = false, unique = true, length = 20)
     public String getUsername() {
         return username;
     }
@@ -67,6 +68,16 @@ public class UsersEntity {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Basic
+    @Column(name = "EMAIL", nullable = false, unique = true)
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override

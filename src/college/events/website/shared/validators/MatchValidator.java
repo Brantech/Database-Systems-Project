@@ -1,24 +1,4 @@
-package college.events.website.shared.validators;/*
- *   File Name:
- *
- *   Classification:  Unclassified
- *
- *   Prime Contract No.: W900KK-17-C-0029
- *
- *   This work was generated under U.S. Government contract and the
- *   Government has unlimited data rights therein.
- *
- *   Copyrights:      Copyright 2014
- *                    Dignitas Technologies, LLC.
- *                    All rights reserved.
- *
- *   Distribution Statement A: Approved for public release; distribution is unlimited
- *
- *   Organizations:   Dignitas Technologies, LLC.
- *                    3504 Lake Lynda Drive, Suite 170
- *                    Orlando, FL 32817
- *
- */
+package college.events.website.shared.validators;
 
 import college.events.website.client.utils.BooleanCallback;
 import college.events.website.shared.errors.GenericError;

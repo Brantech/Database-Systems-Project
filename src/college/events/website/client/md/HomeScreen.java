@@ -9,6 +9,7 @@ import college.events.website.shared.validators.MatchValidator;
 import college.events.website.shared.validators.NameValidator;
 import college.events.website.shared.validators.PasswordValidator;
 import college.events.website.shared.validators.UsernameValidator;
+import college.hibernate.QueryResponse;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.FocusEvent;
 import com.google.gwt.event.dom.client.FocusHandler;
@@ -84,7 +85,17 @@ public class HomeScreen extends Composite {
      */
     public HomeScreen() {
         initWidget(ourUiBinder.createAndBindUi(this));
+cewServiceAsync.isUsernameAvailable("br109653", new AsyncCallback<GenericRPCResponse<String>>() {
+    @Override
+    public void onFailure(Throwable caught) {
 
+    }
+
+    @Override
+    public void onSuccess(GenericRPCResponse<String> result) {
+
+    }
+});
         initialize();
     }
 

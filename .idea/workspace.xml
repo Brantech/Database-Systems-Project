@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfbe703-54d9-4332-a259-90c34a775872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/derby.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2080a462-a330-4030-bd30-04551257e95f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2080a462-a330-4030-bd30-04551257e95f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/College Events Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/College Events Website.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/data/db.lck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/log/log2.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/logmirror.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c10.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c101.dat" afterDir="false" />
@@ -31,10 +29,10 @@
       <change beforePath="$PROJECT_DIR$/data/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c31.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c400.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c4d0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c4d0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c4e1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c4e1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c4f1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c4f1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c501.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c501.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/seg0/c4d0.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/seg0/c4e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/seg0/c4f1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/seg0/c501.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c51.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c60.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c71.dat" afterDir="false" />
@@ -43,18 +41,12 @@
       <change beforePath="$PROJECT_DIR$/data/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/ca1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/cb1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/cf0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/d490.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/d4a1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/d4b1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/d4c0.dat" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/hibernate/DbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/DbManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/QueryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/QueryResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -231,26 +223,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainContainer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomeScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
+            <state relative-caret-position="189">
+              <caret line="87" column="61" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
               <folding>
-                <element signature="e#2624#2625#0" expanded="true" />
-                <element signature="e#2691#2692#0" expanded="true" />
+                <element signature="method#onFailure#0;class#2504:2725" expanded="true" />
+                <element signature="method#onSuccess#0;class#2504:2725" expanded="true" />
                 <element signature="method#initialize#0;class#HomeScreen#0" expanded="true" />
                 <element signature="method#getValidatorCallback#0;class#HomeScreen#0" expanded="true" />
               </folding>
@@ -258,33 +238,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DbManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#createAccount#0;class#DbManager#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CEWServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+            <state relative-caret-position="272">
+              <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding>
                 <element signature="method#createAccount#0;class#CEWServiceImpl#0" expanded="true" />
               </folding>
@@ -292,11 +250,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="USERS" pinned="false" current-in-tab="true">
-        <entry file="das://2080a462-a330-4030-bd30-04551257e95f/schema/APP/table/USERS">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="DbManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;field#US#0;class#DbManager#0" expanded="true" />
+                <element signature="e#716#717#0" expanded="true" />
+                <element signature="e#753#754#0" expanded="true" />
+                <element signature="method#buildSessionFactory#0;class#DbManager#0" expanded="true" />
+                <element signature="method#getSQLFromFile#0;class#DbManager#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.table.create.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -357,7 +332,6 @@
         <option value="$PROJECT_DIR$/src/college/events/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" />
         <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/users.table.create.sql" />
-        <option value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/war/Website.css" />
@@ -381,15 +355,19 @@
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
         <option value="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml" />
         <option value="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" />
-        <option value="$PROJECT_DIR$/src/college/hibernate/DbManager.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/QueryResponse.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console_1.sql" />
         <option value="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/DbManager.java" />
       </list>
     </option>
   </component>
@@ -402,11 +380,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="335" />
-    <option name="y" value="35" />
-    <option name="width" value="1550" />
-    <option name="height" value="840" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -417,9 +395,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -437,6 +415,40 @@
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="college" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -1357,11 +1369,13 @@
       <workItem from="1536162109939" duration="3171000" />
       <workItem from="1536165558579" duration="3070000" />
       <workItem from="1536168958359" duration="159000" />
+      <workItem from="1536169641938" duration="2054000" />
+      <workItem from="1536242195138" duration="13165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79926000" />
+    <option name="totallyTimeSpent" value="95145000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1373,35 +1387,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="335" y="35" width="1550" height="840" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32897604" />
       <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info active="true" anchor="bottom" id="Database Changes" order="13" visible="true" weight="0.32763532" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.25054467" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.27449664" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.21801706" />
       <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.39978212" />
+      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.39978212" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.3278867" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32897604" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.34313726" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32897604" />
       <window_info id="Persistence" order="8" sideWeight="0.5032467" side_tool="true" weight="0.16684435" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32763532" />
       <window_info anchor="bottom" id="Run with VisualVM" order="14" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.2147651" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49675325" visible="true" weight="0.17430703" />
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="JProfiler" order="15" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" weight="0.3278867" />
       <window_info anchor="right" id="SciView" order="10" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -1410,10 +1425,9 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.3267974" />
       <window_info anchor="right" id="Properties" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.3278867" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.3278867" />
       <window_info anchor="right" id="Commander" order="7" weight="0.4" />
     </layout>
     <layout-to-restore>
@@ -1461,48 +1475,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="32" />
+      <option name="time" value="53" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/Validator.java" />
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java" />
-    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/PastValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/gwt-2.8.2/gwt-user.jar!/com/google/gwt/editor/client/EditorError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/gwt-2.8.2/gwt-user.jar!/com/google/gwt/editor/client/impl/SimpleError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/error/BasicEditorError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/gwtmaterial/gwt-material-2.1.jar!/gwt/material/design/client/base/validator/AbstractValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/routines/EmailValidator.class" />
     <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/EmailValidator.class" />
     <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/Validator.class" />
     <entry file="jar://$PROJECT_DIR$/external/commons-validator-1.6/commons-validator-1.6.jar!/org/apache/commons/validator/GenericValidator.class" />
@@ -1588,13 +1564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="67" column="4" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1637,31 +1606,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/QueryResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/external/hibernate/javax.persistence-api-2.2.jar!/javax/persistence/EntityTransaction.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1722,33 +1670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="90" column="50" selection-start-line="90" selection-start-column="50" selection-end-line="90" selection-end-column="50" />
-          <folding>
-            <element signature="e#2624#2625#0" expanded="true" />
-            <element signature="e#2691#2692#0" expanded="true" />
-            <element signature="method#initialize#0;class#HomeScreen#0" expanded="true" />
-            <element signature="method#getValidatorCallback#0;class#HomeScreen#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1759,30 +1680,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="69" selection-start-line="22" selection-start-column="69" selection-end-line="22" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/QueryResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
+          <folding>
+            <element signature="method#QueryResponse#2;class#QueryResponse#0" expanded="true" />
+            <element signature="method#QueryResponse#3;class#QueryResponse#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="docComment;method#getMessage#0;class#QueryResponse#0" expanded="true" />
+            <element signature="docComment;method#getError#0;class#QueryResponse#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+        <state relative-caret-position="272">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
             <element signature="method#createAccount#0;class#CEWServiceImpl#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbManager.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        <state relative-caret-position="85">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="87" column="61" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createAccount#0;class#DbManager#0" expanded="true" />
+            <element signature="method#onFailure#0;class#2504:2725" expanded="true" />
+            <element signature="method#onSuccess#0;class#2504:2725" expanded="true" />
+            <element signature="method#initialize#0;class#HomeScreen#0" expanded="true" />
+            <element signature="method#getValidatorCallback#0;class#HomeScreen#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1791,6 +1770,80 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/BufferedReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="560" column="26" selection-start-line="560" selection-start-column="26" selection-end-line="560" selection-end-column="26" />
+          <folding>
+            <element signature="method#lines#0;class#BufferedReader#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/hibernate/javax.persistence-api-2.2.jar!/javax/persistence/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="198" column="16" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/exception/GenericJDBCException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;field#US#0;class#DbManager#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="method#buildSessionFactory#0;class#DbManager#0" expanded="true" />
+            <element signature="method#getSQLFromFile#0;class#DbManager#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

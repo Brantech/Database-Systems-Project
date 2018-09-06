@@ -48,31 +48,31 @@
       <DataType>VARCHAR(255)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="20" parent="13" name="SQL180904215900152">
+    <index id="20" parent="13" name="SQL180906154446072">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>PK</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="21" parent="13" name="SQL180904215900150">
+    <index id="21" parent="13" name="SQL180906154446070">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>USERNAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="22" parent="13" name="SQL180904215900151">
+    <index id="22" parent="13" name="SQL180906154446071">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>EMAIL</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="23" parent="13" name="SQL180904215900152">
+    <key id="23" parent="13" name="SQL180906154446072">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>PK</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="24" parent="13" name="SQL180904215900150">
+    <key id="24" parent="13" name="SQL180906154446070">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>USERNAME</ColNames>
     </key>
-    <key id="25" parent="13" name="SQL180904215900151">
+    <key id="25" parent="13" name="SQL180906154446071">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>EMAIL</ColNames>
     </key>

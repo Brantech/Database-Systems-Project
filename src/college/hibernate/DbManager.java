@@ -5,9 +5,12 @@ import college.hibernate.security.EncryptionResult;
 import college.hibernate.security.EncryptionService;
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.net.InetAddress;
+import java.net.ServerSocket;
 import java.sql.SQLException;
 import java.util.stream.Collectors;
 import javax.persistence.Query;
+import org.apache.derby.drda.NetworkServerControl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -24,9 +27,29 @@ public class DbManager {
     private static DbManager instance;
 
     /**
+     * Hibernate package properties
+     */
+    private static DbProperties properties;
+
+    /**
      * Used to create database sessions
      */
     private static SessionFactory sessionFactory;
+
+    /**
+     * Starts up and shuts down the database server
+     */
+    private static NetworkServerControl control;
+
+    /**
+     * Port the database server is running on
+     */
+    private static int DB_SERVER_PORT;
+
+    /**
+     * URL template for the database server url
+     */
+    private static final String DB_BASE_URL_TEMPLATE = "jdbc:derby://%s:%d/%s/create=true";
 
     /**
      * Paths to database initialization SQL scripts
@@ -37,6 +60,20 @@ public class DbManager {
      * Constructor preventing outside instantiation
      */
     private DbManager() {
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void ruin() {
+                try {
+                    if(control != null) {
+                        control.shutdown();
+                    }
+                    System.out.println("DerbyDb server has shut down");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+String t = System.getProperty("user.dir");
+        properties = DbProperties.getInstance();
         buildSessionFactory();
     }
 
@@ -57,12 +94,50 @@ public class DbManager {
     private void buildSessionFactory() {
         try {
             if(sessionFactory == null) {
-                sessionFactory = new Configuration().configure(DbManager.class.getResource("hibernate.cfg.xml")).buildSessionFactory();
+                startDbServer();
 
+                String url = String.format(DB_BASE_URL_TEMPLATE, properties.getDerbyDbServerHost(), DB_SERVER_PORT, properties.getDerbyDbLocation());
+
+                Configuration conf = new Configuration().configure(DbManager.class.getResource("hibernate.cfg.xml"));
+                conf.setProperty("hibernate.connection.url", url);
+                conf.setProperty("connection.url", url);
+
+                sessionFactory = conf.buildSessionFactory();
                 initDb();
             }
+
         } catch (Throwable t) {
             System.err.println("Could not create SessionFactory. " + t);
+            try {
+                if (control != null) {
+                    control.shutdown();
+                }
+            } catch (Exception e) {
+            }
+        }
+    }
+
+    /**
+     * Starts up the DerbyDb server
+     */
+    private void startDbServer() {
+        try {
+            DB_SERVER_PORT = properties.getDerbyDbServerPort();
+
+            // Look for an open port if one was not specified
+            if(DB_SERVER_PORT < 0) {
+                ServerSocket socket = new ServerSocket(0);
+                DB_SERVER_PORT = socket.getLocalPort();
+                socket.close();
+            }
+
+            String host = properties.getDerbyDbServerHost();
+
+            control = new NetworkServerControl(InetAddress.getByName(host), DB_SERVER_PORT);
+            control.start(null);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -84,7 +159,9 @@ public class DbManager {
                  try {
                      session.createSQLQuery(s).executeUpdate();
                  } catch (GenericJDBCException e) {
-                     if(e.getCause() instanceof SQLException && e.getSQLState().equals("X0Y68")) {
+                     if(e.getCause() instanceof SQLException &&
+                                (e.getSQLState().equals("X0Y68") || e.getSQLState().equals("X0Y32"))
+                             ) {
                          System.out.printf("\"%s\" was already executed.\n", s);
                      } else {
                          throw e;
@@ -94,13 +171,14 @@ public class DbManager {
             t.commit();
         } catch (Exception e) {
             System.err.println("Could not initialize DB. " + e);
+            if(t != null) {
+                t.rollback();
+            }
+
             if(session != null) {
                 session.close();
             }
 
-            if(t != null) {
-                t.rollback();
-            }
         }
     }
 
@@ -112,6 +190,9 @@ public class DbManager {
      * @return Authentication token and query success
      */
     public QueryResponse login(String username, String password) {
+        if(username == null || password == null || username.isEmpty() || password.isEmpty()) {
+            return new QueryResponse(false, "Username/password cannot be empty");
+        }
         if(sessionFactory == null) {
             return new QueryResponse(false, "Server could not connect to the database");
         }
@@ -129,6 +210,7 @@ public class DbManager {
             query.setParameter("userName", username);
 
             UsersEntity user = (UsersEntity) query.getSingleResult();
+            session.close();
 
             if(EncryptionService.authenticate(password, user.getPassword(), user.getSalt())) {
                 return new QueryResponse(true, "token");
@@ -140,6 +222,7 @@ public class DbManager {
             if(transaction != null) {
                 transaction.rollback();
             }
+            session.close();
             return new QueryResponse(false, "Username not found");
         }
     }

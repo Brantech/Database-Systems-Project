@@ -10,6 +10,10 @@
           <element id="library" level="project" name="gwt-user" />
           <element id="library" level="project" name="gwtmaterial" />
           <element id="library" level="project" name="Hibernate 5.3.2-5.3.2" />
+          <element id="library" level="project" name="derby" />
+        </element>
+        <element id="directory" name="config">
+          <element id="dir-copy" path="$PROJECT_DIR$/config" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="College Events Website/web/Web" />

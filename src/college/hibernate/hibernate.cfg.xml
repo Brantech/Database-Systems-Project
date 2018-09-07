@@ -5,7 +5,6 @@
 <hibernate-configuration>
   <session-factory >
       <property name="connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
-      <property name="connection.url">jdbc:derby://localhost:1527/C:/Users/tatte/Desktop/College/Database Systems/Database-Systems-Project/data;create=true</property>
       <property name="connection.username">admin</property>
       <property name="connection.password">password</property>
       <property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>

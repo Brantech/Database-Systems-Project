@@ -18,10 +18,13 @@
             <column name="USERNAME" sql-type="varchar(20)" length="20"/>
         </property>
         <property name="password">
-            <column name="PASSWORD" sql-type="varchar(20)" length="20"/>
+            <column name="PASSWORD" sql-type="long varchar"/>
         </property>
         <property name="email">
             <column name="EMAIL" sql-type="varchar(255)" length="255"/>
+        </property>
+        <property name="salt">
+            <column name="SALT" sql-type="long varchar"/>
         </property>
     </class>
 </hibernate-mapping>

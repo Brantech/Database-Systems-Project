@@ -18,6 +18,7 @@ public class UsersEntity {
     private String username;
     private String password;
     private String email;
+    private String salt;
 
     @Id
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APP.USERS_SEQUENCE")
@@ -61,7 +62,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "PASSWORD", nullable = false, length = 20)
+    @Column(name = "PASSWORD", nullable = false)
     public String getPassword() {
         return password;
     }
@@ -78,6 +79,16 @@ public class UsersEntity {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Basic
+    @Column(name = "SALT", nullable = false)
+    public String getSalt() {
+        return salt;
+    }
+
+    public void setSalt(String salt) {
+        this.salt = salt;
     }
 
     @Override

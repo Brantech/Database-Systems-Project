@@ -10,6 +10,12 @@ public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
     private static final DbManager manager = DbManager.getInstance();
 
     @Override
+    public GenericRPCResponse<String> login(String username, String password) {
+        QueryResponse response = manager.login(username, password);
+        return new GenericRPCResponse<>(response.getMessage(), response.getSuccess());
+    }
+
+    @Override
     public GenericRPCResponse<String> createAccount(String username, String password, String firstName, String lastName, String email) {
         QueryResponse response = manager.createAccount(username, password, firstName, lastName, email);
         return new GenericRPCResponse<>("", response.getSuccess());

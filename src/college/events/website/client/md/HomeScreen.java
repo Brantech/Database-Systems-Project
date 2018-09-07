@@ -85,21 +85,25 @@ public class HomeScreen extends Composite {
      */
     public HomeScreen() {
         initWidget(ourUiBinder.createAndBindUi(this));
-cewServiceAsync.isUsernameAvailable("br109653", new AsyncCallback<GenericRPCResponse<String>>() {
-    @Override
-    public void onFailure(Throwable caught) {
 
-    }
-
-    @Override
-    public void onSuccess(GenericRPCResponse<String> result) {
-
-    }
-});
         initialize();
     }
 
     private void initialize() {
+        loginButton.addClickHandler(e ->{
+            cewServiceAsync.login(username.getText(), password.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
+                @Override
+                public void onFailure(Throwable caught) {
+                    logger.warning("Incorrect username or password");
+                }
+
+                @Override
+                public void onSuccess(GenericRPCResponse<String> result) {
+                    logger.info(result.getObj());
+                }
+            });
+        });
+
         registerButton.addClickHandler(e -> {
             loginContainer.setDisplay(Display.NONE);
             registerContainer.setDisplay(Display.BLOCK);
@@ -179,14 +183,12 @@ cewServiceAsync.isUsernameAvailable("br109653", new AsyncCallback<GenericRPCResp
             public void onFalse() {
                 widget.getWidget(0).getElement().setAttribute("style", "border: 2px solid red !important;");
                 widget.getWidget(1).getElement().setAttribute("style", "color: red !important;");
-                logger.severe("False");
             }
 
             @Override
             public void onTrue() {
                 widget.getWidget(0).getElement().removeAttribute("syle");
                 widget.getWidget(1).getElement().removeAttribute("style");
-                logger.severe("true");
             }
         };
     }

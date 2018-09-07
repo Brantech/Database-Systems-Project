@@ -1,6 +1,8 @@
 package college.hibernate;
 
 import college.hibernate.entities.UsersEntity;
+import college.hibernate.security.EncryptionResult;
+import college.hibernate.security.EncryptionService;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.sql.SQLException;
@@ -12,21 +14,36 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.exception.GenericJDBCException;
 
+/**
+ * Class used by the server to talk to the database
+ */
 public class DbManager {
+    /**
+     * Instance of DbManager
+     */
     private static DbManager instance;
-    private static SessionFactory sessionFactory;
 
+    /**
+     * Used to create database sessions
+     */
+    private static SessionFactory sessionFactory;
 
     /**
      * Paths to database initialization SQL scripts
      */
     private static final String CREATE_USERS_TABLE = "WEB-INF/classes/college/hibernate/sql/users.table.create.sql";
 
-
+    /**
+     * Constructor preventing outside instantiation
+     */
     private DbManager() {
         buildSessionFactory();
     }
 
+    /**
+     * Gets an instance of the DbManager
+     * @return
+     */
     public static DbManager getInstance() {
         if(instance == null) {
             instance = new DbManager();
@@ -34,6 +51,9 @@ public class DbManager {
         return instance;
     }
 
+    /**
+     * Builds the session factory used to create sessions for queries
+     */
     private void buildSessionFactory() {
         try {
             if(sessionFactory == null) {
@@ -46,6 +66,9 @@ public class DbManager {
         }
     }
 
+    /**
+     * Initializes the database tables
+     */
     private void initDb() {
         Session session = sessionFactory.openSession();
         if(session == null) {
@@ -82,6 +105,46 @@ public class DbManager {
     }
 
     /**
+     * Returns a login authentication token if the authentication succeeds
+     *
+     * @param username
+     * @param password
+     * @return Authentication token and query success
+     */
+    public QueryResponse login(String username, String password) {
+        if(sessionFactory == null) {
+            return new QueryResponse(false, "Server could not connect to the database");
+        }
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Could not create a database session.");
+        }
+
+        Transaction transaction = null;
+        try {
+            transaction = session.beginTransaction();
+
+            Query query = session.createSQLQuery("SELECT * FROM APP.USERS WHERE USERNAME=:userName");
+            query.setParameter("userName", username);
+
+            UsersEntity user = (UsersEntity) query.getSingleResult();
+
+            if(EncryptionService.authenticate(password, user.getPassword(), user.getSalt())) {
+                return new QueryResponse(true, "token");
+            }
+
+        return new QueryResponse(false, "Incorrect password");
+
+        } catch (Exception e) {
+            if(transaction != null) {
+                transaction.rollback();
+            }
+            return new QueryResponse(false, "Username not found");
+        }
+    }
+
+    /**
      * Creates a new user account
      *
      * @param username Username of the account
@@ -97,6 +160,9 @@ public class DbManager {
         }
 
         Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Could not create a database session.");
+        }
 
         Transaction transaction = null;
         try {
@@ -106,13 +172,16 @@ public class DbManager {
                 return new QueryResponse(false, "Username is not available");
             }
 
+            // Encrypted password
+            EncryptionResult ePass = EncryptionService.encrypt(password);
+
             UsersEntity user = new UsersEntity();
             user.setUsername(username);
-            // TODO Encrypt the password
-            user.setPassword(password);
+            user.setPassword(ePass.getEncryptedMessage());
             user.setFirstname(firstName);
             user.setLastname(lastName);
             user.setEmail(email);
+            user.setSalt(ePass.getSalt());
 
             session.persist(user);
 
@@ -141,18 +210,27 @@ public class DbManager {
         }
 
         try {
-            Query query = session.createSQLQuery("SELECT * FROM USERS WHERE USERNAME=:userName");
+            Query query = session.createSQLQuery("SELECT * FROM APP.USERS WHERE USERNAME=:userName");
             query.setParameter("userName", username);
 
-            UsersEntity user = (UsersEntity) query.getSingleResult();
+            query.getSingleResult();
 
             session.close();
-            return user == null ? new QueryResponse(true) : new QueryResponse(false, "Username is not available");
+            // No exception is thrown if the query succeeds. This means the username is unavailable
+            return new QueryResponse(false, "Username is not available");
         } catch (Exception e) {
-            return new QueryResponse(false, e);
+            // An exception means the username was not found and it is available for use
+            session.close();
+            return new QueryResponse(true);
         }
     }
 
+    /**
+     * Takes all of the sql commands in the passed in file and returns them as an array of strings
+     *
+     * @param path Path to the file
+     * @return Array of sql commands
+     */
     private String[] getSQLFromFile(String path) {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(path));

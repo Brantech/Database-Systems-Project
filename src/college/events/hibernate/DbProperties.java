@@ -1,6 +1,7 @@
-package college.hibernate;
+package college.events.hibernate;
 
-import java.util.ResourceBundle;
+import java.io.FileInputStream;
+import java.util.Properties;
 
 /**
  * Class used for retrieving server properties
@@ -11,7 +12,7 @@ public class DbProperties {
     /**
      * Derby database properties
      */
-    private static final String DERBYDB_PROPERTIES = "WEB-INF/config/database.properties";
+    private static final String DERBYDB_PROPERTIES = System.getProperty("user.dir") + "/webapps/root/WEB-INF/config/database.properties";
 
     /**
      * KEYS
@@ -21,14 +22,19 @@ public class DbProperties {
     private static final String DERBYDB_HOST = "dbHost";
 
 
-    private static ResourceBundle derby;
+    private static Properties derby;
 
 
     /**
      * Constructor preventing outside instantiation
      */
     private DbProperties() {
-        derby = ResourceBundle.getBundle(DERBYDB_PROPERTIES);
+        try{
+            derby = new Properties();
+            derby.load(new FileInputStream(DERBYDB_PROPERTIES));
+        } catch (Exception e) {
+            System.err.println(e);
+        }
     }
 
     /**
@@ -49,7 +55,7 @@ public class DbProperties {
      * @return Location of the database
      */
     public String getDerbyDbLocation() {
-        return derby.getString(DERBYDB_LOCATION);
+        return derby.getProperty(DERBYDB_LOCATION);
     }
 
     /**
@@ -57,7 +63,7 @@ public class DbProperties {
      */
     public int getDerbyDbServerPort() {
         if(derby.containsKey(DERBYDB_PORT)) {
-            return Integer.parseInt(derby.getString(DERBYDB_PORT));
+            return Integer.parseInt(derby.getProperty(DERBYDB_PORT));
         }
         return -1;
     }
@@ -68,6 +74,6 @@ public class DbProperties {
      * @return Hostname
      */
     public String getDerbyDbServerHost() {
-        return derby.getString(DERBYDB_HOST);
+        return derby.getProperty(DERBYDB_HOST);
     }
 }

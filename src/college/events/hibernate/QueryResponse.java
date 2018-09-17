@@ -1,4 +1,4 @@
-package college.hibernate;
+package college.events.hibernate;
 
 /**
  * Response object DbManager.java sends back when it completes a query

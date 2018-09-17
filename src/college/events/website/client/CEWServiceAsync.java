@@ -1,7 +1,6 @@
 package college.events.website.client;
 
 import college.events.website.shared.rpc.GenericRPCResponse;
-import college.hibernate.QueryResponse;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 
 public interface CEWServiceAsync {

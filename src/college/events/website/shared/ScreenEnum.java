@@ -5,6 +5,7 @@ package college.events.website.shared;
  */
 public class ScreenEnum {
     public static final ScreenEnum HOME = new ScreenEnum("home");
+    public static final ScreenEnum EVENTS = new ScreenEnum("events");
 
     /**
      * String value of the enum

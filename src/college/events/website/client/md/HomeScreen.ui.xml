@@ -31,16 +31,19 @@
     </ui:style>
 
     <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
-        <m:MaterialColumn ui:field="loginContainer" offset="s4" grid="s4" height="60%">
+        <m:MaterialColumn ui:field="loginContainer" offset="s3" grid="s6" height="90%">
             <m:MaterialCard height="100%" verticalAlign="MIDDLE">
                 <m:MaterialCardContent height="80%">
                     <m:MaterialCardTitle text="Login"/>
-                    <m:MaterialTextBox ui:field="username"
-                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                            fieldType="OUTLINED" width="100%" label="Username"/>
-                    <m:MaterialTextBox ui:field="password"
-                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                            fieldType="OUTLINED" width="100%" label="Password"/>
+                    <m:MaterialPanel padding="0" margin="0">
+                        <m:MaterialTextBox ui:field="username"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" grid="s12" placeholder="Username" margin="0"/>
+                        <m:MaterialTextBox ui:field="password"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" grid="s12" placeholder="Password" type="PASSWORD"
+                                           validateOnBlur="true" margin="0"/>
+                    </m:MaterialPanel>
                 </m:MaterialCardContent>
                 <m:MaterialCardAction addStyleNames="valign-wrapper" height="20%">
                     <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="0" paddingRight="5">
@@ -73,13 +76,13 @@
                             <m:MaterialColumn grid="s6">
                                 <m:MaterialTextBox ui:field="firstName"
                                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                                   fieldType="OUTLINED" width="100%" label="First Name"
+                                                   fieldType="OUTLINED" width="100%" placeholder="First Name"
                                                    validateOnBlur="true"/>
                             </m:MaterialColumn>
                             <m:MaterialColumn grid="s6">
                                 <m:MaterialTextBox ui:field="lastName"
                                                    addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                                   fieldType="OUTLINED" width="100%" label="Last Name"
+                                                   fieldType="OUTLINED" width="100%" placeholder="Last Name"
                                                    validateOnBlur="true"/>
                             </m:MaterialColumn>
                         </m:MaterialRow>
@@ -87,28 +90,29 @@
                         <m:MaterialRow margin="0">
                             <m:MaterialTextBox ui:field="rUsername"
                                                addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                               grid="s12" fieldType="OUTLINED" width="100%" label="Username"
+                                               grid="s12" fieldType="OUTLINED" width="100%" placeholder="Username"
                                                validateOnBlur="true"/>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
                             <m:MaterialTextBox ui:field="rPassword"
                                                addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                               grid="s12" fieldType="OUTLINED" width="100%" label="Password"
+                                               grid="s12" fieldType="OUTLINED" width="100%" placeholder="Password"
                                                type="PASSWORD" validateOnBlur="true"/>
                             <m:MaterialTextBox ui:field="rPassword2"
                                                addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                               grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Password"
+                                               grid="s12" fieldType="OUTLINED" width="100%" placeholder="Re-Type Password"
                                                type="PASSWORD" validateOnBlur="true"/>
                         </m:MaterialRow>
 
                         <m:MaterialRow margin="0">
                             <m:MaterialTextBox ui:field="email" validateOnBlur="true"
                                                addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                               grid="s12" fieldType="OUTLINED" width="100%" label="Email"/>
+                                               grid="s12" fieldType="OUTLINED" width="100%" placeholder="Email" type="EMAIL"/>
                             <m:MaterialTextBox ui:field="email2" validateOnBlur="true"
                                                addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                               grid="s12" fieldType="OUTLINED" width="100%" label="Re-Type Email"/>
+                                               grid="s12" fieldType="OUTLINED" width="100%" placeholder="Re-Type Email"
+                                               type="EMAIL"/>
                         </m:MaterialRow>
                     </m:MaterialPanel>
                 </m:MaterialCardContent>

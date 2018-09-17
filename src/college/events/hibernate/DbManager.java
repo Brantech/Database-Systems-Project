@@ -1,8 +1,7 @@
-package college.hibernate;
+package college.events.hibernate;
 
-import college.hibernate.entities.UsersEntity;
-import college.hibernate.security.EncryptionResult;
-import college.hibernate.security.EncryptionService;
+import college.events.hibernate.entities.UsersEntity;
+import college.events.hibernate.security.EncryptionService;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.net.InetAddress;
@@ -21,6 +20,7 @@ import org.hibernate.exception.GenericJDBCException;
  * Class used by the server to talk to the database
  */
 public class DbManager {
+
     /**
      * Instance of DbManager
      */
@@ -49,12 +49,14 @@ public class DbManager {
     /**
      * URL template for the database server url
      */
-    private static final String DB_BASE_URL_TEMPLATE = "jdbc:derby://%s:%d/%s/create=true";
+    private static final String DB_BASE_URL_TEMPLATE = "jdbc:derby://%s:%d/%s/;create=true";
 
     /**
      * Paths to database initialization SQL scripts
      */
-    private static final String CREATE_USERS_TABLE = "WEB-INF/classes/college/hibernate/sql/users.table.create.sql";
+    private static final String CREATE_USERS_TABLE = "webapps/root/WEB-INF/classes/college/hibernate/sql/Users.table.create.sql";
+    private static final String CREATE_UNIVERSITIES_TABLE = "webapps/root/WEB-INF/classes/college/hibernate/sql/Universities.table.create.sql";
+    private static final String CREATE_EVENTS_TABLE = "webapps/root/WEB-INF/classes/college/hibernate/sql/Events.table.create.sql";
 
     /**
      * Constructor preventing outside instantiation
@@ -72,7 +74,6 @@ public class DbManager {
                 }
             }
         });
-String t = System.getProperty("user.dir");
         properties = DbProperties.getInstance();
         buildSessionFactory();
     }
@@ -96,8 +97,10 @@ String t = System.getProperty("user.dir");
             if(sessionFactory == null) {
                 startDbServer();
 
+                // Creates the url for the database server
                 String url = String.format(DB_BASE_URL_TEMPLATE, properties.getDerbyDbServerHost(), DB_SERVER_PORT, properties.getDerbyDbLocation());
 
+                // Loads the hibernate configuration properties
                 Configuration conf = new Configuration().configure(DbManager.class.getResource("hibernate.cfg.xml"));
                 conf.setProperty("hibernate.connection.url", url);
                 conf.setProperty("connection.url", url);
@@ -155,19 +158,10 @@ String t = System.getProperty("user.dir");
         try {
              t = session.beginTransaction();
 
-             for(String s : getSQLFromFile(CREATE_USERS_TABLE)) {
-                 try {
-                     session.createSQLQuery(s).executeUpdate();
-                 } catch (GenericJDBCException e) {
-                     if(e.getCause() instanceof SQLException &&
-                                (e.getSQLState().equals("X0Y68") || e.getSQLState().equals("X0Y32"))
-                             ) {
-                         System.out.printf("\"%s\" was already executed.\n", s);
-                     } else {
-                         throw e;
-                     }
-                 }
-             }
+             executeSQLFromFile(CREATE_USERS_TABLE, session);
+             executeSQLFromFile(CREATE_EVENTS_TABLE, session);
+             executeSQLFromFile(CREATE_UNIVERSITIES_TABLE, session);
+
             t.commit();
         } catch (Exception e) {
             System.err.println("Could not initialize DB. " + e);
@@ -175,10 +169,7 @@ String t = System.getProperty("user.dir");
                 t.rollback();
             }
 
-            if(session != null) {
-                session.close();
-            }
-
+            session.close();
         }
     }
 
@@ -206,13 +197,13 @@ String t = System.getProperty("user.dir");
         try {
             transaction = session.beginTransaction();
 
-            Query query = session.createSQLQuery("SELECT * FROM APP.USERS WHERE USERNAME=:userName");
+            Query query = session.createQuery("SELECT u FROM UsersEntity u WHERE u.username=:userName", UsersEntity.class);
             query.setParameter("userName", username);
 
             UsersEntity user = (UsersEntity) query.getSingleResult();
             session.close();
 
-            if(EncryptionService.authenticate(password, user.getPassword(), user.getSalt())) {
+            if(EncryptionService.authenticate(password, new String(user.getPassword()))) {
                 return new QueryResponse(true, "token");
             }
 
@@ -255,16 +246,13 @@ String t = System.getProperty("user.dir");
                 return new QueryResponse(false, "Username is not available");
             }
 
-            // Encrypted password
-            EncryptionResult ePass = EncryptionService.encrypt(password);
 
             UsersEntity user = new UsersEntity();
             user.setUsername(username);
-            user.setPassword(ePass.getEncryptedMessage());
+            user.setPassword(EncryptionService.encrypt(password));
             user.setFirstname(firstName);
             user.setLastname(lastName);
             user.setEmail(email);
-            user.setSalt(ePass.getSalt());
 
             session.persist(user);
 
@@ -305,6 +293,23 @@ String t = System.getProperty("user.dir");
             // An exception means the username was not found and it is available for use
             session.close();
             return new QueryResponse(true);
+        }
+    }
+
+    private void executeSQLFromFile(String path, Session session) throws Exception {
+
+        for(String s : getSQLFromFile(path)) {
+            try {
+                session.createSQLQuery(s).executeUpdate();
+            } catch (GenericJDBCException e) {
+                if(e.getCause() instanceof SQLException &&
+                        (e.getSQLState().equals("X0Y68") || e.getSQLState().equals("X0Y32"))
+                ) {
+                    System.out.printf("\"%s\" was already executed.\n", s);
+                } else {
+                    throw e;
+                }
+            }
         }
     }
 

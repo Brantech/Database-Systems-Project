@@ -1,38 +1,35 @@
-package college.hibernate.entities;
+package college.events.hibernate.entities;
 
+import java.util.Objects;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Objects;
 
 @Entity
-@Table(name = "USERS", schema = "APP")
+@Table(name = "USERS", schema = "APP", catalog = "")
 public class UsersEntity {
-    private int pk;
+    private String userId;
     private String firstname;
     private String lastname;
     private String username;
     private String password;
     private String email;
-    private String salt;
+    private String userType;
 
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="APP.USERS_SEQUENCE")
-    @Column(name = "PK", nullable = false)
-    public int getPk() {
-        return pk;
+    @Column(name = "USER_ID", nullable = false, length = 255)
+    public String getUserId() {
+        return userId;
     }
 
-    public void setPk(int pk) {
-        this.pk = pk;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
     @Basic
-    @Column(name = "FIRSTNAME", nullable = false)
+    @Column(name = "FIRSTNAME", nullable = false, length = 255)
     public String getFirstname() {
         return firstname;
     }
@@ -42,7 +39,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "LASTNAME", nullable = false)
+    @Column(name = "LASTNAME", nullable = false, length = 255)
     public String getLastname() {
         return lastname;
     }
@@ -52,7 +49,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "USERNAME", nullable = false, unique = true, length = 20)
+    @Column(name = "USERNAME", nullable = false, length = 20)
     public String getUsername() {
         return username;
     }
@@ -72,7 +69,7 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "EMAIL", nullable = false, unique = true)
+    @Column(name = "EMAIL", nullable = false, length = 255)
     public String getEmail() {
         return email;
     }
@@ -82,13 +79,13 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "SALT", nullable = false)
-    public String getSalt() {
-        return salt;
+    @Column(name = "USER_TYPE", nullable = false, length = 20)
+    public String getUserType() {
+        return userType;
     }
 
-    public void setSalt(String salt) {
-        this.salt = salt;
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 
     @Override
@@ -96,15 +93,17 @@ public class UsersEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UsersEntity that = (UsersEntity) o;
-        return pk == that.pk &&
+        return Objects.equals(userId, that.userId) &&
                 Objects.equals(firstname, that.firstname) &&
                 Objects.equals(lastname, that.lastname) &&
                 Objects.equals(username, that.username) &&
-                Objects.equals(password, that.password);
+                Objects.equals(password, that.password) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(userType, that.userType);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(pk, firstname, lastname, username, password);
+        return Objects.hash(userId, firstname, lastname, username, password, email, userType);
     }
 }

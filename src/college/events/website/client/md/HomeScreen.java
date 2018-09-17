@@ -2,16 +2,16 @@ package college.events.website.client.md;
 
 import college.events.website.client.CEWService;
 import college.events.website.client.CEWServiceAsync;
+import college.events.website.client.UiManager;
 import college.events.website.client.utils.BooleanCallback;
+import college.events.website.shared.ScreenEnum;
 import college.events.website.shared.rpc.GenericRPCResponse;
 import college.events.website.shared.validators.EmptyValidator;
 import college.events.website.shared.validators.MatchValidator;
 import college.events.website.shared.validators.NameValidator;
 import college.events.website.shared.validators.PasswordValidator;
 import college.events.website.shared.validators.UsernameValidator;
-import college.hibernate.QueryResponse;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.event.dom.client.FocusEvent;
 import com.google.gwt.event.dom.client.FocusHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -75,7 +75,7 @@ public class HomeScreen extends Composite {
 
     }
 
-    private static HomeScreenUiBinder ourUiBinder = GWT.create(HomeScreenUiBinder.class);
+    private static HomeScreenUiBinder uiBinder = GWT.create(HomeScreenUiBinder.class);
 
     private static CEWServiceAsync cewServiceAsync = GWT.create(CEWService.class);
 
@@ -84,7 +84,7 @@ public class HomeScreen extends Composite {
      * Default constructor
      */
     public HomeScreen() {
-        initWidget(ourUiBinder.createAndBindUi(this));
+        initWidget(uiBinder.createAndBindUi(this));
 
         initialize();
     }
@@ -99,7 +99,7 @@ public class HomeScreen extends Composite {
 
                 @Override
                 public void onSuccess(GenericRPCResponse<String> result) {
-                    logger.info(result.getObj());
+                    UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
                 }
             });
         });

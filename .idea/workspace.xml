@@ -7,39 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfbe703-54d9-4332-a259-90c34a775872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/college/hibernate/DbProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/College_Events_Website_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/College_Events_Website_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/UniversitiesEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/UniversitiesEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/utils/DateUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2080a462-a330-4030-bd30-04551257e95f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/College Events Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/College Events Website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/data/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log.ctrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/README_DO_NOT_TOUCH_FILES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/README_DO_NOT_TOUCH_FILES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c10.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c101.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c111.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c121.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c130.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c150.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c161.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c171.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c180.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c180.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c1a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c1a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c1b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c1b1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c241.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c380.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c380.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c391.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c391.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c3a1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c3a1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/seg0/c3b1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c3b1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c400.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c400.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c41.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/c411.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/c411.dat" afterDir="false" />
@@ -52,13 +45,24 @@
       <change beforePath="$PROJECT_DIR$/data/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/ca1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/cb1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/data/seg0/cf0.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data/service.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/hibernate/DbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/DbManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/DbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/DbManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/DbProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/DbProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/QueryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/QueryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/security/EncryptionResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/security/EncryptionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +93,7 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
         <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
-        <item name="USERS: table" type="3b012a07:DerbyImplModel$Table" />
+        <item name="EVENTS: table" type="3b012a07:DerbyImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -189,127 +193,166 @@
     <session id="1133069222">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.10" value="4" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="USERS" value="3" />
-          <entry key="class" value="4" />
+          <entry key="DATABASE/84efc5c2-746e-4501-abf3-19deb160b1db" value="1" />
+          <entry key="USERS" value="12" />
+          <entry key="c" value="1" />
+          <entry key="class" value="6" />
           <entry key="html" value="1" />
-          <entry key="java" value="41" />
-          <entry key="sql" value="6" />
-          <entry key="xml" value="5" />
+          <entry key="java" value="75" />
+          <entry key="properties" value="2" />
+          <entry key="sql" value="29" />
+          <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="Database Element" value="3" />
+          <entry key="C++" value="1" />
+          <entry key="CLASS" value="6" />
+          <entry key="Database Element" value="12" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="41" />
-          <entry key="SQL" value="2" />
-          <entry key="Scratch" value="4" />
-          <entry key="XML" value="5" />
+          <entry key="JAVA" value="75" />
+          <entry key="Properties" value="2" />
+          <entry key="SQL" value="20" />
+          <entry key="Scratch" value="9" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="10" />
-          <entry key="java" value="5892" />
-          <entry key="sql" value="128" />
-          <entry key="xml" value="531" />
+          <entry key="java" value="12626" />
+          <entry key="properties" value="20" />
+          <entry key="sql" value="815" />
+          <entry key="xml" value="941" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="7" />
+          <entry key="CSS" value="8" />
           <entry key="HTML" value="10" />
-          <entry key="JAVA" value="5892" />
-          <entry key="SQL" value="122" />
-          <entry key="Scratch" value="6" />
-          <entry key="XML" value="524" />
+          <entry key="JAVA" value="12626" />
+          <entry key="Properties" value="20" />
+          <entry key="SQL" value="767" />
+          <entry key="Scratch" value="48" />
+          <entry key="XML" value="933" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Database-Systems-Project" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeScreen.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="87" selection-start-line="87" selection-end-line="87" />
+            <state>
+              <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
               <folding>
-                <element signature="method#getValidatorCallback#0;class#HomeScreen#0" expanded="true" />
+                <element signature="e#2762#2763#0" expanded="true" />
+                <element signature="e#2850#2851#0" expanded="true" />
+                <element signature="docComment;method#addValidators#0;class#HomeScreen#0" />
+                <element signature="method#addValidators#0;class#HomeScreen#0" />
+                <element signature="method#getFieldFocusHandler#0;class#HomeScreen#0" />
+                <element signature="method#getValidatorCallback#0;class#HomeScreen#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CEWServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/UiManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbProperties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbProperties.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-              <folding>
-                <element signature="docComment;class#Properties#0" expanded="true" />
-                <element signature="docComment;field#DER#0;class#Properties#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#502#503#0" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
-                <element signature="e#1252#1253#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DbManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+            <state relative-caret-position="23">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;field#DB_SERVER_PORT#0;class#DbManager#0" expanded="true" />
-                <element signature="method#DbManager#0;class#DbManager#0" expanded="true" />
-                <element signature="e#1339#1639#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="method#buildSessionFactory#0;class#DbManager#0" expanded="true" />
-                <element signature="method#startDbServer#0;class#DbManager#0" expanded="true" />
-                <element signature="method#initDb#0;class#DbManager#0" expanded="true" />
-                <element signature="method#getSQLFromFile#0;class#DbManager#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="149" column="27" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
+              <folding>
+                <element signature="docComment;class#DbManager#0" />
+                <element signature="docComment;field#instance#0;class#DbManager#0" />
+                <element signature="docComment;field#properties#0;class#DbManager#0" />
+                <element signature="docComment;field#sessionFactory#0;class#DbManager#0" />
+                <element signature="docComment;field#control#0;class#DbManager#0" />
+                <element signature="docComment;field#DB_SERVER_PORT#0;class#DbManager#0" />
+                <element signature="docComment;field#DB_BASE_URL_TEMPLATE#0;class#DbManager#0" />
+                <element signature="docComment;field#CREATE_USERS_TABLE#0;class#DbManager#0" />
+                <element signature="docComment;method#DbManager#0;class#DbManager#0" />
+                <element signature="method#DbManager#0;class#DbManager#0" />
+                <element signature="docComment;method#getInstance#0;class#DbManager#0" />
+                <element signature="method#getInstance#0;class#DbManager#0" />
+                <element signature="docComment;method#buildSessionFactory#0;class#DbManager#0" />
+                <element signature="method#buildSessionFactory#0;class#DbManager#0" />
+                <element signature="docComment;method#startDbServer#0;class#DbManager#0" />
+                <element signature="method#startDbServer#0;class#DbManager#0" />
+                <element signature="docComment;method#initDb#0;class#DbManager#0" />
+                <element signature="docComment;method#login#0;class#DbManager#0" />
+                <element signature="method#login#0;class#DbManager#0" />
+                <element signature="docComment;method#createAccount#0;class#DbManager#0" />
+                <element signature="method#createAccount#0;class#DbManager#0" />
+                <element signature="docComment;method#isUsernameAvailable#0;class#DbManager#0" />
+                <element signature="method#isUsernameAvailable#0;class#DbManager#0" />
+                <element signature="docComment;method#getSQLFromFile#0;class#DbManager#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -338,6 +381,7 @@
       <find>rPassword1</find>
       <find>rPassword</find>
       <find>rPassword2</find>
+      <find>get</find>
     </findStrings>
     <replaceStrings>
       <replace>username</replace>
@@ -358,25 +402,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/college/events/server/CEWServiceImpl.java" />
-        <option value="$PROJECT_DIR$/war/index.html" />
-        <option value="$PROJECT_DIR$/src/college/events/shared/ScreenEnum.java" />
-        <option value="$PROJECT_DIR$/src/college/events/client/UiManager.java" />
-        <option value="$PROJECT_DIR$/src/college/events/client/md/MainContainer.java" />
-        <option value="$PROJECT_DIR$/src/college/events/client/md/HomeScreen.java" />
-        <option value="$PROJECT_DIR$/src/college/events/client/Website.java" />
-        <option value="$PROJECT_DIR$/src/college/events/Website.gwt.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/client/md/MainContainer.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/client/md/HomeScreen.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/users.table.create.sql" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java" />
-        <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/war/Website.css" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/Validator.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/validator/NameValidator.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/FormatError.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/EmailFormatError.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/AbstractError.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/GenericError.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/errors/LengthError.java" />
@@ -389,26 +414,45 @@
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java" />
         <option value="$PROJECT_DIR$/war/Website.html" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" />
         <option value="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql" />
         <option value="$PROJECT_DIR$/src/college/hibernate/QueryResponse.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
         <option value="$PROJECT_DIR$/server/config/database.properties" />
-        <option value="$PROJECT_DIR$/config/database.properties" />
         <option value="$PROJECT_DIR$/src/college/hibernate/Properties.java" />
         <option value="$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/DbProperties.java" />
+        <option value="$PROJECT_DIR$/config/database.properties" />
+        <option value="$PROJECT_DIR$/server/webapps/root/WEB-INF/classes/college/hibernate/sql/users.table.create.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/84efc5c2-746e-4501-abf3-19deb160b1db/console.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/security/EncryptionService.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/entities/universities.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/Website.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/widgets/Calendar.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/sql/universities.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/sql/Events.table.create.sql" />
         <option value="$PROJECT_DIR$/src/college/hibernate/DbManager.java" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/sql/Users.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/hibernate/entities/EventsEntity.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql" />
       </list>
     </option>
   </component>
@@ -418,14 +462,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-281" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="881" />
+    <option name="y" value="261" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -436,9 +483,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -449,41 +496,16 @@
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="webapps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="webapps" type="462c0819:PsiDirectoryNode" />
-              <item name="root" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="webapps" type="462c0819:PsiDirectoryNode" />
-              <item name="root" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="webapps" type="462c0819:PsiDirectoryNode" />
-              <item name="root" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="external" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,7 +519,32 @@
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
               <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -519,36 +566,36 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="derby.embedded&#10;derby" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="2080a462-a330-4030-bd30-04551257e95f" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="84efc5c2-746e-4501-abf3-19deb160b1db" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536295770847" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537151655440" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Remote)" />
-    <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Artificial Intelligence/RNNA" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="GwtCreateUiBinderDialog.RecentRootElementType">
       <recent name="gwt.material.design.client.ui.MaterialPanel" />
     </key>
     <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="" />
-      <recent name="college.hibernate.entities" />
-      <recent name="college.hibernate" />
       <recent name="college.events.hibernate.Entities" />
+      <recent name="college.hibernate.entities" />
+      <recent name="" />
+      <recent name="college.hibernate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tatte\Desktop\College\Database Systems\Database-Systems-Project\src\college\hibernate\entities" />
+      <recent name="C:\Users\tatte\Desktop\College\Database Systems\Database-Systems-Project\src\college\hibernate\sql" />
       <recent name="C:\Users\bgotay\Desktop\Database-Systems-Project" />
       <recent name="C:\Users\bgotay\Desktop\Database-Systems-Project\src\college\hibernate" />
       <recent name="C:\Users\Brandon\Desktop\Database-Systems-Project" />
-      <recent name="C:\Users\Brandon\Desktop\Database-Systems-Project\src\college\events\database\data" />
-      <recent name="C:\Users\Brandon\Desktop\College Events Website\war" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -563,16 +610,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="GWT Configuration.CEW">
+  <component name="RunManager" selected="Jetty Server.Jetty 9.4.12.v20180830">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -581,33 +628,22 @@
       <option name="USE_SUPER_DEV_MODE" value="true" />
       <option name="WORKING_DIRECTORY" value="" />
       <module name="College Events Website" />
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="College Events Website:war exploded" />
         </option>
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Jetty 9.4.12.v20180830" type="JettyConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="Jetty 9.4.12.v20180830" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/root/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="College Events Website:war exploded">
@@ -1316,6 +1352,21 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -1331,34 +1382,18 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
         <option name="BuildArtifacts" enabled="true">
           <artifact name="College Events Website:war exploded" />
         </option>
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -1367,7 +1402,7 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method>
+      <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -1400,11 +1435,19 @@
       <workItem from="1536242195138" duration="13450000" />
       <workItem from="1536329521475" duration="6600000" />
       <workItem from="1536340427413" duration="8862000" />
+      <workItem from="1536439908451" duration="29631000" />
+      <workItem from="1536524993653" duration="5245000" />
+      <workItem from="1536614533183" duration="637000" />
+      <workItem from="1536959160148" duration="4313000" />
+      <workItem from="1537028798999" duration="624000" />
+      <workItem from="1537031648995" duration="1196000" />
+      <workItem from="1537033038462" duration="1473000" />
+      <workItem from="1537147501235" duration="3380000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124007000" />
+    <option name="totallyTimeSpent" value="192521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1416,84 +1459,83 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32883242" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.25019857" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.21748401" />
-      <window_info id="Structure" order="7" sideWeight="0.5036232" side_tool="true" weight="0.17750533" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.39869282" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32883242" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32724383" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32883242" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49932885" weight="0.34312946" />
-      <window_info anchor="bottom" id="Version Control" order="2" weight="0.32883242" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3278867" />
-      <window_info id="Persistence" order="8" sideWeight="0.5032467" side_tool="true" weight="0.16684435" />
-      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4963768" visible="true" weight="0.17750533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49263722" visible="true" weight="0.15898252" />
+      <window_info id="Structure" order="1" sideWeight="0.5036232" side_tool="true" weight="0.17750533" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.5073628" side_tool="true" weight="0.15898252" />
+      <window_info id="Persistence" order="8" sideWeight="0.5073628" side_tool="true" weight="0.15898252" />
       <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5011924" side_tool="true" weight="0.24415794" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.3255439" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49880764" weight="0.24415794" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39806607" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32883242" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.32565528" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32814237" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49932885" weight="0.32644957" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32883242" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32814237" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.24916574" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32565528" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
       <window_info anchor="bottom" id="JProfiler" order="16" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" weight="0.3267974" />
-      <window_info anchor="right" id="SciView" order="10" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
-      <window_info id="Nl-Palette" order="0" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32570806" />
-      <window_info anchor="right" id="Properties" order="2" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.3298887" />
+      <window_info anchor="right" id="Properties" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.12082671" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info id="Image Layers" order="4" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.18665607" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="right" id="Properties" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info id="Nl-Palette" order="0" />
       <window_info id="Capture Tool" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
+      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
+      <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32883242" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.18665607" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info id="Nl-Palette" order="0" />
+      <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
+      <window_info anchor="right" id="Properties" order="2" />
       <window_info anchor="right" id="Database" order="3" weight="0.24324325" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1506,179 +1548,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/college/hibernate/DbManager.java</url>
-          <line>100</line>
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbProperties.java</url>
+          <line>39</line>
           <properties />
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/college/hibernate/DbManager.java</url>
-          <line>75</line>
-          <properties />
-          <option name="timeStamp" value="92" />
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="93" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/javax.persistence-api-2.2.jar!/javax/persistence/EntityTransaction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntit.java" />
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/dialect/DerbyDialect.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Persistence/JavaeeElement:/ccd9ef1f/college:hibernate:hibernate.cfg.xml/College Events Website/hibernate/Hibernate/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/ccd9ef1f/college:hibernate:hibernate.cfg.xml/College Events Website/hibernate/Hibernate/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="" y="">UsersEntity#file://C:/Users/bgotay/Desktop/Database-Systems-Project/src/college/hibernate/entities/UsersEntity.java</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="74.0" y="81.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Properties</Category>
-            <Category>Embeddables</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/service/ServiceRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/boot/registry/StandardServiceRegistryBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Class.java" />
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Exception.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console_1.sql" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/Reader.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/BufferedReader.java" />
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/javax.persistence-api-2.2.jar!/javax/persistence/Query.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="198" column="16" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/hibernate-core-5.3.2.Final.jar!/org/hibernate/exception/GenericJDBCException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/security/SecureRandom.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/security/jca/GetInstance.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/security/jca/ProviderList.class" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/security/Provider.java" />
-    <entry file="das://2080a462-a330-4030-bd30-04551257e95f/schema/APP/table/USERS" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2080a462-a330-4030-bd30-04551257e95f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b0d25e7-7c28-40f6-9d5e-b6fbcece9462/console.sql" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/NativeConstructorAccessorImpl.class" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/71d81211-7ffa-4d7e-b1dc-6393e5125744/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/security/EncryptionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;field#ENCRYPTION_ALGORITHM#0;class#EncryptionService#0" />
-            <element signature="docComment;field#ENCRYPTION_COUNT#0;class#EncryptionService#0" />
-            <element signature="docComment;method#EncryptionService#0;class#EncryptionService#0" />
-            <element signature="docComment;method#encrypt#0;class#EncryptionService#0" />
-            <element signature="method#encrypt#0;class#EncryptionService#0" />
-            <element signature="docComment;method#encrypt#1;class#EncryptionService#0" />
-            <element signature="method#encrypt#1;class#EncryptionService#0" />
-            <element signature="docComment;method#authenticate#0;class#EncryptionService#0" />
-            <element signature="method#authenticate#0;class#EncryptionService#0" />
-            <element signature="docComment;method#getSalt#0;class#EncryptionService#0" />
-            <element signature="method#getSalt#0;class#EncryptionService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/security/EncryptionResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/sql/users.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1686,77 +1566,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/QueryResponse.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/QueryResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="664">
           <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
-          <folding>
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1504#1505#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="646">
           <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="method#getValidatorCallback#0;class#HomeScreen#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/entities/UsersEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://71d81211-7ffa-4d7e-b1dc-6393e5125744/schema/APP/table/USERS" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class" />
     <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84efc5c2-746e-4501-abf3-19deb160b1db/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/external/db-derby-10.14.2.0-bin/lib/derbynet.jar!/org/apache/derby/impl/drda/NetworkServerControlImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="967" column="22" selection-start-line="967" selection-start-column="22" selection-end-line="967" selection-end-column="22" />
-          <folding>
-            <element signature="e#34456#35156#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1764,69 +1595,298 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="141" column="22" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
-          <folding>
-            <element signature="method#getCurrentProperties#0;class#NetworkServerControl#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Properties.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Properties.java" />
+    <entry file="file://$PROJECT_DIR$/server/config/database.config.tld" />
+    <entry file="das://71d81211-7ffa-4d7e-b1dc-6393e5125744/schema/APP/table/USERS" />
+    <entry file="file://$PROJECT_DIR$/server/webapps/root/WEB-INF/classes/college/hibernate/sql/Users.table.create.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="1029" column="23" selection-start-line="1029" selection-start-column="23" selection-end-line="1029" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/external/hibernate/javax.persistence-api-2.2.jar!/javax/persistence/EntityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/DbProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="85" />
           <folding>
-            <element signature="method#stringPropertyNames#0;class#Properties#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1454#1455#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1894#1895#0" expanded="true" />
+            <element signature="e#1946#1947#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/database.config.tld">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/84efc5c2-746e-4501-abf3-19deb160b1db/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/hibernate.cfg.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Base64.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-677">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/jce.jar!/javax/crypto/Cipher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="178" column="31" selection-start-line="178" selection-start-column="31" selection-end-line="178" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/nio/Buffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="176" column="4" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/nio/ByteBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="684" column="22" selection-start-line="684" selection-start-column="22" selection-end-line="684" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/hibernate/security/EncryptionResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="108" column="52" selection-start-line="108" selection-start-column="52" selection-end-line="108" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/USERS" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/Website.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbProperties.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/widgets/Calendar.ui.xml" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/widgets/Calendar.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="308">
+          <caret line="773" column="15" selection-start-line="773" selection-start-column="15" selection-end-line="773" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="83" column="44" lean-forward="true" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java" />
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml" />
+    <entry file="file://$PROJECT_DIR$/../../Computer Science 1/Project 3/mastermind.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="66" column="30" selection-start-line="66" selection-start-column="30" selection-end-line="66" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="101" column="75" selection-start-line="101" selection-start-column="75" selection-end-line="101" selection-end-column="75" />
           <folding>
-            <element signature="docComment;class#Properties#0" expanded="true" />
-            <element signature="docComment;field#DER#0;class#Properties#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#2762#2763#0" expanded="true" />
+            <element signature="e#2850#2851#0" expanded="true" />
+            <element signature="docComment;method#addValidators#0;class#HomeScreen#0" />
+            <element signature="method#addValidators#0;class#HomeScreen#0" />
+            <element signature="method#getFieldFocusHandler#0;class#HomeScreen#0" />
+            <element signature="method#getValidatorCallback#0;class#HomeScreen#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/hibernate/DbManager.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        <state relative-caret-position="345">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/84efc5c2-746e-4501-abf3-19deb160b1db">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>84efc5c2-746e-4501-abf3-19deb160b1db</OriginalElement>
+          <nodes>
+            <node x="" y="">84efc5c2-746e-4501-abf3-19deb160b1db.TABLE:APP.USERS</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="93.5" y="81.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/UiManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;field#DB_SERVER_PORT#0;class#DbManager#0" expanded="true" />
-            <element signature="method#DbManager#0;class#DbManager#0" expanded="true" />
-            <element signature="e#1339#1639#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="method#buildSessionFactory#0;class#DbManager#0" expanded="true" />
-            <element signature="method#startDbServer#0;class#DbManager#0" expanded="true" />
-            <element signature="method#initDb#0;class#DbManager#0" expanded="true" />
-            <element signature="method#getSQLFromFile#0;class#DbManager#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="149" column="27" selection-start-line="149" selection-start-column="27" selection-end-line="149" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;class#DbManager#0" />
+            <element signature="docComment;field#instance#0;class#DbManager#0" />
+            <element signature="docComment;field#properties#0;class#DbManager#0" />
+            <element signature="docComment;field#sessionFactory#0;class#DbManager#0" />
+            <element signature="docComment;field#control#0;class#DbManager#0" />
+            <element signature="docComment;field#DB_SERVER_PORT#0;class#DbManager#0" />
+            <element signature="docComment;field#DB_BASE_URL_TEMPLATE#0;class#DbManager#0" />
+            <element signature="docComment;field#CREATE_USERS_TABLE#0;class#DbManager#0" />
+            <element signature="docComment;method#DbManager#0;class#DbManager#0" />
+            <element signature="method#DbManager#0;class#DbManager#0" />
+            <element signature="docComment;method#getInstance#0;class#DbManager#0" />
+            <element signature="method#getInstance#0;class#DbManager#0" />
+            <element signature="docComment;method#buildSessionFactory#0;class#DbManager#0" />
+            <element signature="method#buildSessionFactory#0;class#DbManager#0" />
+            <element signature="docComment;method#startDbServer#0;class#DbManager#0" />
+            <element signature="method#startDbServer#0;class#DbManager#0" />
+            <element signature="docComment;method#initDb#0;class#DbManager#0" />
+            <element signature="docComment;method#login#0;class#DbManager#0" />
+            <element signature="method#login#0;class#DbManager#0" />
+            <element signature="docComment;method#createAccount#0;class#DbManager#0" />
+            <element signature="method#createAccount#0;class#DbManager#0" />
+            <element signature="docComment;method#isUsernameAvailable#0;class#DbManager#0" />
+            <element signature="method#isUsernameAvailable#0;class#DbManager#0" />
+            <element signature="docComment;method#getSQLFromFile#0;class#DbManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
         </state>
       </provider>
     </entry>

@@ -2,8 +2,8 @@ package college.events.website.server;
 
 import college.events.website.client.CEWService;
 import college.events.website.shared.rpc.GenericRPCResponse;
-import college.hibernate.DbManager;
-import college.hibernate.QueryResponse;
+import college.events.hibernate.DbManager;
+import college.events.hibernate.QueryResponse;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {

@@ -16,5 +16,5 @@ create table APP.EVENTS (
   UNI_ID varchar(255) not null,
 
   primary key (EVENT_ID),
-  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID)
+  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID) on delete cascade
 )

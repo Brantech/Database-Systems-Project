@@ -1,5 +1,6 @@
 package college.events.hibernate;
 
+import college.events.hibernate.entities.UniversitiesEntity;
 import college.events.hibernate.entities.UsersEntity;
 import college.events.hibernate.security.EncryptionService;
 import college.events.hibernate.test_data.InsertDBTestData;
@@ -8,6 +9,7 @@ import java.io.FileReader;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 import javax.persistence.Query;
@@ -237,6 +239,44 @@ public class DbManager {
         }
     }
 
+    public QueryResponse createUniversity(String name, String location, String description, int students) {
+        if(name == null) {
+            return new QueryResponse(false, "Universities must have a name.");
+        }
+
+        if(sessionFactory == null) {
+            return new QueryResponse(false, "Server could not connect to the database");
+        }
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Could not create a database session.");
+        }
+
+        Transaction transaction = null;
+        try {
+            transaction = session.beginTransaction();
+
+            UniversitiesEntity uni = new UniversitiesEntity();
+            uni.setUniId(UUID.randomUUID().toString());
+            uni.setName(name);
+            uni.setLocation(location);
+            uni.setDescritpion(description);
+            uni.setStudents(students);
+
+            session.persist(uni);
+
+            transaction.commit();
+            session.close();
+
+        } catch (Exception e) {
+            if(transaction != null) {
+                transaction.rollback();
+            }
+            return new QueryResponse(false, e.toString());
+        }
+        return new QueryResponse(true);
+    }
     /**
      * Creates a new user account
      *
@@ -267,6 +307,7 @@ public class DbManager {
 
 
             UsersEntity user = new UsersEntity();
+            user.setUserId(UUID.randomUUID().toString());
             user.setUsername(username);
             user.setPassword(EncryptionService.encrypt(password));
             user.setFirstname(firstName);
@@ -296,6 +337,10 @@ public class DbManager {
      * @return QueryResponse telling the availability
      */
     public QueryResponse isUsernameAvailable(String username) {
+        if(username == null) {
+            return new QueryResponse(false, "Username was empty");
+        }
+
         Session session = sessionFactory.openSession();
         if(session == null) {
             return new QueryResponse(false, "Server could not connect to database");
@@ -306,6 +351,27 @@ public class DbManager {
             query.setParameter("userName", username);
 
             query.getSingleResult();
+
+            session.close();
+            // No exception is thrown if the query succeeds. This means the username is unavailable
+            return new QueryResponse(false, "Username is not available");
+        } catch (Exception e) {
+            // An exception means the username was not found and it is available for use
+            session.close();
+            return new QueryResponse(true);
+        }
+    }
+
+    public QueryResponse getUniversities() {
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            Query query = session.createSQLQuery("SELECT * FROM APP.Universities");
+
+            List<UniversitiesEntity> unis = query.getResultList();
 
             session.close();
             // No exception is thrown if the query succeeds. This means the username is unavailable

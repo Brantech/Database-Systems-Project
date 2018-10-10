@@ -35,5 +35,8 @@
         <property name="contactEmail">
             <column name="CONTACT_EMAIL" sql-type="varchar(255)" not-null="true"/>
         </property>
+        <property name="uniId">
+            <column name="UNI_ID" sql-type="varchar(255)"/>
+        </property>
     </class>
 </hibernate-mapping>

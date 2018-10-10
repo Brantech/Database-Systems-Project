@@ -8,6 +8,9 @@
         <id name="rsoId">
             <column name="RSO_ID" sql-type="integer"/>
         </id>
+        <property name="adminId">
+            <column name="ADMIN_ID" sql-type="varchar(255)"/>
+        </property>
         <property name="members">
             <column name="MEMBERS" sql-type="integer"/>
         </property>

@@ -1,9 +1,14 @@
 package college.events.hibernate.test_data;
 
 import college.events.hibernate.DbManager;
+import college.events.hibernate.QueryResponse;
 
 public class InsertDBTestData {
     public static void insertTestData(DbManager manager) {
+        manager.createUniversity("University of Central Florida", "", "", 50000);
+
+        QueryResponse getUniversitiesByName = manager.getUniversities();
+
         manager.createAccount("aaaaa", "password", "Brandon", "Gotay", "a@a.a");
         manager.createAccount("bbbbb", "password", "Brandon", "Gotay", "b@a.a");
         manager.createAccount("ccccc", "password", "Brandon", "Gotay", "c@a.a");

@@ -6,6 +6,7 @@ package college.events.hibernate;
 public class QueryResponse {
 
     private boolean success;
+    private Object payload;
     private String message;
     private Throwable t;
 
@@ -33,6 +34,11 @@ public class QueryResponse {
     public QueryResponse(boolean success, Throwable t) {
         this.success = success;
         this.t = t;
+    }
+
+    public QueryResponse(boolean success, Object payload) {
+        this.success = success;
+        this.payload = payload;
     }
 
     /**

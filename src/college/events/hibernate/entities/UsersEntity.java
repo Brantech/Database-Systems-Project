@@ -1,19 +1,36 @@
-package college.events.hibernate.entities;
+package college.events.hibernate.entities;/*
+ *   File Name:
+ *
+ *   Classification:  Unclassified
+ *
+ *   Prime Contract No.: W900KK-17-C-0029
+ *
+ *   This work was generated under U.S. Government contract and the
+ *   Government has unlimited data rights therein.
+ *
+ *   Copyrights:      Copyright 2014
+ *                    Dignitas Technologies, LLC.
+ *                    All rights reserved.
+ *
+ *   Distribution Statement A: Approved for public release; distribution is unlimited
+ *
+ *   Organizations:   Dignitas Technologies, LLC.
+ *                    3504 Lake Lynda Drive, Suite 170
+ *                    Orlando, FL 32817
+ *
+ */
 
 import java.util.Objects;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "USERS", schema = "APP", catalog = "")
 public class UsersEntity {
-    private int userId;
+    private String userId;
     private String firstname;
     private String lastname;
     private String username;
@@ -21,20 +38,15 @@ public class UsersEntity {
     private String email;
     private String type;
     private String studentId;
+    private String uniId;
 
     @Id
-    @Column(name = "USER_ID", nullable = false)
-    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="USERS_SEQUENCE")
-    @SequenceGenerator(
-            name="USERS_SEQUENCE",
-            sequenceName="USERS_SEQUENCE",
-            allocationSize=1
-    )
-    public int getUserId() {
+    @Column(name = "USER_ID", nullable = false, length = 255)
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -108,23 +120,35 @@ public class UsersEntity {
         this.studentId = studentId;
     }
 
+    @Basic
+    @Column(name = "UNI_ID", nullable = true, length = 255)
+    public String getUniId() {
+        return uniId;
+    }
+
+    public void setUniId(String uniId) {
+        this.uniId = uniId;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(userId, firstname, lastname, username, password, email, type, studentId, uniId);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UsersEntity that = (UsersEntity) o;
-        return userId == that.userId &&
-                Objects.equals(firstname, that.firstname) &&
-                Objects.equals(lastname, that.lastname) &&
-                Objects.equals(username, that.username) &&
-                Objects.equals(password, that.password) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(type, that.type) &&
-                Objects.equals(studentId, that.studentId);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(userId, firstname, lastname, username, password, email, type, studentId);
+        return Objects.equals(userId, that.userId) &&
+                       Objects.equals(firstname, that.firstname) &&
+                       Objects.equals(lastname, that.lastname) &&
+                       Objects.equals(username, that.username) &&
+                       Objects.equals(password, that.password) &&
+                       Objects.equals(email, that.email) &&
+                       Objects.equals(type, that.type) &&
+                       Objects.equals(studentId, that.studentId) &&
+                       Objects.equals(uniId, that.uniId);
     }
 }

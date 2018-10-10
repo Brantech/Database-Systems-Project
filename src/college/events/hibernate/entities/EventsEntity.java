@@ -1,4 +1,24 @@
-package college.events.hibernate.entities;
+package college.events.hibernate.entities;/*
+ *   File Name:
+ *
+ *   Classification:  Unclassified
+ *
+ *   Prime Contract No.: W900KK-17-C-0029
+ *
+ *   This work was generated under U.S. Government contract and the
+ *   Government has unlimited data rights therein.
+ *
+ *   Copyrights:      Copyright 2014
+ *                    Dignitas Technologies, LLC.
+ *                    All rights reserved.
+ *
+ *   Distribution Statement A: Approved for public release; distribution is unlimited
+ *
+ *   Organizations:   Dignitas Technologies, LLC.
+ *                    3504 Lake Lynda Drive, Suite 170
+ *                    Orlando, FL 32817
+ *
+ */
 
 import java.util.Objects;
 import javax.persistence.Basic;
@@ -20,6 +40,7 @@ public class EventsEntity {
     private String location;
     private String contactPhone;
     private String contactEmail;
+    private String uniId;
 
     @Id
     @Column(name = "EVENT_ID", nullable = false)
@@ -121,25 +142,37 @@ public class EventsEntity {
         this.contactEmail = contactEmail;
     }
 
+    @Basic
+    @Column(name = "UNI_ID", nullable = false, length = 255)
+    public String getUniId() {
+        return uniId;
+    }
+
+    public void setUniId(String uniId) {
+        this.uniId = uniId;
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(eventId, name, type, category, description, time, date, location, contactPhone, contactEmail, uniId);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EventsEntity that = (EventsEntity) o;
         return eventId == that.eventId &&
-                Objects.equals(name, that.name) &&
-                Objects.equals(type, that.type) &&
-                Objects.equals(category, that.category) &&
-                Objects.equals(description, that.description) &&
-                Objects.equals(time, that.time) &&
-                Objects.equals(date, that.date) &&
-                Objects.equals(location, that.location) &&
-                Objects.equals(contactPhone, that.contactPhone) &&
-                Objects.equals(contactEmail, that.contactEmail);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(eventId, name, type, category, description, time, date, location, contactPhone, contactEmail);
+                       Objects.equals(name, that.name) &&
+                       Objects.equals(type, that.type) &&
+                       Objects.equals(category, that.category) &&
+                       Objects.equals(description, that.description) &&
+                       Objects.equals(time, that.time) &&
+                       Objects.equals(date, that.date) &&
+                       Objects.equals(location, that.location) &&
+                       Objects.equals(contactPhone, that.contactPhone) &&
+                       Objects.equals(contactEmail, that.contactEmail) &&
+                       Objects.equals(uniId, that.uniId);
     }
 }

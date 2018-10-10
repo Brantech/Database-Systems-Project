@@ -6,7 +6,7 @@
 
     <class name="college.events.hibernate.entities.UsersEntity" table="USERS" schema="APP">
         <id name="userId">
-            <column name="USER_ID" sql-type="varchar(255)"/>
+            <column name="USER_ID" sql-type="integer"/>
         </id>
         <property name="firstname">
             <column name="FIRSTNAME" sql-type="varchar(255)"/>
@@ -23,8 +23,11 @@
         <property name="email">
             <column name="EMAIL" sql-type="varchar(255)"/>
         </property>
-        <property name="userType">
-            <column name="USER_TYPE" sql-type="varchar(20)" length="20"/>
+        <property name="type">
+            <column name="TYPE" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="studentId">
+            <column name="STUDENT_ID" sql-type="varchar(255)" not-null="true"/>
         </property>
     </class>
 </hibernate-mapping>

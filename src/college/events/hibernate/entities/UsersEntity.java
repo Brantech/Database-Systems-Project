@@ -4,27 +4,37 @@ import java.util.Objects;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "USERS", schema = "APP", catalog = "")
 public class UsersEntity {
-    private String userId;
+    private int userId;
     private String firstname;
     private String lastname;
     private String username;
     private String password;
     private String email;
-    private String userType;
+    private String type;
+    private String studentId;
 
     @Id
-    @Column(name = "USER_ID", nullable = false, length = 255)
-    public String getUserId() {
+    @Column(name = "USER_ID", nullable = false)
+    @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="USERS_SEQUENCE")
+    @SequenceGenerator(
+            name="USERS_SEQUENCE",
+            sequenceName="USERS_SEQUENCE",
+            allocationSize=1
+    )
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -79,13 +89,23 @@ public class UsersEntity {
     }
 
     @Basic
-    @Column(name = "USER_TYPE", nullable = false, length = 20)
-    public String getUserType() {
-        return userType;
+    @Column(name = "TYPE", nullable = false, length = 20)
+    public String getType() {
+        return type;
     }
 
-    public void setUserType(String userType) {
-        this.userType = userType;
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @Basic
+    @Column(name = "STUDENT_ID", nullable = true, length = 255)
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
     @Override
@@ -93,17 +113,18 @@ public class UsersEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UsersEntity that = (UsersEntity) o;
-        return Objects.equals(userId, that.userId) &&
+        return userId == that.userId &&
                 Objects.equals(firstname, that.firstname) &&
                 Objects.equals(lastname, that.lastname) &&
                 Objects.equals(username, that.username) &&
                 Objects.equals(password, that.password) &&
                 Objects.equals(email, that.email) &&
-                Objects.equals(userType, that.userType);
+                Objects.equals(type, that.type) &&
+                Objects.equals(studentId, that.studentId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userId, firstname, lastname, username, password, email, userType);
+        return Objects.hash(userId, firstname, lastname, username, password, email, type, studentId);
     }
 }

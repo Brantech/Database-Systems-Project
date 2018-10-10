@@ -2,11 +2,13 @@ package college.events.hibernate;
 
 import college.events.hibernate.entities.UsersEntity;
 import college.events.hibernate.security.EncryptionService;
+import college.events.hibernate.test_data.InsertDBTestData;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.sql.SQLException;
+import java.util.UUID;
 import java.util.stream.Collectors;
 import javax.persistence.Query;
 import org.apache.derby.drda.NetworkServerControl;
@@ -20,6 +22,20 @@ import org.hibernate.exception.GenericJDBCException;
  * Class used by the server to talk to the database
  */
 public class DbManager {
+
+    private enum UserType {
+        SUPER_ADMIN("SUPER_ADMIN"), ADMIN("ADMIN"), STUDENT("STUDENT");
+
+        private final String value;
+
+        UserType(String value) {
+            this.value = value;
+        }
+
+        String getValue() {
+            return value;
+        }
+    }
 
     /**
      * Instance of DbManager
@@ -54,9 +70,10 @@ public class DbManager {
     /**
      * Paths to database initialization SQL scripts
      */
-    private static final String CREATE_USERS_TABLE = "webapps/root/WEB-INF/classes/college/hibernate/sql/Users.table.create.sql";
-    private static final String CREATE_UNIVERSITIES_TABLE = "webapps/root/WEB-INF/classes/college/hibernate/sql/Universities.table.create.sql";
-    private static final String CREATE_EVENTS_TABLE = "webapps/root/WEB-INF/classes/college/hibernate/sql/Events.table.create.sql";
+    private static final String CREATE_UNIVERSITIES_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/Universities.table.create.sql";
+    private static final String CREATE_USERS_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/Users.table.create.sql";
+    private static final String CREATE_EVENTS_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/Events.table.create.sql";
+    private static final String CREATE_RSO_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/RSO.table.create.sql";
 
     /**
      * Constructor preventing outside instantiation
@@ -76,6 +93,7 @@ public class DbManager {
         });
         properties = DbProperties.getInstance();
         buildSessionFactory();
+        InsertDBTestData.insertTestData(this);
     }
 
     /**
@@ -158,9 +176,10 @@ public class DbManager {
         try {
              t = session.beginTransaction();
 
-             executeSQLFromFile(CREATE_USERS_TABLE, session);
-             executeSQLFromFile(CREATE_EVENTS_TABLE, session);
-             executeSQLFromFile(CREATE_UNIVERSITIES_TABLE, session);
+            executeSQLFromFile(CREATE_UNIVERSITIES_TABLE, session);
+            executeSQLFromFile(CREATE_USERS_TABLE, session);
+            executeSQLFromFile(CREATE_EVENTS_TABLE, session);
+            executeSQLFromFile(CREATE_RSO_TABLE, session);
 
             t.commit();
         } catch (Exception e) {
@@ -253,6 +272,8 @@ public class DbManager {
             user.setFirstname(firstName);
             user.setLastname(lastName);
             user.setEmail(email);
+            user.setStudentId(UUID.randomUUID().toString());
+            user.setType(UserType.STUDENT.getValue());
 
             session.persist(user);
 
@@ -296,6 +317,13 @@ public class DbManager {
         }
     }
 
+    /**
+     * Executes sql commands stored in a file
+     *
+     * @param path Path to file
+     * @param session Db session
+     * @throws Exception File was not found or malformed command
+     */
     private void executeSQLFromFile(String path, Session session) throws Exception {
 
         for(String s : getSQLFromFile(path)) {

@@ -9,13 +9,12 @@
       <property name="connection.pool_size">10</property>
       <property name="connection.url">jdbc:derby://localhost:1527/C:/Users/tatte/Desktop/College/Database
           Systems/Database-Systems-Project/data</property>
-
-      <mapping class="college.events.hibernate.entities.UsersEntity"/>
-      <mapping resource="college/events/hibernate/entities/UsersEntity.hbm.xml"/>
-      <mapping resource="college/events/hibernate/entities/EventsEntity.hbm.xml"/>
       <mapping class="college.events.hibernate.entities.EventsEntity"/>
-      <mapping resource="college/events/hibernate/entities/UniversitiesEntity.hbm.xml"/>
+      <mapping resource="college/events/hibernate/entities/EventsEntity.hbm.xml"/>
+      <mapping class="college.events.hibernate.entities.RsoEntity"/>
+      <mapping resource="college/events/hibernate/entities/RsoEntity.hbm.xml"/>
       <mapping class="college.events.hibernate.entities.UniversitiesEntity"/>
+      <mapping resource="college/events/hibernate/entities/UniversitiesEntity.hbm.xml"/>
       <mapping class="college.events.hibernate.entities.UsersEntity"/>
       <mapping resource="college/events/hibernate/entities/UsersEntity.hbm.xml"/>
 

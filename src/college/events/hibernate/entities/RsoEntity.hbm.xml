@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="college.events.hibernate.entities.RsoEntity" table="RSO" schema="APP">
+        <id name="rsoId">
+            <column name="RSO_ID" sql-type="integer"/>
+        </id>
+        <property name="members">
+            <column name="MEMBERS" sql-type="integer"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -13,5 +13,8 @@ create table APP.EVENTS (
   CONTACT_PHONE varchar(255),
   CONTACT_EMAIL varchar(255),
 
-  primary key (EVENT_ID)
+  UNI_ID varchar(255) not null,
+
+  primary key (EVENT_ID),
+  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID)
 )

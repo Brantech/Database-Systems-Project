@@ -10,7 +10,7 @@ public class GenericRPCResponse<T> implements Serializable {
     /**
      * Response Object
      */
-    private T obj;
+    private T payload;
 
     /**
      * Successful operation
@@ -35,27 +35,27 @@ public class GenericRPCResponse<T> implements Serializable {
     /**
      * Main constructor
      *
-     * @param obj Response message
+     * @param payload Response message
      * @param success Successful server operation
      */
-    public GenericRPCResponse(T obj, boolean success) {
-        this.obj = obj;
+    public GenericRPCResponse(T payload, boolean success) {
+        this.payload = payload;
         this.success = success;
     }
 
     /**
      * @return Response object
      */
-    public T getObj() {
-        return obj;
+    public T getPayload() {
+        return payload;
     }
 
     /**
      * Set the response object
-     * @param obj
+     * @param payload
      */
-    public void setObj(T obj) {
-        this.obj = obj;
+    public void setPayload(T payload) {
+        this.payload = payload;
     }
 
     /**

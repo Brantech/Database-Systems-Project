@@ -66,6 +66,19 @@ public class QueryResponse {
     }
 
     /**
+     * Constructor
+     *
+     * @param success Success of the query
+     * @param message Response message
+     * @param payload Object to return
+     */
+    public QueryResponse(boolean success, String message, Object payload) {
+        this.success = success;
+        this.message = message;
+        this.payload = payload;
+    }
+
+    /**
      * @return Query success status
      */
     public boolean getSuccess() {
@@ -84,5 +97,9 @@ public class QueryResponse {
      */
     public Throwable getError() {
         return t;
+    }
+
+    public Object getPayload() {
+        return payload;
     }
 }

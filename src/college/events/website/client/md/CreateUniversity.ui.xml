@@ -1,0 +1,42 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+
+        .mainContainer {
+            height: 100%;
+            margin: 0;
+            padding: 3% 0;
+        }
+    </ui:style>
+
+    <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
+        <m:MaterialColumn grid="s10" offset="s1" height="65%">
+            <m:MaterialCard height="100%" backgroundColor="WHITE" margin="0" padding="20">
+                <m:MaterialCardContent padding="0">
+                    <m:MaterialRow margin="0" height="78%">
+                        <m:MaterialColumn grid="s4" height="100%">
+                            <m:MaterialImage width="100%" height="100%"/>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn grid="s8" height="100%" display="FLEX" flexDirection="COLUMN">
+                            <m:MaterialRow width="100%">
+                                <m:MaterialTextBox ui:field="name" fieldType="OUTLINED" label="Name" margin="0"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow width="100%">
+                                <m:MaterialTextBox ui:field="location" fieldType="OUTLINED" label="Location"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow style="margin: 0; width: 100%; flex: 1; position: relative; overflow-y: auto; overflow-x: none">
+                                <m:MaterialTextArea ui:field="description" resizeRule="NONE" length="255" label="Description" fieldType="OUTLINED" layoutPosition="ABSOLUTE" width="99%"/>
+                            </m:MaterialRow>
+                        </m:MaterialColumn>
+                    </m:MaterialRow>
+                    <m:MaterialRow margin="0" height="22%" paddingTop="10" paddingBottom="10">
+                        <m:MaterialColumn grid="s12">
+                            <m:MaterialButton ui:field="createUniButton" style="color: black; background-color: #fc0; width: 100%; height: 100%; font-size: 1.8em;" text="Create University"/>
+                        </m:MaterialColumn>
+                    </m:MaterialRow>
+                </m:MaterialCardContent>
+            </m:MaterialCard>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

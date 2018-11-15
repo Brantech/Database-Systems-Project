@@ -1,8 +1,13 @@
 package college.events.website.client;
 
+import college.events.website.client.md.CreateUniversity;
+import college.events.website.client.md.EventsScreen;
 import college.events.website.client.md.HomeScreen;
+import college.events.website.client.md.Inbox;
 import college.events.website.client.md.MainContainer;
+import college.events.website.client.md.RSOScreen;
 import college.events.website.shared.ScreenEnum;
+import college.events.website.shared.messages.UserInfo;
 import com.google.gwt.user.client.ui.RootPanel;
 
 /**
@@ -18,6 +23,8 @@ public class UiManager {
      * Main container of the displayed screens
      */
     private MainContainer mainContainer;
+
+    private UserInfo userInfo;
 
     /**
      * Constructor preventing outside instantiation
@@ -42,6 +49,14 @@ public class UiManager {
         return instance;
     }
 
+    public void setUserInfo(UserInfo userInfo) {
+        this.userInfo = userInfo;
+    }
+
+    public UserInfo getUserInfo() {
+        return userInfo;
+    }
+
     /**
      * Displays a screen based on the passed in enum
      *
@@ -50,6 +65,14 @@ public class UiManager {
     public void displayScreen(ScreenEnum screen) {
         if(ScreenEnum.HOME.equals(screen)) {
             displayHomeScreen();
+        } else if(ScreenEnum.CREATE_UNIVERSITY.equals(screen)) {
+            displayCreateUniversityScreen();
+        } else if(ScreenEnum.INBOX.equals(screen)) {
+            displayInboxScreen();
+        } else if(ScreenEnum.EVENTS.equals(screen)) {
+            displayEventsScreen();
+        } else if(ScreenEnum.RSO.equals(screen)) {
+            displayRSOScreen();
         }
     }
 
@@ -58,5 +81,27 @@ public class UiManager {
      */
     private void displayHomeScreen() {
         mainContainer.setDisplayedScreen(new HomeScreen());
+    }
+
+    /**
+     * Displays the create university screen
+     */
+    private void displayCreateUniversityScreen() {
+        mainContainer.setDisplayedScreen(new CreateUniversity());
+    }
+
+    /**
+     * Displays the inbox screen
+     */
+    private void displayInboxScreen() {
+        mainContainer.setDisplayedScreen(new Inbox());
+    }
+
+    private void displayEventsScreen() {
+        mainContainer.setDisplayedScreen(new EventsScreen());
+    }
+
+    private void displayRSOScreen() {
+        mainContainer.setDisplayedScreen(new RSOScreen());
     }
 }

@@ -1,0 +1,214 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+
+        .mainContainer {
+            height: 100%;
+            margin: 0;
+        }
+
+        .textField_IBorder input {
+            border: 1px solid black !important;
+        }
+
+        .textField_ABorder input:focus {
+            border: 2px solid black !important;
+            box-shadow: none !important;
+        }
+
+        .textFieldText label {
+            color: black !important;
+        }
+
+        .textArea_IBorder textarea {
+            border: 1px solid black !important;
+        }
+
+        .textArea_ABorder textarea:focus {
+            border: 2px solid black !important;
+            box-shadow: none !important;
+        }
+    </ui:style>
+
+    <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
+        <m:MaterialColumn grid="s10" offset="s1" verticalAlign="MIDDLE" height="90%" padding="0">
+            <m:MaterialCard margin="0">
+                <m:MaterialCardContent display="FLEX" flexDirection="COLUMN" height="100%" paddingRight="0"
+                                       paddingLeft="0">
+                    <m:MaterialRow margin="0" addStyleNames="valign-wrapper" borderBottom="1px solid black">
+                        <m:MaterialColumn flex="ONE">
+                            <m:MaterialLabel style="font-size: 4em; cursor: default" text="RSO's"/>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn>
+                            <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                            iconType="GROUP"/>
+                        </m:MaterialColumn>
+                    </m:MaterialRow>
+
+                    <m:MaterialRow margin="0" flex="ONE" display="FLEX" flexDirection="COLUMN">
+                        <m:MaterialCard padding="0" margin="20" marginBottom="0">
+                            <m:MaterialRow margin="0" backgroundColor="BLACK">
+                                <m:MaterialColumn grid="s8" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="Name" style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                                <m:MaterialColumn grid="s2" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="Type" textAlign="CENTER"
+                                                     style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                                <m:MaterialColumn grid="s2" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="Members" textAlign="CENTER"
+                                                     style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                            </m:MaterialRow>
+                        </m:MaterialCard>
+                        <m:MaterialCard ui:field="rsoContainer" display="NONE" flex="ONE" margin="20" marginTop="0"/>
+                        <m:MaterialCard ui:field="emptyState"
+                                        style="background-color: gainsboro; margin: 0px 20px 20px; flex: 1; display: flex; flex-direction: column; justify-content: center">
+                            <m:MaterialRow margin="0" textAlign="CENTER">
+                                <m:MaterialIcon style="color: #fc0" iconType="ERROR" iconSize="LARGE"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow margin="0">
+                                <m:MaterialLabel style="font-size: 2em; text-align: center" text="No RSOs were found!"/>
+                            </m:MaterialRow>
+                        </m:MaterialCard>
+                    </m:MaterialRow>
+
+                    <m:MaterialDialog ui:field="rsoViewer" type="FIXED_FOOTER" height="100%" display="FLEX"
+                                      flexDirection="COLUMN">
+                        <m:MaterialDialogContent flex="ONE" display="FLEX" flexDirection="COLUMN">
+                            <m:MaterialRow margin="0" display="FLEX">
+                                <m:MaterialColumn flex="ONE">
+                                    <m:MaterialLabel ui:field="name" style="font-size: 4em; cursor: default"
+                                                     text="RSO"/>
+                                </m:MaterialColumn>
+                                <m:MaterialColumn>
+                                    <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                                    iconType="GROUP"/>
+                                </m:MaterialColumn>
+                            </m:MaterialRow>
+                            <m:MaterialRow margin="0">
+                                <m:MaterialColumn grid="s12">
+                                    <m:MaterialCard margin="0" padding="10">
+                                        <m:MaterialLabel ui:field="type" style="font-size: 1.5em;" textAlign="CENTER"
+                                                         text="Type"/>
+                                    </m:MaterialCard>
+                                </m:MaterialColumn>
+                            </m:MaterialRow>
+                            <m:MaterialRow margin="0" flex="ONE" layoutPosition="RELATIVE">
+                                <m:MaterialColumn grid="s12" layoutPosition="ABSOLUTE" height="100%">
+                                    <m:MaterialCard margin="0" height="100%"
+                                                    style="overflow-y: auto; overflow-x: hidden; padding: 10px">
+                                        <m:MaterialLabel ui:field="description"
+                                                         style="font-size: 1.5em; overflow: break-word" text="None"/>
+                                    </m:MaterialCard>
+                                </m:MaterialColumn>
+                            </m:MaterialRow>
+                        </m:MaterialDialogContent>
+                        <m:MaterialDialogFooter>
+                            <m:MaterialButton ui:field="deleteRSO" display="NONE" text="Delete RSO" style="float: left; background-color: #fc0; color: black;" waves="DEFAULT"/>
+                            <m:MaterialButton ui:field="join" text="Join"
+                                              style="background-color: #fc0; color: black;" waves="DEFAULT"/>
+                            <m:MaterialButton ui:field="leave" text="Leave" display="NONE"
+                                              style="background-color: #fc0; color: black;" waves="DEFAULT"/>
+                            <m:MaterialButton ui:field="close" text="Close"
+                                              style="background-color: black; color: #fc0; margin-right: 10px;" waves="LIGHT"/>
+                        </m:MaterialDialogFooter>
+                    </m:MaterialDialog>
+
+                    <m:MaterialRow margin="0" paddingTop="20" borderTop="1px solid black">
+                        <m:MaterialButton ui:field="createRSO" text="Create RSO"
+                                          style="background-color: black; color: #fc0; float: right; margin-right: 10px;"
+                                          waves="LIGHT"/>
+                        <m:MaterialDialog ui:field="rsoCreationDialog" type="FIXED_FOOTER" inDuration="500"
+                                          outDuration="250">
+                            <m:MaterialDialogContent>
+                                <m:MaterialRow margin="0" addStyleNames="valign-wrapper">
+                                    <m:MaterialColumn flex="ONE">
+                                        <m:MaterialLabel style="font-size: 4em; cursor: default" text="Create RSO"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn>
+                                        <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                                        iconType="GROUP"/>
+                                    </m:MaterialColumn>
+                                </m:MaterialRow>
+
+                                <m:MaterialRow style="margin: 0; overflow-y: auto">
+                                    <m:MaterialColumn grid="S12" marginBottom="20">
+                                        <m:MaterialLabel text="RSO Info"
+                                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextBox ui:field="rsoName"
+                                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                                           fieldType="OUTLINED" width="100%" placeholder="RSO Name"
+                                                           margin="0" length="255"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextArea ui:field="rsoDescription"
+                                                            addStyleNames="{style.textArea_ABorder} {style.textArea_IBorder}"
+                                                            fieldType="OUTLINED" width="100%" placeholder="Description"
+                                                            margin="0"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="S12" marginBottom="20">
+                                        <m:MaterialLabel text="RSO Type"
+                                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12" marginBottom="20">
+                                        <m:MaterialButton ui:field="rsoTypeButton" activates="rsoTypeDrop"
+                                                          iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                                                          style="background-color: #fc0; color: black; width: 100%"
+                                                          text="Academic" waves="DEFAULT"/>
+                                        <m:MaterialDropDown ui:field="rsoTypeDropDown" activator="rsoTypeDrop">
+                                            <m:MaterialLink text="Academic" textColor="BLACK"/>
+                                            <m:MaterialLink text="Film" textColor="BLACK"/>
+                                            <m:MaterialLink text="Music" textColor="BLACK"/>
+                                            <m:MaterialLink text="Sports" textColor="BLACK"/>
+                                        </m:MaterialDropDown>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="S12" marginBottom="20">
+                                        <m:MaterialLabel text="Member Emails"
+                                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextBox ui:field="member1"
+                                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                                           fieldType="OUTLINED" width="100%" placeholder="Email 1"
+                                                           margin="0"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextBox ui:field="member2"
+                                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                                           fieldType="OUTLINED" width="100%" placeholder="Email 2"
+                                                           margin="0"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextBox ui:field="member3"
+                                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                                           fieldType="OUTLINED" width="100%" placeholder="Email 3"
+                                                           margin="0"/>
+                                    </m:MaterialColumn>
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextBox ui:field="member4"
+                                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                                           fieldType="OUTLINED" width="100%" placeholder="Email 4"
+                                                           margin="0"/>
+                                    </m:MaterialColumn>
+                                </m:MaterialRow>
+
+
+                            </m:MaterialDialogContent>
+                            <m:MaterialDialogFooter>
+                                <m:MaterialButton ui:field="apply" text="Apply"
+                                                  style="background-color: #fc0; color: black;" waves="DEFAULT"/>
+                                <m:MaterialButton ui:field="cancel" text="Cancel"
+                                                  style="background-color: black; color: #fc0; margin-right: 10px"
+                                                  waves="LIGHT"/>
+                            </m:MaterialDialogFooter>
+                        </m:MaterialDialog>
+                    </m:MaterialRow>
+                </m:MaterialCardContent>
+            </m:MaterialCard>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

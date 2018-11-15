@@ -1,0 +1,21 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+        .contentStyle * {
+            cursor: pointer !important;
+        }
+    </ui:style>
+
+    <m:MaterialRow ui:field="mainContainer" addStyleNames="valign-wrapper {style.contentStyle}" style="cursor: pointer; margin: 0;" shadow="1">
+        <m:MaterialColumn grid="s8" verticalAlign="MIDDLE" style="padding-top: 10px; padding-bottom: 10px">
+            <m:MaterialLabel ui:field="name" style="font-size: 1.5em" text="(none)"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s2" verticalAlign="MIDDLE">
+            <m:MaterialLabel ui:field="type" style="font-size: 1.5em" textAlign="CENTER" text="(none)"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s2" verticalAlign="MIDDLE">
+            <m:MaterialLabel ui:field="members" style="font-size: 1.5em" textAlign="CENTER" text="0"/>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

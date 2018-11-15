@@ -6,6 +6,9 @@ package college.events.website.shared;
 public class ScreenEnum {
     public static final ScreenEnum HOME = new ScreenEnum("home");
     public static final ScreenEnum EVENTS = new ScreenEnum("events");
+    public static final ScreenEnum RSO = new ScreenEnum("rso");
+    public static final ScreenEnum CREATE_UNIVERSITY = new ScreenEnum("create_university");
+    public static final ScreenEnum INBOX = new ScreenEnum("inbox");
 
     /**
      * String value of the enum

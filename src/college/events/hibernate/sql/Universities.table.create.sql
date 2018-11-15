@@ -1,5 +1,3 @@
-create sequence APP.UNIVERSITIES_SEQUENCE start with 1 increment by 1;
-
 create table APP.UNIVERSITIES (
   UNI_ID varchar(255) not null,
 

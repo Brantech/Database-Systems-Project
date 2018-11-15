@@ -16,13 +16,16 @@
 
     <m:MaterialPanel padding="0" margin="0" height="100%">
         <m:MaterialHeader>
-            <m:MaterialNavBar backgroundColor="BLACK" activates="sideNav" addStyleNames="{style.headerText}">
+            <m:MaterialNavBar ui:field="navBar" backgroundColor="BLACK" activates="sideNav" addStyleNames="{style.headerText}">
                 <m:MaterialNavBrand marginLeft="60" text="College Events Website"/>
             </m:MaterialNavBar>
         </m:MaterialHeader>
 
-        <m:MaterialSideNavPush m:id="sideNav" width="300" showOnAttach="false">
-
+        <m:MaterialSideNavPush ui:field="sideNav" m:id="sideNav" closeOnClick="true" width="300" showOnAttach="false">
+            <m:MaterialLink ui:field="inbox" text="Inbox" iconType="MAIL_OUTLINE"/>
+            <m:MaterialLink ui:field="events" text="Events" iconType="ASSIGNMENT"/>
+            <m:MaterialLink ui:field="rso" text="RSO's" iconType="GROUP"/>
+            <m:MaterialLink ui:field="logout" text="Logout" iconType="EXIT_TO_APP"/>
         </m:MaterialSideNavPush>
 
         <m:MaterialPanel ui:field="widgetContainer" addStyleNames="{style.widgetContainer}">

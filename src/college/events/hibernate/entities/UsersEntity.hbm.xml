@@ -27,10 +27,10 @@
             <column name="TYPE" sql-type="varchar(20)" length="20"/>
         </property>
         <property name="studentId">
-            <column name="STUDENT_ID" sql-type="varchar(255)" not-null="true"/>
+            <column name="STUDENT_ID" sql-type="varchar(255)"/>
         </property>
         <property name="uniId">
-            <column name="UNI_ID" sql-type="varchar(255)" not-null="true"/>
+            <column name="UNI_ID" sql-type="varchar(255)"/>
         </property>
     </class>
 </hibernate-mapping>

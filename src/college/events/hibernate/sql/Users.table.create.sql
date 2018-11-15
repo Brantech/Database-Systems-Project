@@ -14,5 +14,5 @@ create table APP.USERS (
   UNI_ID varchar(255),
 
   primary key (USER_ID),
-  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID) on delete cascade
+  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID) on delete set null
 )

@@ -4,7 +4,9 @@ import college.events.website.client.CEWService;
 import college.events.website.client.CEWServiceAsync;
 import college.events.website.client.UiManager;
 import college.events.website.client.utils.BooleanCallback;
+import college.events.website.shared.CookyKeys;
 import college.events.website.shared.ScreenEnum;
+import college.events.website.shared.messages.UserInfo;
 import college.events.website.shared.rpc.GenericRPCResponse;
 import college.events.website.shared.validators.EmptyValidator;
 import college.events.website.shared.validators.MatchValidator;
@@ -15,6 +17,7 @@ import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.FocusHandler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Cookies;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
@@ -25,6 +28,9 @@ import gwt.material.design.client.ui.MaterialTextBox;
 import java.util.logging.Logger;
 
 public class HomeScreen extends Composite {
+
+    //region UI Fields
+
     @UiField
     MaterialColumn loginContainer;
 
@@ -70,6 +76,8 @@ public class HomeScreen extends Composite {
     @UiField
     MaterialButton submitButton;
 
+    //endregion
+
     private static Logger logger = Logger.getLogger(HomeScreen.class.getName());
     interface HomeScreenUiBinder extends UiBinder<Widget, HomeScreen> {
 
@@ -86,20 +94,46 @@ public class HomeScreen extends Composite {
     public HomeScreen() {
         initWidget(uiBinder.createAndBindUi(this));
 
+        String token = Cookies.getCookie(CookyKeys.AUTH_TOKEN);
+        if(token != null && token.length() != 0) {
+            cewServiceAsync.login(token, new AsyncCallback<GenericRPCResponse<UserInfo>>() {
+                @Override
+                public void onFailure(Throwable caught) {
+                    Cookies.removeCookie(CookyKeys.AUTH_TOKEN);
+                }
+
+                @Override
+                public void onSuccess(GenericRPCResponse<UserInfo> result) {
+                    if(result.isSuccess()) {
+                        logger.warning("Logged in with token");
+                        Cookies.setCookie(CookyKeys.AUTH_TOKEN, result.getPayload().getAuthToken());
+                        UiManager.getInstance().setUserInfo(result.getPayload());
+                        UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                    } else {
+                        Cookies.removeCookie(CookyKeys.AUTH_TOKEN);
+                    }
+                }
+            });
+        }
+
         initialize();
     }
 
     private void initialize() {
         loginButton.addClickHandler(e ->{
-            cewServiceAsync.login(username.getText(), password.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
+            cewServiceAsync.login(username.getText(), password.getText(), new AsyncCallback<GenericRPCResponse<UserInfo>>() {
                 @Override
                 public void onFailure(Throwable caught) {
                     logger.warning("Incorrect username or password");
                 }
 
                 @Override
-                public void onSuccess(GenericRPCResponse<String> result) {
-                    UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                public void onSuccess(GenericRPCResponse<UserInfo> result) {
+                    if(result.isSuccess()) {
+                        Cookies.setCookie(CookyKeys.AUTH_TOKEN, result.getPayload().getAuthToken());
+                        UiManager.getInstance().setUserInfo(result.getPayload());
+                        UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                    }
                 }
             });
         });
@@ -124,7 +158,7 @@ public class HomeScreen extends Composite {
             valid &= email.validate();
             valid &= email2.validate();
             if(valid) {
-                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), email.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
+                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), email.getText(), "HOOBLAH", new AsyncCallback<GenericRPCResponse<String>>() {
                     @Override
                     public void onFailure(Throwable caught) {
                         logger.warning("Failed to create new account");
@@ -134,7 +168,7 @@ public class HomeScreen extends Composite {
                     @Override
                     public void onSuccess(GenericRPCResponse<String> result) {
                         logger.warning("New user has been created");
-                        //TODO: Transition to next screen
+                        UiManager.getInstance().displayScreen(ScreenEnum.CREATE_UNIVERSITY);
                     }
                 });
             }

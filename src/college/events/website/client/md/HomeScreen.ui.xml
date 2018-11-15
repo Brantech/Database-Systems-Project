@@ -31,31 +31,33 @@
     </ui:style>
 
     <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
-        <m:MaterialColumn ui:field="loginContainer" offset="s3" grid="s6" height="90%">
-            <m:MaterialCard height="100%" verticalAlign="MIDDLE">
-                <m:MaterialCardContent height="80%">
+        <m:MaterialColumn ui:field="loginContainer" offset="s4" grid="s4" minHeight="60%">
+            <m:MaterialCard width="100%" minHeight="60%" layoutPosition="RELATIVE" verticalAlign="MIDDLE" margin="0">
+                <m:MaterialCardContent>
                     <m:MaterialCardTitle text="Login"/>
                     <m:MaterialPanel padding="0" margin="0">
                         <m:MaterialTextBox ui:field="username"
                                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                           fieldType="OUTLINED" grid="s12" placeholder="Username" margin="0"/>
+                                           fieldType="OUTLINED" width="100%" placeholder="Username" margin="0"/>
                         <m:MaterialTextBox ui:field="password"
                                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                           fieldType="OUTLINED" grid="s12" placeholder="Password" type="PASSWORD"
+                                           fieldType="OUTLINED" width="100%" placeholder="Password" type="PASSWORD"
                                            validateOnBlur="true" margin="0"/>
                     </m:MaterialPanel>
                 </m:MaterialCardContent>
-                <m:MaterialCardAction addStyleNames="valign-wrapper" height="20%">
-                    <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="0" paddingRight="5">
-                        <m:MaterialButton ui:field="loginButton"
-                                          style="color: black; background-color: #fc0; width: 100%; height: 60%"
-                                          waves="LIGHT" text="Login"/>
-                    </m:MaterialColumn>
-                    <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="5" paddingRight="0">
-                        <m:MaterialButton ui:field="registerButton"
-                                          waves="LIGHT" text="Register" backgroundColor="BLACK"
-                                          style="color: #fc0; width: 100%; height: 60%"/>
-                    </m:MaterialColumn>
+                <m:MaterialCardAction layoutPosition="ABSOLUTE" bottom="0" width="100%">
+                    <m:MaterialRow margin="0">
+                        <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="5" paddingRight="0">
+                            <m:MaterialButton ui:field="registerButton"
+                                              waves="LIGHT" text="Register" backgroundColor="BLACK"
+                                              style="color: #fc0; width: 100%;"/>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn grid="s6" verticalAlign="MIDDLE" paddingLeft="0" paddingRight="5">
+                            <m:MaterialButton ui:field="loginButton"
+                                              style="color: black; background-color: #fc0; width: 100%;"
+                                              waves="LIGHT" text="Login"/>
+                        </m:MaterialColumn>
+                    </m:MaterialRow>
                 </m:MaterialCardAction>
             </m:MaterialCard>
         </m:MaterialColumn>

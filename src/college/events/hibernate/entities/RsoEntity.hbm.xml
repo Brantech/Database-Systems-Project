@@ -6,13 +6,25 @@
 
     <class name="college.events.hibernate.entities.RsoEntity" table="RSO" schema="APP">
         <id name="rsoId">
-            <column name="RSO_ID" sql-type="integer"/>
+            <column name="RSO_ID" sql-type="varchar(255)"/>
         </id>
         <property name="adminId">
             <column name="ADMIN_ID" sql-type="varchar(255)"/>
         </property>
+        <property name="name">
+            <column name="NAME" sql-type="varchar(255)"/>
+        </property>
+        <property name="description">
+            <column name="DESCRIPTION" sql-type="varchar(255)"/>
+        </property>
+        <property name="type">
+            <column name="TYPE" sql-type="varchar(255)"/>
+        </property>
         <property name="members">
             <column name="MEMBERS" sql-type="integer"/>
+        </property>
+        <property name="uniId">
+            <column name="UNI_ID" sql-type="varchar(255)"/>
         </property>
     </class>
 </hibernate-mapping>

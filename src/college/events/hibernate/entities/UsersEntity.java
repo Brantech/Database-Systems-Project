@@ -1,24 +1,4 @@
-package college.events.hibernate.entities;/*
- *   File Name:
- *
- *   Classification:  Unclassified
- *
- *   Prime Contract No.: W900KK-17-C-0029
- *
- *   This work was generated under U.S. Government contract and the
- *   Government has unlimited data rights therein.
- *
- *   Copyrights:      Copyright 2014
- *                    Dignitas Technologies, LLC.
- *                    All rights reserved.
- *
- *   Distribution Statement A: Approved for public release; distribution is unlimited
- *
- *   Organizations:   Dignitas Technologies, LLC.
- *                    3504 Lake Lynda Drive, Suite 170
- *                    Orlando, FL 32817
- *
- */
+package college.events.hibernate.entities;
 
 import java.util.Objects;
 import javax.persistence.Basic;
@@ -131,24 +111,23 @@ public class UsersEntity {
     }
 
     @Override
-    public int hashCode() {
-
-        return Objects.hash(userId, firstname, lastname, username, password, email, type, studentId, uniId);
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         UsersEntity that = (UsersEntity) o;
         return Objects.equals(userId, that.userId) &&
-                       Objects.equals(firstname, that.firstname) &&
-                       Objects.equals(lastname, that.lastname) &&
-                       Objects.equals(username, that.username) &&
-                       Objects.equals(password, that.password) &&
-                       Objects.equals(email, that.email) &&
-                       Objects.equals(type, that.type) &&
-                       Objects.equals(studentId, that.studentId) &&
-                       Objects.equals(uniId, that.uniId);
+                Objects.equals(firstname, that.firstname) &&
+                Objects.equals(lastname, that.lastname) &&
+                Objects.equals(username, that.username) &&
+                Objects.equals(password, that.password) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(type, that.type) &&
+                Objects.equals(studentId, that.studentId) &&
+                Objects.equals(uniId, that.uniId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(userId, firstname, lastname, username, password, email, type, studentId, uniId);
     }
 }

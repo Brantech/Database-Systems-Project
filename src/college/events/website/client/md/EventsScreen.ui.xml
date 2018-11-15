@@ -1,0 +1,63 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+
+        .mainContainer {
+            height: 100%;
+            margin: 0;
+        }
+    </ui:style>
+
+    <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
+        <m:MaterialColumn grid="s10" offset="s1" verticalAlign="MIDDLE" height="90%" padding="0">
+            <m:MaterialCard margin="0">
+                <m:MaterialCardContent display="FLEX" flexDirection="COLUMN" height="100%" paddingRight="0" paddingLeft="0">
+                    <m:MaterialRow margin="0" addStyleNames="valign-wrapper" borderBottom="1px solid black">
+                        <m:MaterialColumn flex="ONE">
+                            <m:MaterialLabel style="font-size: 4em; cursor: default" text="Events"/>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn>
+                            <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                            iconType="ASSIGNMENT"/>
+                        </m:MaterialColumn>
+                    </m:MaterialRow>
+                    <m:MaterialRow margin="0" paddingTop="10" paddingBottom="10">
+                        <m:MaterialColumn grid="s6">
+                            <m:MaterialButton ui:field="locationFilter" activates="loc" text="Location" style="background-color: black; color: #fc0; width: 100%" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+                            <m:MaterialDropDown activator="loc" belowOrigin="true">
+                                <m:MaterialLink textColor="BLACK" text="Any"/>
+                            </m:MaterialDropDown>
+                        </m:MaterialColumn>
+                        <m:MaterialColumn grid="s6">
+                            <m:MaterialButton ui:field="universityFilter" activates="uni" text="University" style="background-color: black; color: #fc0; width: 100%" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+                            <m:MaterialDropDown activator="uni" belowOrigin="true">
+                                <m:MaterialLink textColor="BLACK" text="Any"/>
+                            </m:MaterialDropDown>
+                        </m:MaterialColumn>
+                    </m:MaterialRow>
+
+                    <m:MaterialRow margin="0" flex="ONE"/>
+                    <m:MaterialRow margin="0">
+                        <m:MaterialButton ui:field="createEvent" text="Create Event" style="background-color: black; color: #fc0; float: right; margin-right: 10px" waves="LIGHT"/>
+                        <m:MaterialDialog ui:field="eventCreationDialog" type="FIXED_FOOTER" inDuration="500" outDuration="250">
+                            <m:MaterialDialogContent>
+                                <m:MaterialRow margin="0" >
+                                    <m:MaterialColumn grid="s12">
+                                        <m:MaterialTextBox placeholder="Name"/>
+                                    </m:MaterialColumn>
+                                </m:MaterialRow>
+
+
+                            </m:MaterialDialogContent>
+                            <m:MaterialDialogFooter>
+                                <m:MaterialButton ui:field="submit" text="Submit" style="background-color: #fc0; color: black;" waves="DEFAULT"/>
+                                <m:MaterialButton ui:field="cancel" text="Cancel" style="background-color: black; color: #fc0; margin-right: 10px" waves="LIGHT"/>
+                            </m:MaterialDialogFooter>
+                        </m:MaterialDialog>
+                    </m:MaterialRow>
+                </m:MaterialCardContent>
+            </m:MaterialCard>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

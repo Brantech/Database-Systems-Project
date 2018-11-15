@@ -1,24 +1,4 @@
-package college.events.hibernate.entities;/*
- *   File Name:
- *
- *   Classification:  Unclassified
- *
- *   Prime Contract No.: W900KK-17-C-0029
- *
- *   This work was generated under U.S. Government contract and the
- *   Government has unlimited data rights therein.
- *
- *   Copyrights:      Copyright 2014
- *                    Dignitas Technologies, LLC.
- *                    All rights reserved.
- *
- *   Distribution Statement A: Approved for public release; distribution is unlimited
- *
- *   Organizations:   Dignitas Technologies, LLC.
- *                    3504 Lake Lynda Drive, Suite 170
- *                    Orlando, FL 32817
- *
- */
+package college.events.hibernate.entities;
 
 import java.util.Objects;
 import javax.persistence.Basic;
@@ -30,7 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "EVENTS", schema = "APP", catalog = "")
 public class EventsEntity {
-    private int eventId;
+    private String eventId;
     private String name;
     private String type;
     private String category;
@@ -41,14 +21,15 @@ public class EventsEntity {
     private String contactPhone;
     private String contactEmail;
     private String uniId;
+    private String rsoId;
 
     @Id
-    @Column(name = "EVENT_ID", nullable = false)
-    public int getEventId() {
+    @Column(name = "EVENT_ID", nullable = false, length = 255)
+    public String getEventId() {
         return eventId;
     }
 
-    public void setEventId(int eventId) {
+    public void setEventId(String eventId) {
         this.eventId = eventId;
     }
 
@@ -152,10 +133,14 @@ public class EventsEntity {
         this.uniId = uniId;
     }
 
-    @Override
-    public int hashCode() {
+    @Basic
+    @Column(name = "RSO_ID", nullable = true, length = 255)
+    public String getRsoId() {
+        return rsoId;
+    }
 
-        return Objects.hash(eventId, name, type, category, description, time, date, location, contactPhone, contactEmail, uniId);
+    public void setRsoId(String rsoId) {
+        this.rsoId = rsoId;
     }
 
     @Override
@@ -163,16 +148,22 @@ public class EventsEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EventsEntity that = (EventsEntity) o;
-        return eventId == that.eventId &&
-                       Objects.equals(name, that.name) &&
-                       Objects.equals(type, that.type) &&
-                       Objects.equals(category, that.category) &&
-                       Objects.equals(description, that.description) &&
-                       Objects.equals(time, that.time) &&
-                       Objects.equals(date, that.date) &&
-                       Objects.equals(location, that.location) &&
-                       Objects.equals(contactPhone, that.contactPhone) &&
-                       Objects.equals(contactEmail, that.contactEmail) &&
-                       Objects.equals(uniId, that.uniId);
+        return Objects.equals(eventId, that.eventId) &&
+                Objects.equals(name, that.name) &&
+                Objects.equals(type, that.type) &&
+                Objects.equals(category, that.category) &&
+                Objects.equals(description, that.description) &&
+                Objects.equals(time, that.time) &&
+                Objects.equals(date, that.date) &&
+                Objects.equals(location, that.location) &&
+                Objects.equals(contactPhone, that.contactPhone) &&
+                Objects.equals(contactEmail, that.contactEmail) &&
+                Objects.equals(uniId, that.uniId) &&
+                Objects.equals(rsoId, that.rsoId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(eventId, name, type, category, description, time, date, location, contactPhone, contactEmail, uniId, rsoId);
     }
 }

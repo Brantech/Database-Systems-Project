@@ -1,0 +1,80 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+
+        .mainContainer {
+            height: 100%;
+            margin: 0;
+        }
+
+        .messageContainer {
+            overflow-y: scroll;
+            flex: 1;
+        }
+
+        .messageSubject input {
+            margin: 0;
+        }
+
+        .messageContent textArea {
+            margin: 0;
+            padding: 10px 0;
+        }
+    </ui:style>
+
+    <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
+        <m:MaterialColumn grid="s10" offset="s1" verticalAlign="MIDDLE" height="90%" backgroundColor="WHITE">
+            <m:MaterialCardContent display="FLEX" flexDirection="COLUMN" height="100%" paddingBottom="10">
+                <m:MaterialRow margin="0" addStyleNames="valign-wrapper">
+                    <m:MaterialColumn flex="ONE">
+                        <m:MaterialLabel style="font-size: 4em; cursor: default" text="Inbox"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn>
+                        <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                        iconType="MAIL_OUTLINE"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+
+                <m:MaterialRow margin="0" flex="ONE" shadow="2" display="FLEX" flexDirection="COLUMN">
+                    <m:MaterialColumn grid="s12" padding="0" backgroundColor="BLACK" shadow="1">
+                        <m:MaterialRow margin="0" paddingRight="18">
+                            <m:MaterialColumn grid="s10" paddingTop="10" paddingBottom="10"
+                                              borderRight="1px solid white">
+                                <m:MaterialLabel text="Subject" style="color: #fc0; font-size: 2em"/>
+                            </m:MaterialColumn>
+                            <m:MaterialColumn grid="s2" paddingTop="10" paddingBottom="10">
+                                <m:MaterialLabel text="Date" style="color: #fc0; font-size: 2em"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
+                    </m:MaterialColumn>
+
+                    <m:MaterialColumn ui:field="messageContainer" grid="s12" addStyleNames="{style.messageContainer}"
+                                      padding="0"/>
+                </m:MaterialRow>
+            </m:MaterialCardContent>
+
+        </m:MaterialColumn>
+
+        <m:MaterialDialog ui:field="messageViewer" type="FIXED_FOOTER" dismissible="true" inDuration="500"
+                          outDuration="250">
+            <m:MaterialDialogContent display="FLEX" flexDirection="COLUMN">
+                <m:MaterialTextBox ui:field="subject" addStyleNames="{style.messageSubject}"
+                                   style="padding: 0 10px; border: 1px solid black; border-radius: 5px; width: 100%; margin-bottom: 10px"
+                                   text="Subject" readOnly="true"/>
+                <m:MaterialTextArea ui:field="content" addStyleNames="{style.messageContent}"
+                                    style="padding: 0 10px; border: 1px solid black; border-radius: 5px; width: 100%; margin: 0; flex: 1;"
+                                    text="Content" readOnly="true" resizeRule="NONE"/>
+            </m:MaterialDialogContent>
+            <m:MaterialDialogFooter>
+                <m:MaterialButton ui:field="approve" text="Approve" waves="DEFAULT"
+                                  style="background-color: #fc0; color: black"/>
+                <m:MaterialButton ui:field="decline" text="Decline" waves="LIGHT"
+                                  style="background-color: black; color: #fc0; margin-right: 10px"/>
+                <m:MaterialButton ui:field="close" marginRight="10" text="Close" waves="DEFAULT" backgroundColor="WHITE"
+                                  textColor="BLACK"/>
+            </m:MaterialDialogFooter>
+        </m:MaterialDialog>
+
+    </m:MaterialRow>
+</ui:UiBinder>

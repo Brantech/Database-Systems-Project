@@ -6,7 +6,7 @@
 
     <class name="college.events.hibernate.entities.EventsEntity" table="EVENTS" schema="APP">
         <id name="eventId">
-            <column name="EVENT_ID" sql-type="integer"/>
+            <column name="EVENT_ID" sql-type="varchar(255)"/>
         </id>
         <property name="name">
             <column name="NAME" sql-type="varchar(255)"/>
@@ -37,6 +37,9 @@
         </property>
         <property name="uniId">
             <column name="UNI_ID" sql-type="varchar(255)"/>
+        </property>
+        <property name="rsoId">
+            <column name="RSO_ID" sql-type="varchar(255)" not-null="true"/>
         </property>
     </class>
 </hibernate-mapping>

@@ -1,7 +1,7 @@
 create sequence APP.EVENTS_SEQUENCE start with 1 increment by 1;
 
 create table APP.EVENTS (
-  EVENT_ID integer not null,
+  EVENT_ID varchar(255) not null,
 
   NAME varchar(255) not null,
   TYPE varchar(20) not null,
@@ -14,7 +14,9 @@ create table APP.EVENTS (
   CONTACT_EMAIL varchar(255),
 
   UNI_ID varchar(255) not null,
+  RSO_ID varchar(255),
 
   primary key (EVENT_ID),
-  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID) on delete cascade
+  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID) on delete cascade,
+  foreign key (RSO_ID) references APP.RSO(RSO_ID) on delete cascade
 )

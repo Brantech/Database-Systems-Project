@@ -1,5 +1,6 @@
 package college.events.hibernate.security;
 
+import com.google.gson.JsonObject;
 import java.nio.ByteBuffer;
 import java.security.AlgorithmParameters;
 import java.security.SecureRandom;
@@ -152,6 +153,21 @@ public class EncryptionService {
         }
 
         return message.equals(decrypt(eMessage));
+    }
+
+    /**
+     * Creates an authentication token with the username and password
+     *
+     * @param username
+     * @param password
+     * @return Encrypted token
+     */
+    public static String createToken(String username, String password) {
+        JsonObject token = new JsonObject();
+        token.addProperty("username", username);
+        token.addProperty("password", password);
+
+        return encrypt(token.toString());
     }
 
     /**

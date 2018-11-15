@@ -1,6 +1,6 @@
 package college.events.website.client;
 
-import college.events.website.shared.Events;
+import college.events.website.shared.messages.EventMessage;
 import college.events.website.shared.messages.RSOMessage;
 import college.events.website.shared.messages.SuperAdminMessage;
 import college.events.website.shared.messages.UserInfo;
@@ -9,7 +9,6 @@ import college.events.website.shared.rpc.GetRSOResponse;
 import com.google.gwt.user.client.rpc.RemoteService;
 import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 @RemoteServiceRelativePath("CEWService")
@@ -22,11 +21,14 @@ public interface CEWService extends RemoteService {
     GenericRPCResponse<String> createRSO(String rsoName, String description, String type, List<String> memberEmails, String authToken);
     GenericRPCResponse<ArrayList<SuperAdminMessage>> getSuperAdminMessages(String authToken);
     GenericRPCResponse<String> isUsernameAvailable(String username);
-    GenericRPCResponse<ArrayList<Events>> getEvents(String authToken);
+    GenericRPCResponse<ArrayList<EventMessage>> getEvents(String authToken);
     GetRSOResponse getRSOs(UserInfo info);
     boolean approveRSOApplication(String messageID, String authToken);
-    boolean declineRSOApplication(String messageID, String authToken);
+    boolean declineMessage(String messageID, String authToken);
     boolean joinRSO(RSOMessage rso, String authToken);
     boolean leaveRSO(RSOMessage rso, String authToken);
     boolean deleteRSO(RSOMessage rso, String authToken);
+    GenericRPCResponse<ArrayList<RSOMessage>> getUsersRSOs(UserInfo info);
+    GenericRPCResponse<String> createEvent(String authToken, String eventName, String description, String location, String date, String time, String rso, String category, String privacy, String contactName, String contactPhone, String contactEmail);
+    boolean approveEvent(String messageID, String authToken);
 }

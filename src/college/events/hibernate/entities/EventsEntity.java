@@ -18,6 +18,7 @@ public class EventsEntity {
     private String time;
     private String date;
     private String location;
+    private String contactName;
     private String contactPhone;
     private String contactEmail;
     private String uniId;
@@ -101,6 +102,16 @@ public class EventsEntity {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    @Basic
+    @Column(name = "CONTACT_NAME", nullable = true, length = 255)
+    public String getContactName() {
+        return contactName;
+    }
+
+    public void setContactName(String contactName) {
+        this.contactName = contactName;
     }
 
     @Basic

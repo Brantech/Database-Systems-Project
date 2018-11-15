@@ -108,7 +108,13 @@ public class HomeScreen extends Composite {
                         logger.warning("Logged in with token");
                         Cookies.setCookie(CookyKeys.AUTH_TOKEN, result.getPayload().getAuthToken());
                         UiManager.getInstance().setUserInfo(result.getPayload());
-                        UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                        if(result.getPayload().getTYPE().equals("SUPER_ADMIN")) {
+                            UiManager.getInstance().adminMode();
+                            UiManager.getInstance().displayScreen(ScreenEnum.INBOX);
+                        } else {
+                            UiManager.getInstance().studentMode();
+                            UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                        }
                     } else {
                         Cookies.removeCookie(CookyKeys.AUTH_TOKEN);
                     }
@@ -132,7 +138,13 @@ public class HomeScreen extends Composite {
                     if(result.isSuccess()) {
                         Cookies.setCookie(CookyKeys.AUTH_TOKEN, result.getPayload().getAuthToken());
                         UiManager.getInstance().setUserInfo(result.getPayload());
-                        UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                        if(result.getPayload().getTYPE().equals("SUPER_ADMIN")) {
+                            UiManager.getInstance().adminMode();
+                            UiManager.getInstance().displayScreen(ScreenEnum.INBOX);
+                        } else {
+                            UiManager.getInstance().studentMode();
+                            UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                        }
                     }
                 }
             });

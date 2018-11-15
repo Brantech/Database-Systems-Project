@@ -57,6 +57,14 @@ public class UiManager {
         return userInfo;
     }
 
+    public void adminMode() {
+        mainContainer.adminMode();
+    }
+
+    public void studentMode() {
+        mainContainer.studentMode();
+    }
+
     /**
      * Displays a screen based on the passed in enum
      *

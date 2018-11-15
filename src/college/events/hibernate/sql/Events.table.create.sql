@@ -10,6 +10,7 @@ create table APP.EVENTS (
   TIME varchar(255) not null,
   DATE varchar(255) not null,
   LOCATION varchar(255),
+  CONTACT_NAME varchar(255),
   CONTACT_PHONE varchar(255),
   CONTACT_EMAIL varchar(255),
 

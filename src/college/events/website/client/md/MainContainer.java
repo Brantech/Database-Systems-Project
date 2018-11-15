@@ -11,6 +11,8 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Cookies;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.client.constants.Display;
+import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialNavBar;
 import gwt.material.design.client.ui.MaterialPanel;
 
@@ -39,6 +41,9 @@ public class MainContainer extends Composite {
     @UiField
     MaterialSideNavPush sideNav;
 
+    @UiField
+    MaterialLink inbox, events, rso;
+
     /**
      * Default constructor
      */
@@ -55,6 +60,18 @@ public class MainContainer extends Composite {
     public void setDisplayedScreen(Composite widget) {
         widgetContainer.clear();
         widgetContainer.add(widget);
+    }
+
+    public void adminMode() {
+        inbox.setDisplay(Display.BLOCK);
+        events.setDisplay(Display.NONE);
+        rso.setDisplay(Display.NONE);
+    }
+
+    public void studentMode() {
+        inbox.setDisplay(Display.NONE);
+        events.setDisplay(Display.BLOCK);
+        rso.setDisplay(Display.BLOCK);
     }
 
     @UiHandler("inbox")

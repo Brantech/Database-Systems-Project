@@ -53,7 +53,7 @@ public class DbManager {
     }
 
     private enum MessageType {
-        RSO_REQUEST("RSO_REQUEST");
+        RSO_REQUEST("RSO_REQUEST"), EVENT("Event");
 
         private final String value;
 
@@ -649,6 +649,57 @@ public class DbManager {
         }
     }
 
+    public QueryResponse getUsersRSOs(UserInfo info) {
+        if(info == null) {
+            return new QueryResponse(false);
+        }
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            QueryResponse login = login(info.getAuthToken());
+            if(!login.getSuccess()) {
+                return new QueryResponse(false, "Authentication error");
+            }
+            UsersEntity admin = (UsersEntity) login.getPayload();
+
+            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.adminId=:id");
+            query.setParameter("id", admin.getUserId());
+
+            List<RsoEntity> results = query.getResultList();
+
+            session.close();
+            return new QueryResponse(true, results);
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false);
+        }
+    }
+
+    public QueryResponse getRSOName(String rsoID) {
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.rsoId=:id");
+            query.setParameter("id", rsoID);
+
+            RsoEntity rso = (RsoEntity) query.getSingleResult();
+
+            session.close();
+
+            return new QueryResponse(true, rso.getName());
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false, "");
+        }
+    }
+
     public QueryResponse createRSO(String rsoName, String description, String type, List<String> memberEmails, String authToken) {
         if(rsoName == null || memberEmails == null || type == null || memberEmails.size() != 4|| authToken == null) {
             return new QueryResponse(false);
@@ -848,7 +899,7 @@ public class DbManager {
         }
     }
 
-    public QueryResponse declineRSOApplication(String messageID, String authToken) {
+    public QueryResponse decline(String messageID, String authToken) {
         if(messageID == null || authToken == null) {
             return new QueryResponse(false);
         }
@@ -870,9 +921,6 @@ public class DbManager {
             query.setParameter("id", messageID);
 
             MessagesEntity m = (MessagesEntity) query.getSingleResult();
-            if(!m.getMessageType().equals(MessageType.RSO_REQUEST.value)) {
-                return new QueryResponse(false, "Message is not an RSO request");
-            }
 
             session.delete(m);
 
@@ -1059,7 +1107,14 @@ public class DbManager {
         return new QueryResponse(true);
     }
 
-    public QueryResponse createEvent(String name, String type, String category, String description, String time, String date, String location, String contactPhone, String contactEmail, String uniID, String rsoID, String authToken) {
+    public QueryResponse createEvent(String authToken, String eventName, String description, String location, String date, String time, String rsoID, String category, String privacy, String contactName, String contactPhone, String contactEmail) {
+        if(authToken == null || eventName == null || location == null || date == null || time == null || category == null || privacy == null || contactName == null || contactPhone == null || contactEmail == null) {
+            return new QueryResponse(false);
+        }
+        if(authToken.isEmpty() || eventName.isEmpty() || location.isEmpty() || date.isEmpty() || time.isEmpty() || category.isEmpty() || privacy.isEmpty() || contactName.isEmpty() || contactPhone.isEmpty() || contactEmail.isEmpty()) {
+            return new QueryResponse(false);
+        }
+
         if(sessionFactory == null) {
             return new QueryResponse(false, "Server could not connect to the database");
         }
@@ -1073,31 +1128,53 @@ public class DbManager {
         try {
             transaction = session.beginTransaction();
 
-            Map<String, String> decoded = (Map<String, String>) gson.fromJson(EncryptionService.decrypt(authToken), Map.class);
-            Query query = session.createQuery("SELECT u FROM UsersEntity u WHERE u.username=:userName", UsersEntity.class);
-            query.setParameter("userName", decoded.get("username"));
-
-            UsersEntity u = (UsersEntity) query.getSingleResult();
-            if(!EncryptionService.authenticate(decoded.get("password"), u.getPassword())) {
-                return new QueryResponse(false, "authentication error");
+            QueryResponse login = login(authToken);
+            if(!login.getSuccess()) {
+                session.close();
+                return new QueryResponse(false, "Authentication error");
             }
-
-            if((rsoID == null || rsoID.isEmpty()) && !u.getType().equals(UserType.SUPER_ADMIN)) {
-                return new QueryResponse(false, "Insufficient premissions");
-            }
+            UsersEntity user = (UsersEntity) login.getPayload();
 
             EventsEntity event = new EventsEntity();
             event.setEventId(UUID.randomUUID().toString());
-            event.setName(name);
-            event.setType(type);
+            event.setName(eventName);
+            event.setType(privacy);
             event.setCategory(category);
             event.setDescription(description);
             event.setTime(time);
             event.setDate(date);
             event.setLocation(location);
+            event.setContactName(contactName);
             event.setContactPhone(contactPhone);
             event.setContactEmail(contactEmail);
-            event.setUniId(uniID);
+            event.setUniId(user.getUniId());
+
+            if(rsoID == null || rsoID.isEmpty()) {
+                MessagesEntity request = new MessagesEntity();
+                request.setId(UUID.randomUUID().toString());
+                request.setSubject("Event Creation Request");
+                request.setMessageType("Event");
+                request.setMessage(user.getEmail() + " wants to create a " + privacy + " event named " + eventName);
+                request.setPayload(gson.toJson(event, EventsEntity.class));
+                request.setSenderId(user.getUserId());
+                request.setUniId(user.getUniId());
+                request.setSendDate(System.currentTimeMillis() + "");
+
+                session.persist(request);
+                transaction.commit();
+                session.close();
+                return new QueryResponse(true, "EventMessage without an RSO must be approved by an administrator. A request has been made");
+            }
+
+            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.rsoId=:id");
+            query.setParameter("id", rsoID);
+
+            RsoEntity rso = (RsoEntity) query.getSingleResult();
+
+            if(!rso.getAdminId().equals(user.getUserId())) {
+                return new QueryResponse(false, "Insufficient premissions");
+            }
+
             event.setRsoId(rsoID);
 
             session.persist(event);
@@ -1134,6 +1211,27 @@ public class DbManager {
         }
     }
 
+    public QueryResponse getUniversityName(String uniID) {
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            Query query = session.createQuery("SELECT u FROM UniversitiesEntity u WHERE u.uniId=:id");
+            query.setParameter("id", uniID);
+
+            UniversitiesEntity uni = (UniversitiesEntity) query.getSingleResult();
+
+            session.close();
+
+            return new QueryResponse(true, uni.getName());
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false, "");
+        }
+    }
+
     public QueryResponse getSuperAdminMessages(String authToken) {
         if(authToken == null || authToken.isEmpty()) {
             return new QueryResponse(false, "Invalid authentication");
@@ -1150,13 +1248,56 @@ public class DbManager {
                 return new QueryResponse(false, "Insufficient permissions");
             }
 
-            Query query = session.createQuery("SELECT m FROM MessagesEntity m WHERE m.messageType=:mType");
-            query.setParameter("mType", MessageType.RSO_REQUEST.value);
+            Query query = session.createQuery("SELECT m FROM MessagesEntity m");
 
             List<MessagesEntity> messages = query.getResultList();
 
             return new QueryResponse(true, messages);
         } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false, e.toString());
+        }
+    }
+
+    public QueryResponse approveEvent(String messageID, String authToken) {
+        if(messageID == null || authToken == null) {
+            return new QueryResponse(false);
+        }
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        Transaction transaction = null;
+        try {
+            transaction = session.beginTransaction();
+
+            if(!isSuperAdmin(authToken, session)) {
+                return new QueryResponse(false, "Invalid permissions");
+            }
+
+            Query query = session.createQuery("SELECT m FROM MessagesEntity m WHERE m.id=:id");
+            query.setParameter("id", messageID);
+
+            MessagesEntity m = (MessagesEntity) query.getSingleResult();
+            if(!m.getMessageType().equals(MessageType.EVENT.value)) {
+                return new QueryResponse(false, "Message is not an Event request");
+            }
+
+            EventsEntity payload = gson.fromJson(m.getPayload(), EventsEntity.class);
+
+            session.persist(payload);
+            session.delete(m);
+
+            transaction.commit();
+            session.close();
+            return new QueryResponse(true);
+
+        } catch (Exception e) {
+            if(transaction != null) {
+                transaction.rollback();
+            }
             session.close();
             return new QueryResponse(false, e.toString());
         }
@@ -1183,8 +1324,9 @@ public class DbManager {
                 return new QueryResponse(false, "authentication error");
             }
 
-            query = session.createQuery("SELECT e FROM EventsEntity e WHERE e.type=:type");
+            query = session.createQuery("SELECT e FROM EventsEntity e WHERE e.type=:type OR e.uniId=:id");
             query.setParameter("type", "public");
+            query.setParameter("id", u.getUniId());
 
             List<EventsEntity> events = query.getResultList();
 
@@ -1197,7 +1339,7 @@ public class DbManager {
 
                 events.addAll(query.getResultList());
             }
-
+            events = events.stream().distinct().collect(Collectors.toList());
 
             return new QueryResponse(true, events);
         } catch (Exception e) {

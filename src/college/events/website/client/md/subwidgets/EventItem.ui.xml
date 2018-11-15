@@ -1,0 +1,28 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'>
+
+    <ui:style>
+        .contentStyle * {
+            cursor: pointer !important;
+        }
+
+        .wrapper {
+            width: 100%;
+        }
+    </ui:style>
+
+    <m:MaterialRow ui:field="mainContainer" addStyleNames="valign-wrapper {style.contentStyle} {style.wrapper}" hoverable="true" style="cursor: pointer; margin: 0; border: 1px solid black" borderTop="none" waves="DEFAULT" >
+        <m:MaterialColumn grid="s5" verticalAlign="MIDDLE" style="border-right: 1px solid black; padding-top: 10px; padding-bottom: 10px" borderRight="1px solid black">
+            <m:MaterialLabel ui:field="name" style="font-size: 1.5em" text="(none)"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s3" verticalAlign="MIDDLE" style="border-right: 1px solid black; padding-top: 10px; padding-bottom: 10px" borderRight="1px solid black">
+            <m:MaterialLabel ui:field="university" style="font-size: 1.5em" text="(none)" textAlign="CENTER"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s2" verticalAlign="MIDDLE" style="border-right: 1px solid black; padding-top: 10px; padding-bottom: 10px" borderRight="1px solid black">
+            <m:MaterialLabel ui:field="category" style="font-size: 1.5em" text="(none)" textAlign="CENTER"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s2" style="padding-top: 10px; padding-bottom: 10px" verticalAlign="MIDDLE">
+            <m:MaterialLabel ui:field="date" style="font-size: 1.5em" text="(none)" textAlign="CENTER"/>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

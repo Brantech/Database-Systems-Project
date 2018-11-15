@@ -1,18 +1,41 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:m='urn:import:gwt.material.design.client.ui'>
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
 
     <ui:style>
-
         .mainContainer {
             height: 100%;
             margin: 0;
+        }
+
+        .textField_IBorder input {
+            border: 1px solid black !important;
+        }
+
+        .textField_ABorder input:focus {
+            border: 2px solid black !important;
+            box-shadow: none !important;
+        }
+
+        .textFieldText label {
+            color: black !important;
+        }
+
+        .textArea_IBorder textarea {
+            border: 1px solid black !important;
+        }
+
+        .textArea_ABorder textarea:focus {
+            border: 2px solid black !important;
+            box-shadow: none !important;
         }
     </ui:style>
 
     <m:MaterialRow addStyleNames="{style.mainContainer} valign-wrapper">
         <m:MaterialColumn grid="s10" offset="s1" verticalAlign="MIDDLE" height="90%" padding="0">
             <m:MaterialCard margin="0">
-                <m:MaterialCardContent display="FLEX" flexDirection="COLUMN" height="100%" paddingRight="0" paddingLeft="0">
+                <m:MaterialCardContent display="FLEX" flexDirection="COLUMN" height="100%" paddingRight="0"
+                                       paddingLeft="0">
                     <m:MaterialRow margin="0" addStyleNames="valign-wrapper" borderBottom="1px solid black">
                         <m:MaterialColumn flex="ONE">
                             <m:MaterialLabel style="font-size: 4em; cursor: default" text="Events"/>
@@ -22,42 +45,289 @@
                                             iconType="ASSIGNMENT"/>
                         </m:MaterialColumn>
                     </m:MaterialRow>
-                    <m:MaterialRow margin="0" paddingTop="10" paddingBottom="10">
-                        <m:MaterialColumn grid="s6">
-                            <m:MaterialButton ui:field="locationFilter" activates="loc" text="Location" style="background-color: black; color: #fc0; width: 100%" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+                    <m:MaterialRow margin="0" paddingTop="10" paddingBottom="10" paddingLeft="20" paddingRight="20">
+                        <m:MaterialColumn grid="s6" paddingLeft="0">
+                            <m:MaterialButton ui:field="locationFilter" activates="loc" text="Location"
+                                              style="background-color: black; color: #fc0; width: 100%"
+                                              iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
                             <m:MaterialDropDown activator="loc" belowOrigin="true">
                                 <m:MaterialLink textColor="BLACK" text="Any"/>
                             </m:MaterialDropDown>
                         </m:MaterialColumn>
-                        <m:MaterialColumn grid="s6">
-                            <m:MaterialButton ui:field="universityFilter" activates="uni" text="University" style="background-color: black; color: #fc0; width: 100%" iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
+                        <m:MaterialColumn grid="s6" paddingRight="0">
+                            <m:MaterialButton ui:field="universityFilter" activates="uni" text="University"
+                                              style="background-color: black; color: #fc0; width: 100%"
+                                              iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
                             <m:MaterialDropDown activator="uni" belowOrigin="true">
                                 <m:MaterialLink textColor="BLACK" text="Any"/>
                             </m:MaterialDropDown>
                         </m:MaterialColumn>
                     </m:MaterialRow>
 
-                    <m:MaterialRow margin="0" flex="ONE"/>
+                    <m:MaterialRow margin="0" flex="ONE" display="FLEX" flexDirection="COLUMN">
+                        <m:MaterialCard padding="0" margin="20" marginTop="0" marginBottom="0">
+                            <m:MaterialRow margin="0" backgroundColor="BLACK">
+                                <m:MaterialColumn grid="s5" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="Name" style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                                <m:MaterialColumn grid="s3" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="University" textAlign="CENTER"
+                                                     style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                                <m:MaterialColumn grid="s2" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="Category" textAlign="CENTER"
+                                                     style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                                <m:MaterialColumn grid="s2" paddingTop="10" paddingBottom="10">
+                                    <m:MaterialLabel text="Date" textAlign="CENTER"
+                                                     style="color: #fc0; font-size: 2em"/>
+                                </m:MaterialColumn>
+                            </m:MaterialRow>
+                        </m:MaterialCard>
+                        <m:MaterialCard ui:field="eventsContainer" style="display: none; flex: 1; margin: 0 20px 20px 20px; overflow-y: auto"/>
+                        <m:MaterialCard ui:field="emptyState"
+                                        style="background-color: gainsboro; margin: 0px 20px 20px; flex: 1; display: flex; flex-direction: column; justify-content: center">
+                            <m:MaterialRow margin="0" textAlign="CENTER">
+                                <m:MaterialIcon style="color: #fc0" iconType="ERROR" iconSize="LARGE"/>
+                            </m:MaterialRow>
+                            <m:MaterialRow margin="0">
+                                <m:MaterialLabel style="font-size: 2em; text-align: center"
+                                                 text="No events were found!"/>
+                            </m:MaterialRow>
+                        </m:MaterialCard>
+                    </m:MaterialRow>
                     <m:MaterialRow margin="0">
-                        <m:MaterialButton ui:field="createEvent" text="Create Event" style="background-color: black; color: #fc0; float: right; margin-right: 10px" waves="LIGHT"/>
-                        <m:MaterialDialog ui:field="eventCreationDialog" type="FIXED_FOOTER" inDuration="500" outDuration="250">
-                            <m:MaterialDialogContent>
-                                <m:MaterialRow margin="0" >
-                                    <m:MaterialColumn grid="s12">
-                                        <m:MaterialTextBox placeholder="Name"/>
-                                    </m:MaterialColumn>
-                                </m:MaterialRow>
-
-
-                            </m:MaterialDialogContent>
-                            <m:MaterialDialogFooter>
-                                <m:MaterialButton ui:field="submit" text="Submit" style="background-color: #fc0; color: black;" waves="DEFAULT"/>
-                                <m:MaterialButton ui:field="cancel" text="Cancel" style="background-color: black; color: #fc0; margin-right: 10px" waves="LIGHT"/>
-                            </m:MaterialDialogFooter>
-                        </m:MaterialDialog>
+                        <m:MaterialButton ui:field="createEvent" text="Create Event"
+                                          style="background-color: black; color: #fc0; float: right; margin-right: 10px"
+                                          waves="LIGHT"/>
                     </m:MaterialRow>
                 </m:MaterialCardContent>
             </m:MaterialCard>
         </m:MaterialColumn>
+
+        <m:MaterialDialog ui:field="eventCreationDialog" type="FIXED_FOOTER" inDuration="500"
+                          outDuration="250">
+            <m:MaterialDialogContent>
+                <m:MaterialRow margin="0" addStyleNames="valign-wrapper">
+                    <m:MaterialColumn flex="ONE">
+                        <m:MaterialLabel style="font-size: 4em; cursor: default" text="Create Event"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn>
+                        <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                        iconType="ASSIGNMENT"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+
+                <m:MaterialRow style="margin: 0; overflow-y: auto">
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event Info"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="eventName"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Event Name"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextArea ui:field="eventDescription"
+                                            addStyleNames="{style.textArea_ABorder} {style.textArea_IBorder}"
+                                            fieldType="OUTLINED" width="100%" placeholder="Description"
+                                            margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="eventLocation"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Location"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialDatePicker ui:field="eventDate"
+                                              addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                              autoClose="true" placeholder="Date" fieldType="OUTLINED" container="BODY"
+                                              format="mmmm dd yyyy"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <ma:timepicker.MaterialTimePicker ui:field="eventTime"
+                                              addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                              autoClose="true" placeholder="Time" fieldType="OUTLINED"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event RSO"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12" marginBottom="20" layoutPosition="RELATIVE">
+                        <m:MaterialButton ui:field="eventRSO" activates="rsoDrop"
+                                          iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                                          style="background-color: #fc0; color: black; width: 100%"
+                                          text="(none)" waves="DEFAULT"/>
+                        <m:MaterialCard ui:field="rsoDropDown" style="display: none; top: 100%; position: relative; margin: 0;"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event Category"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12" marginBottom="20" layoutPosition="RELATIVE">
+                        <m:MaterialButton ui:field="eventTypeButton"
+                                          iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                                          style="background-color: #fc0; color: black; width: 100%"
+                                          text="Social" waves="DEFAULT"/>
+                        <m:MaterialCard ui:field="typesDropDown" style="display: none; top: 100%; position: relative; margin: 0;"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event Privacy"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12" marginBottom="20">
+                        <m:MaterialButton ui:field="eventPrivacy"
+                                          iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"
+                                          style="background-color: #fc0; color: black; width: 100%"
+                                          text="Public" waves="DEFAULT"/>
+                        <m:MaterialCard ui:field="privacyDropDown" style="display: none; top: 100%; position: relative; margin: 0;"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Contact Information"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="contactName"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Name"
+                                           margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="contactPhone"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Phone Number"
+                                           margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="contactEmail"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Email"
+                                           margin="0"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+
+
+            </m:MaterialDialogContent>
+            <m:MaterialDialogFooter>
+                <m:MaterialButton ui:field="submit" text="submit"
+                                  style="background-color: #fc0; color: black;" waves="DEFAULT"/>
+                <m:MaterialButton ui:field="cancel" text="Cancel"
+                                  style="background-color: black; color: #fc0; margin-right: 10px"
+                                  waves="LIGHT"/>
+            </m:MaterialDialogFooter>
+        </m:MaterialDialog>
+
+        <m:MaterialDialog ui:field="viewEventDialog" type="FIXED_FOOTER" inDuration="500"
+                          outDuration="250">
+            <m:MaterialDialogContent>
+                <m:MaterialRow margin="0" addStyleNames="valign-wrapper">
+                    <m:MaterialColumn flex="ONE">
+                        <m:MaterialLabel style="font-size: 4em; cursor: default" text="Event"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn>
+                        <m:MaterialIcon style="cursor: default" iconColor="BLACK" iconSize="LARGE"
+                                        iconType="ASSIGNMENT"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+
+                <m:MaterialRow style="margin: 0; overflow-y: auto">
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event Info"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="nameView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Event Name" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextArea ui:field="descriptionView"
+                                            addStyleNames="{style.textArea_ABorder} {style.textArea_IBorder}"
+                                            fieldType="OUTLINED" width="100%" placeholder="Description" readOnly="true"
+                                            margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="locationView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Location" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="dateView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Date" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="timeView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Time" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event RSO"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12" marginBottom="20" layoutPosition="RELATIVE">
+                        <m:MaterialTextBox ui:field="rsoView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="RSO" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event Category"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12" marginBottom="20" layoutPosition="RELATIVE">
+                        <m:MaterialTextBox ui:field="categoryView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Category" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Event Privacy"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12" marginBottom="20">
+                        <m:MaterialTextBox ui:field="privacyView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Privacy" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Contact Information"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="contactNameView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Name" readOnly="true"
+                                           margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="contactPhoneView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Phone Number" readOnly="true"
+                                           margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="contactEmailView"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Email" readOnly="true"
+                                           margin="0"/>
+                    </m:MaterialColumn>
+                </m:MaterialRow>
+
+
+            </m:MaterialDialogContent>
+            <m:MaterialDialogFooter>
+                <m:MaterialButton ui:field="close" text="Close"
+                                  style="background-color: #fc0; color: black;" waves="DEFAULT"/>
+            </m:MaterialDialogFooter>
+        </m:MaterialDialog>
     </m:MaterialRow>
 </ui:UiBinder>

@@ -98,9 +98,8 @@ public class Inbox extends Composite {
         }
     }
 
-    @UiHandler("approve")
-    void onClickApprove(ClickEvent event) {
-        cewServiceAsync.approveRSOApplication(selected.getId(), Cookies.getCookie(CookyKeys.AUTH_TOKEN), new AsyncCallback<Boolean>() {
+    private void approveRSO() {
+        cewServiceAsync.approveRSOApplication(selected.getId(), UiManager.getInstance().getUserInfo().getAuthToken(), new AsyncCallback<Boolean>() {
             @Override
             public void onFailure(Throwable caught) {
 
@@ -118,9 +117,38 @@ public class Inbox extends Composite {
         });
     }
 
+    private void approveEvent() {
+        cewServiceAsync.approveEvent(selected.getId(), UiManager.getInstance().getUserInfo().getAuthToken(), new AsyncCallback<Boolean>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(Boolean result) {
+                logger.severe("asdf");
+                if(result) {
+                    int i = messages.indexOf(selected);
+                    messageContainer.remove(i);
+                    messages.remove(i);
+                    messageViewer.close();
+                }
+            }
+        });
+    }
+
+    @UiHandler("approve")
+    void onClickApprove(ClickEvent event) {
+        if(selected.getMessageType().equals("Event")) {
+            approveEvent();
+        } else {
+            approveRSO();
+        }
+    }
+
     @UiHandler("decline")
     void onClickDecline(ClickEvent event) {
-        cewServiceAsync.declineRSOApplication(selected.getId(), Cookies.getCookie(CookyKeys.AUTH_TOKEN), new AsyncCallback<Boolean>() {
+        cewServiceAsync.declineMessage(selected.getId(), UiManager.getInstance().getUserInfo().getAuthToken(), new AsyncCallback<Boolean>() {
             @Override
             public void onFailure(Throwable caught) {
 

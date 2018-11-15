@@ -11,6 +11,7 @@
           <element id="library" level="project" name="gwtmaterial" />
           <element id="library" level="project" name="Hibernate 5.3.2-5.3.2" />
           <element id="library" level="project" name="derby" />
+          <element id="library" level="project" name="gson" />
         </element>
         <element id="directory" name="config">
           <element id="dir-copy" path="$PROJECT_DIR$/config" />

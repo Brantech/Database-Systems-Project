@@ -29,6 +29,9 @@
         <property name="location">
             <column name="LOCATION" sql-type="varchar(255)" not-null="true"/>
         </property>
+        <property name="contactName">
+            <column name="CONTACT_NAME" sql-type="varchar(255)" not-null="true"/>
+        </property>
         <property name="contactPhone">
             <column name="CONTACT_PHONE" sql-type="varchar(255)" not-null="true"/>
         </property>
@@ -39,7 +42,7 @@
             <column name="UNI_ID" sql-type="varchar(255)"/>
         </property>
         <property name="rsoId">
-            <column name="RSO_ID" sql-type="varchar(255)" not-null="true"/>
+            <column name="RSO_ID" sql-type="varchar(255)"/>
         </property>
     </class>
 </hibernate-mapping>

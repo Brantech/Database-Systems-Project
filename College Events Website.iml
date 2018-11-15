@@ -23,6 +23,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
+          <unit-entry name="college:events:hibernate:hibernate.cfg.xml" value="84efc5c2-746e-4501-abf3-19deb160b1db" />
           <unit-entry name="college:hibernate:hibernate.cfg.xml" value="84efc5c2-746e-4501-abf3-19deb160b1db" />
         </datasource-map>
         <naming-strategy-map />
@@ -42,5 +43,6 @@
     <orderEntry type="library" name="gwtmaterial" level="project" />
     <orderEntry type="library" name="Hibernate 5.3.2-5.3.2" level="project" />
     <orderEntry type="library" name="derby" level="project" />
+    <orderEntry type="library" name="gson" level="project" />
   </component>
 </module>

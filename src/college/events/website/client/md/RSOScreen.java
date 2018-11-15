@@ -123,8 +123,10 @@ public class RSOScreen extends Composite {
         }
 
         if(rso.getADMIN_ID().equals(UiManager.getInstance().getUserInfo().getUSER_ID())) {
+            leave.setDisplay(Display.NONE);
             deleteRSO.setDisplay(Display.BLOCK);
         } else {
+            leave.setDisplay(Display.BLOCK);
             deleteRSO.setDisplay(Display.NONE);
         }
 

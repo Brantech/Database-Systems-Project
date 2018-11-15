@@ -1,10 +1,11 @@
 package college.events.website.server;
 
+import college.events.hibernate.entities.EventsEntity;
 import college.events.hibernate.entities.MessagesEntity;
 import college.events.hibernate.entities.RsoEntity;
 import college.events.hibernate.entities.UsersEntity;
 import college.events.website.client.CEWService;
-import college.events.website.shared.Events;
+import college.events.website.shared.messages.EventMessage;
 import college.events.website.shared.messages.RSOMessage;
 import college.events.website.shared.messages.SuperAdminMessage;
 import college.events.website.shared.messages.UserInfo;
@@ -14,7 +15,6 @@ import college.events.hibernate.QueryResponse;
 import college.events.website.shared.rpc.GetRSOResponse;
 import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
@@ -78,9 +78,18 @@ public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
     }
 
     @Override
-    public GenericRPCResponse<ArrayList<Events>> getEvents(String authToken) {
+    public GenericRPCResponse<ArrayList<EventMessage>> getEvents(String authToken) {
         QueryResponse response = manager.getEvents(authToken);
-        return new GenericRPCResponse<>((ArrayList<Events>) response.getPayload(), response.getSuccess());
+        ArrayList<EventMessage> events = new ArrayList<>();
+
+        if(response.getSuccess()) {
+            for(EventsEntity e : (ArrayList<EventsEntity>) response.getPayload()) {
+                events.add(new EventMessage(e.getEventId(), e.getName(), e.getType(), e.getCategory(),
+                        e.getDescription(), e.getTime(), e.getDate(), e.getLocation(), e.getContactName(),
+                        e.getContactPhone(), e.getContactEmail(), manager.getUniversityName(e.getUniId()).getMessage(), manager.getRSOName(e.getRsoId()).getMessage()));
+            }
+        }
+        return new GenericRPCResponse<>(events, response.getSuccess());
     }
 
     @Override
@@ -108,8 +117,8 @@ public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
     }
 
     @Override
-    public boolean declineRSOApplication(String messageID, String authToken) {
-        QueryResponse response = manager.declineRSOApplication(messageID, authToken);
+    public boolean declineMessage(String messageID, String authToken) {
+        QueryResponse response = manager.decline(messageID, authToken);
         return response.getSuccess();
     }
 
@@ -126,5 +135,27 @@ public class CEWServiceImpl extends RemoteServiceServlet implements CEWService {
     @Override
     public boolean deleteRSO(RSOMessage rso, String authToken) {
         return manager.deleteRSO(rso, authToken).getSuccess();
+    }
+
+    @Override
+    public GenericRPCResponse<ArrayList<RSOMessage>> getUsersRSOs(UserInfo info) {
+        QueryResponse response = manager.getUsersRSOs(info);
+
+        ArrayList<RSOMessage> ret = new ArrayList<>();
+        for(RsoEntity r : (List<RsoEntity>) response.getPayload()) {
+            ret.add(new RSOMessage(r.getRsoId(), r.getAdminId(), r.getName(), r.getDescription(), r.getType(), r.getMembers(), r.getUniId()));
+        }
+        return new GenericRPCResponse<>(ret, response.getSuccess());
+    }
+
+    @Override
+    public GenericRPCResponse<String> createEvent(String authToken, String eventName, String description, String location, String date, String time, String rsoID, String category, String privacy, String contactName, String contactPhone, String contactEmail) {
+        QueryResponse response = manager.createEvent(authToken, eventName, description, location, date, time, rsoID, category, privacy, contactName, contactPhone, contactEmail);
+        return new GenericRPCResponse<>((String) response.getPayload(), response.getSuccess());
+    }
+
+    @Override
+    public boolean approveEvent(String messageID, String authToken) {
+        return manager.approveEvent(messageID, authToken).getSuccess();
     }
 }

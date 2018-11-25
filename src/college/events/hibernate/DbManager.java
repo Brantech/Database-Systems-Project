@@ -17,6 +17,7 @@ import org.hibernate.query.NativeQuery;
 
 import javax.persistence.Query;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.net.InetAddress;
 import java.net.ServerSocket;
@@ -145,7 +146,7 @@ public class DbManager {
                 String url = String.format(DB_BASE_URL_TEMPLATE, properties.getDerbyDbServerHost(), DB_SERVER_PORT, properties.getDerbyDbLocation());
 
                 // Loads the hibernate configuration properties
-                Configuration conf = new Configuration().configure(DbManager.class.getResource("hibernate.cfg.xml"));
+                Configuration conf = new Configuration().configure(new File("../config/hibernate.cfg.xml").toURI().toURL());
                 conf.setProperty("hibernate.connection.url", url);
                 conf.setProperty("connection.url", url);
 
@@ -797,9 +798,11 @@ public class DbManager {
         try {
             session.beginTransaction();
 
+            String id = UUID.randomUUID().toString();
             session.createSQLQuery("INSERT INTO APP.RSO VALUES (:id, :adminID, :name, :description, :type, :members, :status, :uniID)")
-                    .setParameter("id", UUID.randomUUID().toString())
-                    .setParameter("adminID", members[0])
+                    .setParameter("id", id)
+                    .setParameter("adminID", session.createSQLQuery("SELECT USER_ID FROM APP.USERS u WHERE u.EMAIL=:email")
+                            .setParameter("email", members[0]).getSingleResult())
                     .setParameter("name", rsoName)
                     .setParameter("description", description)
                     .setParameter("type", type)
@@ -807,6 +810,13 @@ public class DbManager {
                     .setParameter("status", "ACTIVE")
                     .setParameter("uniID", uniID)
                     .executeUpdate();
+
+            for(String s : members) {
+                session.createSQLQuery("INSERT INTO APP.RSOFOLLOWS VALUES (:uID, :rID)")
+                        .setParameter("uID", session.createSQLQuery("SELECT USER_ID FROM APP.USERS u WHERE u.EMAIL=:email")
+                                .setParameter("email", s).getSingleResult())
+                        .setParameter("rID", id);
+            }
         } catch (Exception e) {
             e.printStackTrace();
             session.close();

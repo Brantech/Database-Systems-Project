@@ -129,7 +129,6 @@ public class HomeScreen extends Composite {
             });
         }
 
-        MaterialLoader.loading(true, loginContainer);
         cewServiceAsync.getUniversities(new AsyncCallback<GenericRPCResponse<ArrayList<UniversityMessage>>>() {
             @Override
             public void onFailure(Throwable caught) {
@@ -138,7 +137,6 @@ public class HomeScreen extends Composite {
 
             @Override
             public void onSuccess(GenericRPCResponse<ArrayList<UniversityMessage>> result) {
-                MaterialLoader.loading(false, loginContainer);
                 if(result.isSuccess()) {
                     for (UniversityMessage u : result.getPayload()) {
                         MaterialLink link = new MaterialLink(u.getName(), u.getUniID());

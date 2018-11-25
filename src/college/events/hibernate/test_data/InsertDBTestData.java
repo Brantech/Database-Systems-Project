@@ -57,8 +57,11 @@ public class InsertDBTestData {
         manager.createStudent("yyyyy", "password", "Brandon", "Gotay", "y@a.a", unis.get(1).getUniId());
         manager.createStudent("zzzzz", "password", "Brandon", "Gotay", "z@a.a", unis.get(1).getUniId());
 
-        manager.createDemoRSO("RSO 1","First", "Academic", new String[]{"a@a.a", "b@a.a", "c@a.a", "d@a.a", "e@a.a"}, unis.get(0).getUniId());
-        manager.createDemoRSO("RSO 2","Second", "Sports", new String[]{"f@a.a", "g@a.a", "h@a.a", "i@a.a", "j@a.a"}, unis.get(0).getUniId());
-        manager.createDemoRSO("RSO 3","Third", "Music", new String[]{"l@a.a", "m@a.a", "n@a.a", "o@a.a", "p@a.a"}, unis.get(1).getUniId());
+        if(((List) manager.getRSOs().getPayload()).isEmpty()) {
+            manager.createDemoRSO("RSO 1", "First", "Academic", new String[]{"a@a.a", "b@a.a", "c@a.a", "d@a.a", "e@a.a"}, unis.get(0).getUniId());
+            manager.createDemoRSO("RSO 2", "Second", "Sports", new String[]{"f@a.a", "g@a.a", "h@a.a", "i@a.a", "j@a.a"}, unis.get(0).getUniId());
+            manager.createDemoRSO("RSO 3", "Third", "Music", new String[]{"l@a.a", "m@a.a", "n@a.a", "o@a.a", "p@a.a"}, unis.get(1).getUniId());
+            manager.createDemoRSO("RSO 4", "Fourth", "Film", new String[]{"q@a.a", "r@a.a", "s@a.a", "t@a.a", "u@a.a"}, unis.get(1).getUniId());
+        }
     }
 }

@@ -7,7 +7,7 @@
       <property name="connection.driver_class">org.apache.derby.jdbc.ClientDriver</property>
       <property name="hibernate.dialect">org.hibernate.dialect.DerbyTenSevenDialect</property>
       <property name="connection.pool_size">100</property>
-      <property name="connection.url">jdbc:derby://localhost:1527/C:/Users/Brandon/Desktop/Database-Systems-Project/data</property>
+      <property name="connection.url">jdbc:derby://localhost:1527/C:/Users/Brandon/Desktop/Project/data;create=true</property>
 
       <mapping resource="college/events/hibernate/entities/EventsEntity.hbm.xml"/>
       <mapping class="college.events.hibernate.entities.EventsEntity"/>

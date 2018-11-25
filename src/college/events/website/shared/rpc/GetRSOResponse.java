@@ -1,9 +1,9 @@
 package college.events.website.shared.rpc;
 
 import college.events.website.shared.messages.RSOMessage;
+
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class GetRSOResponse implements Serializable {
     private boolean success;

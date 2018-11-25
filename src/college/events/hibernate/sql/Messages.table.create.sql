@@ -9,6 +9,6 @@ create table APP.Messages (
   SEND_DATE varchar(19) not null,
 
   primary key (ID),
-  foreign key (SENDER_ID) references APP.USERS(USER_ID) on delete cascade ,
-  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID)
+  foreign key (SENDER_ID) references APP.USERS(USER_ID) on delete cascade,
+  foreign key (UNI_ID) references APP.UNIVERSITIES(UNI_ID) on delete cascade
 )

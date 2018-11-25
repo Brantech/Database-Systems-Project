@@ -1,0 +1,58 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+>
+
+    <ui:style>
+        .textField_IBorder input {
+            border: 1px solid black !important;
+            border-bottom: none !important;
+            margin: 0;
+        }
+
+        .textField_ABorder input:focus {
+            border: 2px solid black !important;
+            border-bottom: none !important;
+            box-shadow: none !important;
+        }
+
+        .textFieldText label {
+            color: black !important;
+        }
+
+        .textArea_IBorder textarea {
+            border: 1px solid black !important;
+        }
+
+        .textArea_ABorder textarea:focus {
+            border: 2px solid black !important;
+            box-shadow: none !important;
+        }
+    </ui:style>
+
+    <m:MaterialRow margin="0" borderBottom="1px solid black" padding="5">
+        <m:MaterialColumn grid="s10">
+            <m:MaterialLabel ui:field="author"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s1">
+            <m:MaterialIcon ui:field="cancel" display="NONE" iconType="CLOSE"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s1">
+            <m:MaterialIcon ui:field="save" display="NONE" iconType="SAVE"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn offset="s1" grid="s1">
+            <m:MaterialIcon ui:field="edit"  display="NONE" iconType="EDIT"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12">
+            <m:MaterialTextBox ui:field="commentTitle"
+                               addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                               fieldType="OUTLINED" width="100%" placeholder="Title" readOnly="true"
+                               margin="0"/>
+        </m:MaterialColumn>
+        <m:MaterialColumn grid="s12">
+            <m:MaterialTextArea ui:field="commentMessage"
+                                addStyleNames="{style.textArea_ABorder} {style.textArea_IBorder}"
+                                fieldType="OUTLINED" width="100%" placeholder="Comment" readOnly="true"
+                                margin="0"/>
+        </m:MaterialColumn>
+    </m:MaterialRow>
+</ui:UiBinder>

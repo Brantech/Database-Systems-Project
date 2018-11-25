@@ -23,6 +23,7 @@
 
         <m:MaterialSideNavPush ui:field="sideNav" m:id="sideNav" closeOnClick="true" width="300" showOnAttach="false">
             <m:MaterialLink ui:field="inbox" text="Inbox" display="NONE" iconType="MAIL_OUTLINE"/>
+            <m:MaterialLink ui:field="createUni" text="Create University" display="NONE" iconType="SCHOOL"/>
             <m:MaterialLink ui:field="events" text="Events" iconType="ASSIGNMENT"/>
             <m:MaterialLink ui:field="rso" text="RSO's" iconType="GROUP"/>
             <m:MaterialLink ui:field="logout" text="Logout" iconType="EXIT_TO_APP"/>

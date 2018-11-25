@@ -1,16 +1,17 @@
 package college.events.hibernate.security;
 
 import com.google.gson.JsonObject;
-import java.nio.ByteBuffer;
-import java.security.AlgorithmParameters;
-import java.security.SecureRandom;
-import java.util.Base64;
+
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.nio.ByteBuffer;
+import java.security.AlgorithmParameters;
+import java.security.SecureRandom;
+import java.util.Base64;
 
 /**
  * Used to encrypt and authenticate strings
@@ -44,7 +45,7 @@ public class EncryptionService {
     /**
      * Length of the encrypted message
      */
-    private static final int ENCRYPTED_LENGTH = 256;
+    private static final int ENCRYPTED_LENGTH = 128;
 
     /**
      * Length of the the generated salt

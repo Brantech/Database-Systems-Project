@@ -12,6 +12,7 @@ import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.client.ui.MaterialLabel;
 import gwt.material.design.client.ui.MaterialRow;
+
 import java.util.Date;
 
 public class EventItem extends Composite {
@@ -45,7 +46,7 @@ public class EventItem extends Composite {
         name.setText(event.getName());
         university.setText(event.getUniversity());
         category.setText(event.getCategory());
-        date.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(event.getDate()))));
+        date.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(event.getDate().split(" ")[0]))));
     }
 
     @UiHandler("mainContainer")
@@ -54,4 +55,5 @@ public class EventItem extends Composite {
             callback.onSuccess(null);
         }
     }
+
 }

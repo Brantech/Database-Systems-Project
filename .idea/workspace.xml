@@ -7,27 +7,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3bfbe703-54d9-4332-a259-90c34a775872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.ui.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/College_Events_Website_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/College_Events_Website_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/CommentEntity.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/CommentEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Comments.table.create.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/Comment.ui.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/messages/CommentsMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/college/events/website/shared/messages/UniversityMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/College Events Website.iml" beforeDir="false" afterPath="$PROJECT_DIR$/College Events Website.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/webapps/README.TXT" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/DbManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/DbManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/MessagesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/MessagesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/RsofollowsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/RsofollowsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/UniversitiesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/UniversitiesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/sql/Messages.table.create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Messages.table.create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/hibernate/test_data/InsertDBTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/hibernate/test_data/InsertDBTestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/CreateUniversity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/CreateUniversity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/InboxMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/InboxMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/messages/EventMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/rpc/GetRSOResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/rpc/GetRSOResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/utils/DateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/EmptyValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/MatchValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/NameValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/PasswordValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/college/events/website/shared/validators/UsernameValidator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,18 +81,12 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
+        <item name="CEW" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
+        <item name="CEW" type="feb32156:DbDataSourceImpl" />
         <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="CEW_DB" type="feb32156:DbDataSourceImpl" />
-        <item name="APP: schema" type="6aa84934:DerbyImplModel$Schema" />
-        <item name="EVENTS: table" type="3b012a07:DerbyImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -112,49 +137,64 @@
     <session id="-626691238">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="COMMENT" value="8" />
+          <entry key="EVENTS" value="6" />
+          <entry key="MESSAGES" value="2" />
+          <entry key="RSO" value="8" />
+          <entry key="RSOFOLLOWS" value="3" />
+          <entry key="UNIVERSITIES" value="9" />
+          <entry key="USERS" value="5" />
           <entry key="css" value="8" />
           <entry key="gif" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="15" />
+          <entry key="java" value="73" />
           <entry key="js" value="1" />
-          <entry key="properties" value="1" />
-          <entry key="sql" value="9" />
-          <entry key="xml" value="11" />
+          <entry key="properties" value="3" />
+          <entry key="sql" value="31" />
+          <entry key="xml" value="28" />
+          <entry key="xml/College Events Website/hibernate/Hibernate/PersistenceModel" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="8" />
+          <entry key="Database Element" value="41" />
           <entry key="HTML" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="73" />
           <entry key="JavaScript" value="1" />
-          <entry key="Properties" value="1" />
-          <entry key="SQL" value="6" />
-          <entry key="Scratch" value="3" />
-          <entry key="XML" value="11" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="3" />
+          <entry key="SQL" value="26" />
+          <entry key="Scratch" value="4" />
+          <entry key="UML" value="2" />
+          <entry key="XML" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="cell" value="3" />
           <entry key="css" value="2" />
-          <entry key="java" value="2740" />
-          <entry key="sql" value="558" />
-          <entry key="xml" value="2251" />
+          <entry key="java" value="17207" />
+          <entry key="sql" value="933" />
+          <entry key="xml" value="3756" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="59" />
-          <entry key="JAVA" value="2740" />
-          <entry key="SQL" value="558" />
-          <entry key="XML" value="2194" />
+          <entry key="CSS" value="64" />
+          <entry key="JAVA" value="17202" />
+          <entry key="SQL" value="938" />
+          <entry key="Scratch" value="3" />
+          <entry key="XML" value="3694" />
         </counts>
       </usages-collector>
     </session>
@@ -245,104 +285,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="246" column="34" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
+            <state relative-caret-position="102">
+              <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
               <folding>
-                <element signature="class#EventsScreenUiBinder#0;class#EventsScreen#0" />
-                <element signature="method#EventsScreen#0;class#EventsScreen#0" />
-                <element signature="method#onFailure#0;class#1591:2301" />
-                <element signature="class#3605:3828" />
-                <element signature="method#onFailure#0;class#3605:3828" />
-                <element signature="method#onSuccess#0;class#3605:3872" />
-                <element signature="class#3553:4021" />
-                <element signature="method#onFailure#0;class#3553:3854" />
-                <element signature="method#onSuccess#0;class#3553:4021" />
-                <element signature="class#4114:4465" />
-                <element signature="method#onFailure#0;class#4114:4465" />
-                <element signature="method#onSuccess#0;class#4380:4794" />
-                <element signature="class#5197:5452" />
-                <element signature="method#onFailure#0;class#5197:5452" />
-                <element signature="method#onSuccess#0;class#5197:5532" />
-                <element signature="class#5624:5847" />
-                <element signature="method#onFailure#0;class#5624:5847" />
-                <element signature="method#onSuccess#0;class#5624:5895" />
-                <element signature="class#5959:6229" />
-                <element signature="method#onFailure#0;class#5959:6229" />
-                <element signature="method#onSuccess#0;class#5945:6217" />
-                <element signature="e#6412#6428#0" expanded="true" />
-                <element signature="e#6936#6971#0" expanded="true" />
-                <element signature="e#6936#6971#0" expanded="true" />
-                <element signature="e#6985#7026#0" expanded="true" />
-                <element signature="e#6985#7026#0" expanded="true" />
-                <element signature="e#6448#6462#0" expanded="true" />
-                <element signature="e#7515#7544#0" expanded="true" />
-                <element signature="e#7387#7398#0" expanded="true" />
-                <element signature="e#7515#7544#0" expanded="true" />
-                <element signature="e#7570#7613#0" expanded="true" />
-                <element signature="e#7449#7467#0" expanded="true" />
-                <element signature="e#7570#7613#0" expanded="true" />
-                <element signature="e#7639#7676#0" expanded="true" />
-                <element signature="e#7515#7530#0" expanded="true" />
-                <element signature="e#7639#7676#0" expanded="true" />
-                <element signature="e#7702#7747#0" expanded="true" />
-                <element signature="e#7582#7601#0" expanded="true" />
-                <element signature="e#7702#7747#0" expanded="true" />
-                <element signature="e#7773#7816#0" expanded="true" />
-                <element signature="e#7652#7670#0" expanded="true" />
-                <element signature="e#7773#7816#0" expanded="true" />
-                <element signature="e#7842#7887#0" expanded="true" />
-                <element signature="e#7722#7741#0" expanded="true" />
-                <element signature="e#7842#7887#0" expanded="true" />
-                <element signature="e#7913#8015#0" expanded="true" />
-                <element signature="e#7916#7927#0" expanded="true" />
-                <element signature="e#7913#8015#0" expanded="true" />
-                <element signature="e#8041#8137#0" expanded="true" />
-                <element signature="e#8039#8050#0" expanded="true" />
-                <element signature="e#8041#8137#0" expanded="true" />
-                <element signature="e#8163#8200#0" expanded="true" />
-                <element signature="e#8136#8151#0" expanded="true" />
-                <element signature="e#8163#8200#0" expanded="true" />
-                <element signature="e#8226#8258#0" expanded="true" />
-                <element signature="e#8198#8209#0" expanded="true" />
-                <element signature="e#8226#8258#0" expanded="true" />
-                <element signature="e#8284#8311#0" expanded="true" />
-                <element signature="e#8252#8262#0" expanded="true" />
-                <element signature="e#8284#8311#0" expanded="true" />
-                <element signature="method#createDropDownItem#0;class#EventsScreen#0" />
-                <element signature="e#4564#4675#0" />
-                <element signature="e#8925#9312#0" />
-                <element signature="e#9271#9353#0" />
-                <element signature="e#9364#9384#0" expanded="true" />
-                <element signature="e#9364#9384#0" expanded="true" />
-                <element signature="e#9394#9421#0" expanded="true" />
-                <element signature="e#9394#9421#0" expanded="true" />
-                <element signature="e#9431#9455#0" expanded="true" />
-                <element signature="e#9431#9455#0" expanded="true" />
-                <element signature="e#9465#9485#0" expanded="true" />
-                <element signature="e#9465#9485#0" expanded="true" />
-                <element signature="e#9495#9515#0" expanded="true" />
-                <element signature="e#9495#9515#0" expanded="true" />
-                <element signature="e#9525#9544#0" expanded="true" />
-                <element signature="e#9525#9544#0" expanded="true" />
-                <element signature="e#9554#9578#0" expanded="true" />
-                <element signature="e#9554#9578#0" expanded="true" />
-                <element signature="e#9588#9611#0" expanded="true" />
-                <element signature="e#9588#9611#0" expanded="true" />
-                <element signature="e#9621#9649#0" expanded="true" />
-                <element signature="e#9621#9649#0" expanded="true" />
-                <element signature="e#9659#9686#0" expanded="true" />
-                <element signature="e#9659#9686#0" expanded="true" />
-                <element signature="e#9696#9724#0" expanded="true" />
-                <element signature="e#9696#9724#0" expanded="true" />
-                <element signature="method#onEventRSOClick#0;class#EventsScreen#0" />
-                <element signature="method#onSubmitClick#0;class#EventsScreen#0" />
-                <element signature="class#8964:9299" />
-                <element signature="method#onFailure#0;class#8964:9299" />
-                <element signature="method#onSuccess#0;class#9060:9474" />
+                <element signature="n#ui:style#0;n#ui:UiBinder#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/test_data/InsertDBTestData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="61" column="125" selection-start-line="61" selection-start-column="125" selection-end-line="61" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -350,69 +309,126 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="297" column="97" selection-start-line="297" selection-start-column="97" selection-end-line="297" selection-end-column="97" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="68" />
               <folding>
                 <element signature="n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialRow#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialRow#1;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialCard#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialRow#0;n#m:MaterialCard#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialCard#2;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#3;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialColumn#4;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialColumn#5;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#6;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#7;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialLabel#0;n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialColumn#10;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#1;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialColumn#2;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-                <element signature="n#m:MaterialColumn#6;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#3;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#7;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#9;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#10;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#11;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
                 <element signature="n#m:MaterialColumn#12;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialLabel#0;n#m:MaterialColumn#12;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#13;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+                <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#15;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java">
+        <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="212">
+              <caret line="791" column="54" selection-start-line="791" selection-start-column="54" selection-end-line="791" selection-end-column="54" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#1380#1409#0" expanded="true" />
-                <element signature="e#987#1002#0" expanded="true" />
-                <element signature="e#1380#1409#0" expanded="true" />
-                <element signature="e#1419#1460#0" expanded="true" />
-                <element signature="e#1032#1053#0" expanded="true" />
-                <element signature="e#1419#1460#0" expanded="true" />
-                <element signature="e#1470#1507#0" expanded="true" />
-                <element signature="e#1081#1100#0" expanded="true" />
-                <element signature="e#1470#1507#0" expanded="true" />
-                <element signature="e#1517#1619#0" expanded="true" />
-                <element signature="e#1267#1282#0" expanded="true" />
-                <element signature="e#1517#1619#0" expanded="true" />
-                <element signature="e#1701#1771#0" expanded="true" />
-                <element signature="e#1701#1771#0" expanded="true" />
-                <element signature="e#1701#1771#0" expanded="true" />
+                <element signature="docComment;class#DbManager#0" />
+                <element signature="e#1102#1381#0" />
+                <element signature="e#1387#1652#0" />
+                <element signature="e#1658#1698#0" />
+                <element signature="e#1743#1790#0" />
+                <element signature="e#1840#1891#0" />
+                <element signature="e#1947#2010#0" />
+                <element signature="e#2065#2122#0" />
+                <element signature="e#2167#2226#0" />
+                <element signature="e#2325#2388#0" />
+                <element signature="e#3387#3450#0" />
+                <element signature="e#3387#4025#0" />
+                <element signature="e#4031#4098#0" />
+                <element signature="e#4031#4254#0" />
+                <element signature="e#4260#4341#0" />
+                <element signature="e#4260#5376#0" />
+                <element signature="e#5382#5429#0" />
+                <element signature="e#5382#6074#0" />
+                <element signature="e#6080#6130#0" />
+                <element signature="e#6080#7195#0" />
+                <element signature="e#7201#7327#0" />
+                <element signature="e#7201#7741#0" />
+                <element signature="e#7747#7940#0" />
+                <element signature="e#7747#9565#0" />
+                <element signature="e#9571#9776#0" />
+                <element signature="e#9571#11303#0" />
+                <element signature="e#11309#11323#0" />
+                <element signature="e#11329#11636#0" />
+                <element signature="e#11329#13379#0" />
+                <element signature="e#13385#13755#0" />
+                <element signature="e#13385#15561#0" />
+                <element signature="e#15567#15925#0" />
+                <element signature="e#15567#17887#0" />
+                <element signature="e#17893#18074#0" />
+                <element signature="e#17893#19129#0" />
+                <element signature="e#19135#19177#0" />
+                <element signature="e#19135#20047#0" />
+                <element signature="e#20053#21199#0" />
+                <element signature="e#21240#22387#0" />
+                <element signature="e#22393#22966#0" />
+                <element signature="e#22972#23658#0" />
+                <element signature="e#23664#28217#0" />
+                <element signature="e#0#104#1" />
+                <element signature="e#28223#29836#0" />
+                <element signature="e#29842#32655#0" />
+                <element signature="e#0#99#1" />
+                <element signature="e#0#51#1" />
+                <element signature="e#0#51#1" />
+                <element signature="e#32661#33854#0" />
+                <element signature="e#33860#36049#0" />
+                <element signature="e#0#70#1" />
+                <element signature="e#0#51#1" />
+                <element signature="e#36055#38169#0" />
+                <element signature="e#38192#45235#0" />
+                <element signature="e#0#53#1" />
+                <element signature="e#0#105#1" />
+                <element signature="e#0#42#1" />
+                <element signature="e#0#151#1" />
+                <element signature="e#45241#45858#0" />
+                <element signature="e#45864#46562#0" />
+                <element signature="e#46568#47142#0" />
+                <element signature="e#0#46#1" />
+                <element signature="e#47148#48060#0" />
+                <element signature="e#48066#49557#0" />
+                <element signature="e#49563#53442#0" />
+                <element signature="e#0#52#1" />
+                <element signature="e#0#174#1" />
+                <element signature="e#0#209#1" />
+                <element signature="e#0#204#1" />
+                <element signature="e#0#229#1" />
+                <element signature="e#53448#55654#0" />
+                <element signature="e#0#47#1" />
+                <element signature="e#0#73#1" />
+                <element signature="e#55660#57284#0" />
+                <element signature="e#0#43#1" />
+                <element signature="e#0#71#1" />
+                <element signature="e#57290#58553#0" />
+                <element signature="e#0#48#1" />
+                <element signature="e#0#53#1" />
+                <element signature="e#58559#58753#0" />
+                <element signature="e#58559#59360#0" />
+                <element signature="e#59366#59556#0" />
+                <element signature="e#59366#59884#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.ui.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="110" selection-start-line="13" selection-start-column="110" selection-end-line="13" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -463,6 +479,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Brandon\Desktop\Database-Systems-Project\external\gwtmaterial\gwt-material-2.1.jar!\gwt\material</dir>
+      <dir>C:\Users\Brandon\Desktop\Database-Systems-Project\src\college\events\hibernate\sql</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -471,24 +488,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/MessagesEntity.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/test_data/InsertDBTestData.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/InboxMessage.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/InboxRPCMessage.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/SuperAdminMessage.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/InboxMessage.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/InboxMessage.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/Inbox.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/CreateUniversity.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/Events.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/messages/LoginResponseMessage.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/QueryResponse.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/ScreenEnum.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Messages.table.create.sql" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/shared/messages/SuperAdminMessage.java" />
         <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.hbm.xml" />
         <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/UniversitiesEntity.hbm.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java" />
@@ -496,32 +495,50 @@
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItems.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItems.ui.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItem.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/RSOFollows.table.create.sql" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItem.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/TwoListResponse.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/rpc/GetRSOResponse.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/messages/RSOMessage.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" />
         <option value="$PROJECT_DIR$/war/Website.css" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/UiManager.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql" />
         <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.java" />
         <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java" />
-        <option value="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml" />
-        <option value="$PROJECT_DIR$/src/college/events/hibernate/DbManager.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/shared/messages/EventMessage.java" />
+        <option value="$PROJECT_DIR$/config/database.properties" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/CommentEntity.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/CommentEntity.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Comments.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Messages.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/messages/UniversityMessage.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/RSOFollows.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/shared/messages/CommentsMessage.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/Comment.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/Comment.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/CEWService.java" />
         <option value="$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/Start.java" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml" />
+        <option value="$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/DbManager.java" />
+        <option value="$PROJECT_DIR$/src/college/events/hibernate/test_data/InsertDBTestData.java" />
       </list>
     </option>
   </component>
@@ -538,10 +555,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="307" />
+    <option name="y" value="-12" />
+    <option name="width" value="1550" />
+    <option name="height" value="840" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -552,7 +569,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -563,6 +580,11 @@
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -593,16 +615,7 @@
               <item name="college" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
               <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="test_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -630,45 +643,6 @@
               <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="md" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="md" type="462c0819:PsiDirectoryNode" />
-              <item name="subwidgets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Database-Systems-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="college" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="messages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Database-Systems-Project" type="b2602c69:ProjectViewProjectNode" />
@@ -685,19 +659,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="derby.embedded&#10;derby" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="84efc5c2-746e-4501-abf3-19deb160b1db" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="4e50ec8e-9b65-4693-b04f-f92912375df3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542269295880" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543126899670" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Derby (Remote)" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Computer Architecture/Cache Simulator" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/external/gson/gson.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -752,7 +727,7 @@
     <configuration name="CEW" type="GWT.ConfigurationType" factoryName="GWT Configuration">
       <option name="RUN_PAGE" value="Website.html" />
       <option name="USE_SUPER_DEV_MODE" value="true" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\tatte\Desktop\College\Database Systems\Database-Systems-Project\server" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Brandon\Desktop\Database-Systems-Project\server" />
       <module name="College Events Website" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -1588,11 +1563,13 @@
       <workItem from="1542089576057" duration="1128000" />
       <workItem from="1542146589057" duration="14213000" />
       <workItem from="1542234096770" duration="33477000" />
+      <workItem from="1542298446401" duration="5779000" />
+      <workItem from="1543024275846" duration="59069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375074000" />
+    <option name="totallyTimeSpent" value="439922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1604,10 +1581,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4856802" visible="true" weight="0.18124007" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48140496" visible="true" weight="0.22348994" />
       <window_info id="Structure" order="1" sideWeight="0.51004016" side_tool="true" weight="0.16494435" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1615,17 +1592,58 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Favorites" order="7" sideWeight="0.51193637" side_tool="true" weight="0.16613673" />
-      <window_info id="Persistence" order="8" sideWeight="0.51431984" side_tool="true" weight="0.17289348" />
+      <window_info id="Persistence" order="8" sideWeight="0.51859504" side_tool="true" weight="0.22348994" />
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5011924" side_tool="true" weight="0.39806607" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.25946817" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" weight="0.24415794" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49880764" weight="0.32473812" />
-      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32883242" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.25815603" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" weight="0.24397163" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49880764" weight="0.3134752" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32765958" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.3248227" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32814237" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49932885" weight="0.3248227" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32883242" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32814237" />
+      <window_info anchor="bottom" id="Database Changes" order="13" weight="0.24916574" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32565528" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="15" />
+      <window_info anchor="bottom" id="JProfiler" order="16" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="17" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Maven Projects" order="2" weight="0.3295302" />
+      <window_info anchor="right" id="Properties" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.20201342" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48140496" visible="true" weight="0.22348994" />
+      <window_info id="Structure" order="1" sideWeight="0.51004016" side_tool="true" weight="0.16494435" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Favorites" order="7" sideWeight="0.51193637" side_tool="true" weight="0.16613673" />
+      <window_info id="Persistence" order="8" sideWeight="0.51859504" side_tool="true" weight="0.22348994" />
+      <window_info id="Web" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5011924" side_tool="true" weight="0.39806607" />
+      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.25815603" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" weight="0.24397163" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49880764" visible="true" weight="0.3134752" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.32765958" />
       <window_info anchor="bottom" id="Terminal" order="5" weight="0.3255439" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32814237" />
       <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49932885" weight="0.3255439" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49932885" weight="0.3248227" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32883242" />
@@ -1639,49 +1657,13 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Maven Projects" order="2" weight="0.3298887" />
       <window_info anchor="right" id="Properties" order="3" />
-      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.12082671" />
+      <window_info anchor="right" id="Database" order="4" weight="0.20201342" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Commander" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="right" id="SciView" order="10" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Nl-Palette" order="0" />
-      <window_info id="Capture Tool" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.4989429" visible="true" weight="0.15937997" />
-      <window_info id="Structure" order="7" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info id="Persistence" order="8" sideWeight="0.5010571" side_tool="true" weight="0.20402685" />
-      <window_info id="Web" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.49932885" weight="0.32883242" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49932885" visible="true" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49932885" visible="true" weight="0.18665607" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.32907802" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="right" id="Properties" order="2" />
-      <window_info anchor="right" id="Database" order="3" weight="0.24324325" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1701,51 +1683,81 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>397</line>
+          <line>393</line>
           <properties />
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>161</line>
+          <line>156</line>
           <properties />
           <option name="timeStamp" value="208" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>338</line>
+          <line>334</line>
           <properties />
           <option name="timeStamp" value="210" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>455</line>
+          <line>451</line>
           <properties />
           <option name="timeStamp" value="211" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>286</line>
-          <properties />
-          <option name="timeStamp" value="228" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>676</line>
-          <properties />
-          <option name="timeStamp" value="284" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>1185</line>
+          <line>1214</line>
           <properties />
           <option name="timeStamp" value="285" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
-          <line>1297</line>
+          <line>512</line>
           <properties />
-          <option name="timeStamp" value="287" />
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
+          <line>217</line>
+          <properties />
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
+          <line>1531</line>
+          <properties />
+          <option name="timeStamp" value="307" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
+          <line>1079</line>
+          <properties />
+          <option name="timeStamp" value="336" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
+          <line>1460</line>
+          <properties />
+          <option name="timeStamp" value="354" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
+          <line>1412</line>
+          <properties />
+          <option name="timeStamp" value="360" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java</url>
+          <line>1388</line>
+          <properties />
+          <option name="timeStamp" value="384" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1756,377 +1768,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/USERS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/messages/SuperAdminMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="77" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/UniversitiesEntity.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/messages/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
-          <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItem.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#843#860#0" expanded="true" />
-            <element signature="e#889#906#0" expanded="true" />
-            <element signature="e#1149#1196#0" expanded="true" />
-            <element signature="e#1170#1195#0" expanded="true" />
-            <element signature="e#938#958#0" expanded="true" />
-            <element signature="e#1170#1195#0" expanded="true" />
-            <element signature="e#1149#1196#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/Inbox.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="43" column="64" lean-forward="true" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/rpc/GetRSOResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/rpc/GenericRPCResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;class#GenericRPCResponse#0" />
-            <element signature="docComment;field#success#0;class#GenericRPCResponse#0" />
-            <element signature="docComment;method#GenericRPCResponse#0;class#GenericRPCResponse#0" />
-            <element signature="docComment;method#GenericRPCResponse#1;class#GenericRPCResponse#0" />
-            <element signature="docComment;method#GenericRPCResponse#2;class#GenericRPCResponse#0" />
-            <element signature="docComment;method#isSuccess#0;class#GenericRPCResponse#0" />
-            <element signature="docComment;method#setSuccess#0;class#GenericRPCResponse#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/messages/RSOMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/RSOFOLLOWS">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/RSOFollows.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/external/hibernate/javax.persistence-api-2.2.jar!/javax/persistence/Query.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/RSO">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="n#m:MaterialRow#0;n#m:MaterialCard#0;n#m:MaterialRow#1;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialDialog#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialButton#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#3;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#4;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#5;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#6;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#7;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/Website.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/Website.gwt.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding>
-            <element signature="docComment;method#MainContainer#0;class#MainContainer#0" />
-            <element signature="docComment;method#setDisplayedScreen#0;class#MainContainer#0" />
-            <element signature="e#2075#2105#0" expanded="true" />
-            <element signature="e#2075#2105#0" expanded="true" />
-            <element signature="e#2115#2147#0" expanded="true" />
-            <element signature="e#2115#2147#0" expanded="true" />
-            <element signature="e#2157#2186#0" expanded="true" />
-            <element signature="e#2157#2186#0" expanded="true" />
-            <element signature="method#onLogoutClick#0;class#MainContainer#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/UiManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="60" column="26" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
-          <folding>
-            <element signature="docComment;class#UiManager#0" />
-            <element signature="docComment;field#instance#0;class#UiManager#0" />
-            <element signature="docComment;field#mainContainer#0;class#UiManager#0" />
-            <element signature="docComment;method#UiManager#0;class#UiManager#0" />
-            <element signature="method#UiManager#0;class#UiManager#0" />
-            <element signature="docComment;method#getInstance#0;class#UiManager#0" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-            <element signature="docComment;method#displayScreen#0;class#UiManager#0" />
-            <element signature="method#displayScreen#0;class#UiManager#0" />
-            <element signature="docComment;method#displayHomeScreen#0;class#UiManager#0" />
-            <element signature="docComment;method#displayCreateUniversityScreen#0;class#UiManager#0" />
-            <element signature="docComment;method#displayInboxScreen#0;class#UiManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="115" column="40" selection-start-line="115" selection-start-column="40" selection-end-line="115" selection-end-column="40" />
-          <folding>
-            <element signature="method#RSOScreen#0;class#RSOScreen#0" />
-            <element signature="method#resetRSOCreator#0;class#RSOScreen#0" />
-            <element signature="method#addRSOItems#0;class#RSOScreen#0" />
-            <element signature="method#viewRSO#0;class#RSOScreen#0" />
-            <element signature="e#4372#4403#0" expanded="true" />
-            <element signature="e#4372#4403#0" expanded="true" />
-            <element signature="method#onUnload#0;class#RSOScreen#0" />
-            <element signature="method#onApplyClick#0;class#RSOScreen#0" />
-            <element signature="method#onRSOTypeSelect#0;class#RSOScreen#0" />
-            <element signature="method#onJoinClick#0;class#RSOScreen#0" />
-            <element signature="method#onLeaveClick#0;class#RSOScreen#0" />
-            <element signature="method#onDeleteRSOClick#0;class#RSOScreen#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/Inbox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="128" column="35" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
-          <folding>
-            <element signature="method#init#0;class#Inbox#0" />
-            <element signature="class#2078:2880" />
-            <element signature="method#showMessages#0;class#Inbox#0" />
-            <element signature="e#3614#3637#0" expanded="true" />
-            <element signature="e#3614#3651#0" expanded="true" />
-            <element signature="e#3614#3666#0" expanded="true" />
-            <element signature="e#4207#4223#0" expanded="true" />
-            <element signature="e#4220#4243#0" expanded="true" />
-            <element signature="e#4220#4257#0" expanded="true" />
-            <element signature="e#4220#4272#0" expanded="true" />
-            <element signature="e#4204#4229#0" expanded="true" />
-            <element signature="e#4859#4900#0" expanded="true" />
-            <element signature="e#4859#4900#0" expanded="true" />
-            <element signature="e#5084#5107#0" expanded="true" />
-            <element signature="e#5084#5121#0" expanded="true" />
-            <element signature="e#5084#5136#0" expanded="true" />
-            <element signature="e#4978#4979#0" expanded="true" />
-            <element signature="e#5015#5016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
-          <folding>
-            <element signature="docComment;method#HomeScreen#0;class#HomeScreen#0" />
-            <element signature="e#3354#3410#0" expanded="true" />
-            <element signature="e#3354#3410#0" expanded="true" />
-            <element signature="e#3439#3458#0" expanded="true" />
-            <element signature="e#3439#3468#0" expanded="true" />
-            <element signature="e#3522#3545#0" expanded="true" />
-            <element signature="e#3587#3610#0" expanded="true" />
-            <element signature="e#3705#3728#0" expanded="true" />
-            <element signature="e#4418#4437#0" expanded="true" />
-            <element signature="e#4418#4447#0" expanded="true" />
-            <element signature="e#4501#4524#0" expanded="true" />
-            <element signature="e#4566#4589#0" expanded="true" />
-            <element signature="e#4684#4707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/InboxMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/InboxMessage.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="14" lean-forward="true" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="113" column="24" selection-start-line="113" selection-start-column="24" selection-end-line="113" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/EventsEntity.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -2134,84 +1775,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/MESSAGES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="110" selection-start-line="13" selection-start-column="110" selection-end-line="13" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#1380#1409#0" expanded="true" />
-            <element signature="e#987#1002#0" expanded="true" />
-            <element signature="e#1380#1409#0" expanded="true" />
-            <element signature="e#1419#1460#0" expanded="true" />
-            <element signature="e#1032#1053#0" expanded="true" />
-            <element signature="e#1419#1460#0" expanded="true" />
-            <element signature="e#1470#1507#0" expanded="true" />
-            <element signature="e#1081#1100#0" expanded="true" />
-            <element signature="e#1470#1507#0" expanded="true" />
-            <element signature="e#1517#1619#0" expanded="true" />
-            <element signature="e#1267#1282#0" expanded="true" />
-            <element signature="e#1517#1619#0" expanded="true" />
-            <element signature="e#1701#1771#0" expanded="true" />
-            <element signature="e#1701#1771#0" expanded="true" />
-            <element signature="e#1701#1771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="297" column="97" selection-start-line="297" selection-start-column="97" selection-end-line="297" selection-end-column="97" />
-          <folding>
-            <element signature="n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialRow#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialRow#1;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialCard#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialRow#0;n#m:MaterialCard#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialCard#2;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#3;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#4;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#5;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#6;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#7;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialLabel#0;n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#10;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#1;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#2;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#6;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#10;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-            <element signature="n#m:MaterialColumn#12;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/MESSAGES" />
     <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/messages/EventMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -2225,10 +1789,203 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/EVENTS" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4e50ec8e-9b65-4693-b04f-f92912375df3/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/UsersEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/security/EncryptionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#concatArray#0;class#EncryptionService#0" />
+            <element signature="method#concatArray#0;class#EncryptionService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="85" column="74" selection-start-line="85" selection-start-column="74" selection-end-line="85" selection-end-column="74" />
+          <folding>
+            <element signature="docComment;method#MainContainer#0;class#MainContainer#0" />
+            <element signature="docComment;method#setDisplayedScreen#0;class#MainContainer#0" />
+            <element signature="e#2495#2496#0" expanded="true" />
+            <element signature="e#2519#2520#0" expanded="true" />
+            <element signature="method#onLogoutClick#0;class#MainContainer#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/MainContainer.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="108" selection-start-line="25" selection-start-column="108" selection-end-line="25" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="65" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/MessagesEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/MessagesEntity.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/CommentEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
+          <folding>
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1384#1385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Comments.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Messages.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/messages/UniversityMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/MESSAGES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/RSOFollows.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/RSOFOLLOWS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Events.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="13" column="110" selection-start-line="13" selection-start-column="110" selection-end-line="13" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/EventItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/shared/messages/CommentsMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/Comment.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="36" column="76" selection-start-line="36" selection-start-column="76" selection-end-line="36" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/COMMENT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/EVENTS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/QueryResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+        <state relative-caret-position="119">
+          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
           <folding>
             <element signature="e#1982#1983#0" expanded="true" />
             <element signature="e#2012#2013#0" expanded="true" />
@@ -2238,215 +1995,395 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWServiceAsync.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/CEWService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/college/events/website/server/CEWServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="88" column="167" selection-start-line="88" selection-start-column="167" selection-end-line="88" selection-end-column="167" />
+        <state relative-caret-position="235">
+          <caret line="180" column="67" selection-start-line="180" selection-start-column="67" selection-end-line="180" selection-end-column="67" />
           <folding>
+            <element signature="method#getLocations#0;class#CEWServiceImpl#0" />
             <element signature="method#login#0;class#CEWServiceImpl#0" />
-            <element signature="method#login#1;class#CEWServiceImpl#0" />
-            <element signature="method#createAccount#0;class#CEWServiceImpl#0" />
             <element signature="method#createUniversity#0;class#CEWServiceImpl#0" />
             <element signature="method#createRSO#0;class#CEWServiceImpl#0" />
             <element signature="method#getSuperAdminMessages#0;class#CEWServiceImpl#0" />
             <element signature="method#isUsernameAvailable#0;class#CEWServiceImpl#0" />
-            <element signature="e#4194#4555#0" expanded="true" />
-            <element signature="e#4454#4506#0" expanded="true" />
-            <element signature="e#4529#4541#0" expanded="true" />
-            <element signature="e#4510#4555#0" expanded="true" />
-            <element signature="e#4194#4555#0" expanded="true" />
-            <element signature="method#getRSOs#0;class#CEWServiceImpl#0" />
+            <element signature="method#writeComment#0;class#CEWServiceImpl#0" />
             <element signature="method#approveRSOApplication#0;class#CEWServiceImpl#0" />
             <element signature="method#declineMessage#0;class#CEWServiceImpl#0" />
             <element signature="method#deleteRSO#0;class#CEWServiceImpl#0" />
-            <element signature="method#getUsersRSOs#0;class#CEWServiceImpl#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="691" column="25" selection-start-line="691" selection-start-column="25" selection-end-line="691" selection-end-column="25" />
+        <state relative-caret-position="283">
+          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/RSO.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/RsoEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="84" column="29" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
           <folding>
-            <element signature="docComment;class#DbManager#0" />
-            <element signature="class#UserType#0;class#DbManager#0" />
-            <element signature="class#MessageType#0;class#DbManager#0" />
-            <element signature="docComment;field#instance#0;class#DbManager#0" />
-            <element signature="docComment;field#properties#0;class#DbManager#0" />
-            <element signature="docComment;field#sessionFactory#0;class#DbManager#0" />
-            <element signature="docComment;field#control#0;class#DbManager#0" />
-            <element signature="docComment;field#DB_SERVER_PORT#0;class#DbManager#0" />
-            <element signature="docComment;field#DB_BASE_URL_TEMPLATE#0;class#DbManager#0" />
-            <element signature="docComment;field#CREATE_UNIVERSITIES_TABLE#0;class#DbManager#0" />
-            <element signature="docComment;method#DbManager#0;class#DbManager#0" />
-            <element signature="method#DbManager#0;class#DbManager#0" />
-            <element signature="docComment;method#getInstance#0;class#DbManager#0" />
-            <element signature="method#getInstance#0;class#DbManager#0" />
-            <element signature="docComment;method#buildSessionFactory#0;class#DbManager#0" />
-            <element signature="method#buildSessionFactory#0;class#DbManager#0" />
-            <element signature="docComment;method#startDbServer#0;class#DbManager#0" />
-            <element signature="method#startDbServer#0;class#DbManager#0" />
-            <element signature="docComment;method#initDb#0;class#DbManager#0" />
-            <element signature="method#initDb#0;class#DbManager#0" />
-            <element signature="docComment;method#login#0;class#DbManager#0" />
-            <element signature="method#login#0;class#DbManager#0" />
-            <element signature="docComment;method#login#1;class#DbManager#0" />
-            <element signature="method#login#1;class#DbManager#0" />
-            <element signature="docComment;method#createUniversity#0;class#DbManager#0" />
-            <element signature="method#createUniversity#0;class#DbManager#0" />
-            <element signature="e#11408#11422#0" />
-            <element signature="docComment;method#createSuperAdmin#0;class#DbManager#0" />
-            <element signature="method#createSuperAdmin#0;class#DbManager#0" />
-            <element signature="docComment;method#createAdmin#0;class#DbManager#0" />
-            <element signature="method#createAdmin#0;class#DbManager#0" />
-            <element signature="docComment;method#createStudent#0;class#DbManager#0" />
-            <element signature="method#createStudent#0;class#DbManager#0" />
-            <element signature="docComment;method#isUsernameAvailable#0;class#DbManager#0" />
-            <element signature="method#isUsernameAvailable#0;class#DbManager#0" />
-            <element signature="e#0#47#1" />
-            <element signature="docComment;method#isSuperAdmin#0;class#DbManager#0" />
-            <element signature="method#isSuperAdmin#0;class#DbManager#0" />
-            <element signature="method#getUserByEmail#0;class#DbManager#0" />
-            <element signature="e#21334#22404#0" />
-            <element signature="e#22410#23482#0" />
-            <element signature="e#23831#23883#1" expanded="true" />
-            <element signature="e#23865#23909#0" expanded="true" />
-            <element signature="e#23886#23909#0" expanded="true" />
-            <element signature="e#23985#23998#0" expanded="true" />
-            <element signature="e#22410#26167#0" />
-            <element signature="e#26173#27786#0" />
-            <element signature="e#27792#29868#0" />
-            <element signature="e#30893#32086#0" />
-            <element signature="e#31259#33111#0" />
-            <element signature="e#33117#35135#0" />
-            <element signature="docComment;method#createMessage#0;class#DbManager#0" />
-            <element signature="method#createMessage#0;class#DbManager#0" />
-            <element signature="e#38322#41100#0" />
-            <element signature="method#getUniversities#0;class#DbManager#0" />
-            <element signature="e#42890#42940#1" expanded="true" />
-            <element signature="e#42995#43039#0" expanded="true" />
-            <element signature="e#42922#42945#0" expanded="true" />
-            <element signature="e#43114#43127#0" expanded="true" />
-            <element signature="method#getSuperAdminMessages#0;class#DbManager#0" />
-            <element signature="e#43588#45655#0" />
-            <element signature="method#getEvents#0;class#DbManager#0" />
-            <element signature="e#46794#46806#0" expanded="true" />
-            <element signature="e#47352#47367#0" expanded="true" />
-            <element signature="e#48022#48077#0" expanded="true" />
-            <element signature="e#48022#48077#0" expanded="true" />
-            <element signature="docComment;method#executeSQLFromFile#0;class#DbManager#0" />
-            <element signature="method#executeSQLFromFile#0;class#DbManager#0" />
-            <element signature="docComment;method#getSQLFromFile#0;class#DbManager#0" />
-            <element signature="method#getSQLFromFile#0;class#DbManager#0" />
+            <element signature="e#1767#1768#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#1844#1845#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://84efc5c2-746e-4501-abf3-19deb160b1db/schema/APP/table/EVENTS">
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1685#1762#0" />
+            <element signature="e#3196#4083#0" />
+            <element signature="method#onFailure#0;class#3352:4074" />
+            <element signature="e#4089#9280#0" />
+            <element signature="class#4168:4508" />
+            <element signature="method#onFailure#0;class#4168:4508" />
+            <element signature="method#onSuccess#0;class#4168:4508" />
+            <element signature="method#onFailure#0;class#4593:5600" />
+            <element signature="method#onSuccess#0;class#4593:5600" />
+            <element signature="class#5033:5533" />
+            <element signature="method#onFailure#0;class#5033:5533" />
+            <element signature="method#onSuccess#0;class#5033:5533" />
+            <element signature="class#5692:6034" />
+            <element signature="method#onFailure#0;class#5692:6034" />
+            <element signature="method#onSuccess#0;class#5692:6034" />
+            <element signature="method#onFailure#0;class#6257:6550" />
+            <element signature="class#6110:6422" />
+            <element signature="method#onFailure#0;class#6110:6422" />
+            <element signature="method#onSuccess#0;class#6110:6422" />
+            <element signature="class#6489:6802" />
+            <element signature="method#onFailure#0;class#6489:6802" />
+            <element signature="method#onSuccess#0;class#6489:6802" />
+            <element signature="method#onFailure#0;class#7061:9247" />
+            <element signature="method#onFailure#0;class#8314:9205" />
+            <element signature="e#9286#9814#0" />
+            <element signature="e#9673#9784#0" />
+            <element signature="e#9820#10207#0" />
+            <element signature="e#10213#10626#0" />
+            <element signature="e#12206#12800#0" />
+            <element signature="method#onSuccess#0;class#12483:12851" />
+            <element signature="method#onFailure#0;class#13257:15875" />
+            <element signature="method#onFailure#0;class#14750:15809" />
+            <element signature="e#12806#16737#0" />
+            <element signature="method#onFailure#0;class#12493:14679" />
+            <element signature="method#onFailure#0;class#13746:14637" />
+            <element signature="e#10632#10812#0" />
+            <element signature="e#17009#17010#0" expanded="true" />
+            <element signature="e#17064#17065#0" expanded="true" />
+            <element signature="e#17145#17146#0" expanded="true" />
+            <element signature="e#17202#17203#0" expanded="true" />
+            <element signature="e#17281#17282#0" expanded="true" />
+            <element signature="e#17323#17324#0" expanded="true" />
+            <element signature="e#17392#17393#0" expanded="true" />
+            <element signature="e#17435#17436#0" expanded="true" />
+            <element signature="e#24052#24053#0" expanded="true" />
+            <element signature="e#24115#24116#0" expanded="true" />
+            <element signature="e#13341#13469#0" />
+            <element signature="e#13475#14193#0" />
+            <element signature="class#13711:14185" />
+            <element signature="method#onFailure#0;class#13711:14185" />
+            <element signature="method#onSuccess#0;class#13711:14185" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/RSOItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/RSOScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="109" column="40" selection-start-line="109" selection-start-column="40" selection-end-line="109" selection-end-column="40" />
+          <folding>
+            <element signature="method#RSOScreen#0;class#RSOScreen#0" />
+            <element signature="method#resetRSOCreator#0;class#RSOScreen#0" />
+            <element signature="method#addRSOItems#0;class#RSOScreen#0" />
+            <element signature="method#viewRSO#0;class#RSOScreen#0" />
+            <element signature="method#onUnload#0;class#RSOScreen#0" />
+            <element signature="method#onApplyClick#0;class#RSOScreen#0" />
+            <element signature="method#onRSOTypeSelect#0;class#RSOScreen#0" />
+            <element signature="method#onJoinClick#0;class#RSOScreen#0" />
+            <element signature="method#onLeaveClick#0;class#RSOScreen#0" />
+            <element signature="method#onDeleteRSOClick#0;class#RSOScreen#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/RSO">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.java">
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/entities/CommentEntity.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="246" column="34" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
+        <state relative-caret-position="340">
+          <caret line="20" column="60" selection-start-line="20" selection-start-column="60" selection-end-line="20" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://Persistence/JavaeeElement:/c3e5c90d/college:events:hibernate:hibernate.cfg.xml/College Events Website/hibernate/Hibernate/PersistenceModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Persistence</ID>
+          <OriginalElement>JavaeeElement:/c3e5c90d/college:events:hibernate:hibernate.cfg.xml/College Events Website/hibernate/Hibernate/PersistenceModel</OriginalElement>
+          <nodes>
+            <node x="" y="">RsofollowsEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/RsofollowsEntity.java</node>
+            <node x="" y="">CommentEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/CommentEntity.java</node>
+            <node x="" y="">UniversitiesEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/UniversitiesEntity.java</node>
+            <node x="" y="">MessagesEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/MessagesEntity.java</node>
+            <node x="" y="">RsoEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/RsoEntity.java</node>
+            <node x="" y="">UsersEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/UsersEntity.java</node>
+            <node x="" y="">EventsEntity#file://C:/Users/Brandon/Desktop/Database-Systems-Project/src/college/events/hibernate/entities/EventsEntity.java</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.815931721194879" x="500.00759717001506" y="245.340829846583" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+            <Category>Embeddables</Category>
+            <Category>Superclasses</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/subwidgets/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="104" column="58" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
           <folding>
-            <element signature="class#EventsScreenUiBinder#0;class#EventsScreen#0" />
-            <element signature="method#EventsScreen#0;class#EventsScreen#0" />
-            <element signature="method#onFailure#0;class#1591:2301" />
-            <element signature="class#3605:3828" />
-            <element signature="method#onFailure#0;class#3605:3828" />
-            <element signature="method#onSuccess#0;class#3605:3872" />
-            <element signature="class#3553:4021" />
-            <element signature="method#onFailure#0;class#3553:3854" />
-            <element signature="method#onSuccess#0;class#3553:4021" />
-            <element signature="class#4114:4465" />
-            <element signature="method#onFailure#0;class#4114:4465" />
-            <element signature="method#onSuccess#0;class#4380:4794" />
-            <element signature="class#5197:5452" />
-            <element signature="method#onFailure#0;class#5197:5452" />
-            <element signature="method#onSuccess#0;class#5197:5532" />
-            <element signature="class#5624:5847" />
-            <element signature="method#onFailure#0;class#5624:5847" />
-            <element signature="method#onSuccess#0;class#5624:5895" />
-            <element signature="class#5959:6229" />
-            <element signature="method#onFailure#0;class#5959:6229" />
-            <element signature="method#onSuccess#0;class#5945:6217" />
-            <element signature="e#6412#6428#0" expanded="true" />
-            <element signature="e#6936#6971#0" expanded="true" />
-            <element signature="e#6936#6971#0" expanded="true" />
-            <element signature="e#6985#7026#0" expanded="true" />
-            <element signature="e#6985#7026#0" expanded="true" />
-            <element signature="e#6448#6462#0" expanded="true" />
-            <element signature="e#7515#7544#0" expanded="true" />
-            <element signature="e#7387#7398#0" expanded="true" />
-            <element signature="e#7515#7544#0" expanded="true" />
-            <element signature="e#7570#7613#0" expanded="true" />
-            <element signature="e#7449#7467#0" expanded="true" />
-            <element signature="e#7570#7613#0" expanded="true" />
-            <element signature="e#7639#7676#0" expanded="true" />
-            <element signature="e#7515#7530#0" expanded="true" />
-            <element signature="e#7639#7676#0" expanded="true" />
-            <element signature="e#7702#7747#0" expanded="true" />
-            <element signature="e#7582#7601#0" expanded="true" />
-            <element signature="e#7702#7747#0" expanded="true" />
-            <element signature="e#7773#7816#0" expanded="true" />
-            <element signature="e#7652#7670#0" expanded="true" />
-            <element signature="e#7773#7816#0" expanded="true" />
-            <element signature="e#7842#7887#0" expanded="true" />
-            <element signature="e#7722#7741#0" expanded="true" />
-            <element signature="e#7842#7887#0" expanded="true" />
-            <element signature="e#7913#8015#0" expanded="true" />
-            <element signature="e#7916#7927#0" expanded="true" />
-            <element signature="e#7913#8015#0" expanded="true" />
-            <element signature="e#8041#8137#0" expanded="true" />
-            <element signature="e#8039#8050#0" expanded="true" />
-            <element signature="e#8041#8137#0" expanded="true" />
-            <element signature="e#8163#8200#0" expanded="true" />
-            <element signature="e#8136#8151#0" expanded="true" />
-            <element signature="e#8163#8200#0" expanded="true" />
-            <element signature="e#8226#8258#0" expanded="true" />
-            <element signature="e#8198#8209#0" expanded="true" />
-            <element signature="e#8226#8258#0" expanded="true" />
-            <element signature="e#8284#8311#0" expanded="true" />
-            <element signature="e#8252#8262#0" expanded="true" />
-            <element signature="e#8284#8311#0" expanded="true" />
-            <element signature="method#createDropDownItem#0;class#EventsScreen#0" />
-            <element signature="e#4564#4675#0" />
-            <element signature="e#8925#9312#0" />
-            <element signature="e#9271#9353#0" />
-            <element signature="e#9364#9384#0" expanded="true" />
-            <element signature="e#9364#9384#0" expanded="true" />
-            <element signature="e#9394#9421#0" expanded="true" />
-            <element signature="e#9394#9421#0" expanded="true" />
-            <element signature="e#9431#9455#0" expanded="true" />
-            <element signature="e#9431#9455#0" expanded="true" />
-            <element signature="e#9465#9485#0" expanded="true" />
-            <element signature="e#9465#9485#0" expanded="true" />
-            <element signature="e#9495#9515#0" expanded="true" />
-            <element signature="e#9495#9515#0" expanded="true" />
-            <element signature="e#9525#9544#0" expanded="true" />
-            <element signature="e#9525#9544#0" expanded="true" />
-            <element signature="e#9554#9578#0" expanded="true" />
-            <element signature="e#9554#9578#0" expanded="true" />
-            <element signature="e#9588#9611#0" expanded="true" />
-            <element signature="e#9588#9611#0" expanded="true" />
-            <element signature="e#9621#9649#0" expanded="true" />
-            <element signature="e#9621#9649#0" expanded="true" />
-            <element signature="e#9659#9686#0" expanded="true" />
-            <element signature="e#9659#9686#0" expanded="true" />
-            <element signature="e#9696#9724#0" expanded="true" />
-            <element signature="e#9696#9724#0" expanded="true" />
-            <element signature="method#onEventRSOClick#0;class#EventsScreen#0" />
-            <element signature="method#onSubmitClick#0;class#EventsScreen#0" />
-            <element signature="class#8964:9299" />
-            <element signature="method#onFailure#0;class#8964:9299" />
-            <element signature="method#onSuccess#0;class#9060:9474" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Universities.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/sql/Users.table.create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/UNIVERSITIES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4e50ec8e-9b65-4693-b04f-f92912375df3/schema/APP/table/USERS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="140" column="60" selection-start-line="140" selection-start-column="60" selection-end-line="140" selection-end-column="60" />
+          <folding>
+            <element signature="class#HomeScreenUiBinder#0;class#HomeScreen#0" />
+            <element signature="docComment;method#HomeScreen#0;class#HomeScreen#0" />
+            <element signature="class#2529:3733" />
+            <element signature="class#5888:7015" />
+            <element signature="docComment;method#addValidators#0;class#HomeScreen#0" />
+            <element signature="method#addValidators#0;class#HomeScreen#0" />
+            <element signature="method#getFieldFocusHandler#0;class#HomeScreen#0" />
+            <element signature="method#getValidatorCallback#0;class#HomeScreen#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/HomeScreen.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+          <folding>
+            <element signature="n#ui:style#0;n#ui:UiBinder#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/website/client/md/EventsScreen.ui.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="68" />
+          <folding>
+            <element signature="n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialRow#0;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialCard#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialRow#0;n#m:MaterialCard#0;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialCard#2;n#m:MaterialRow#2;n#m:MaterialCardContent#0;n#m:MaterialCard#0;n#m:MaterialColumn#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#3;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#6;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#7;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialLabel#0;n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#0;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#1;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#3;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#7;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#8;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#9;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#10;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#11;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialColumn#12;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialLabel#0;n#m:MaterialColumn#12;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#13;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+            <element signature="n#m:MaterialTextBox#0;n#m:MaterialColumn#15;n#m:MaterialRow#1;n#m:MaterialDialogContent#0;n#m:MaterialDialog#1;n#m:MaterialRow#0;n#ui:UiBinder#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/DbManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="791" column="54" selection-start-line="791" selection-start-column="54" selection-end-line="791" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#DbManager#0" />
+            <element signature="e#1102#1381#0" />
+            <element signature="e#1387#1652#0" />
+            <element signature="e#1658#1698#0" />
+            <element signature="e#1743#1790#0" />
+            <element signature="e#1840#1891#0" />
+            <element signature="e#1947#2010#0" />
+            <element signature="e#2065#2122#0" />
+            <element signature="e#2167#2226#0" />
+            <element signature="e#2325#2388#0" />
+            <element signature="e#3387#3450#0" />
+            <element signature="e#3387#4025#0" />
+            <element signature="e#4031#4098#0" />
+            <element signature="e#4031#4254#0" />
+            <element signature="e#4260#4341#0" />
+            <element signature="e#4260#5376#0" />
+            <element signature="e#5382#5429#0" />
+            <element signature="e#5382#6074#0" />
+            <element signature="e#6080#6130#0" />
+            <element signature="e#6080#7195#0" />
+            <element signature="e#7201#7327#0" />
+            <element signature="e#7201#7741#0" />
+            <element signature="e#7747#7940#0" />
+            <element signature="e#7747#9565#0" />
+            <element signature="e#9571#9776#0" />
+            <element signature="e#9571#11303#0" />
+            <element signature="e#11309#11323#0" />
+            <element signature="e#11329#11636#0" />
+            <element signature="e#11329#13379#0" />
+            <element signature="e#13385#13755#0" />
+            <element signature="e#13385#15561#0" />
+            <element signature="e#15567#15925#0" />
+            <element signature="e#15567#17887#0" />
+            <element signature="e#17893#18074#0" />
+            <element signature="e#17893#19129#0" />
+            <element signature="e#19135#19177#0" />
+            <element signature="e#19135#20047#0" />
+            <element signature="e#20053#21199#0" />
+            <element signature="e#21240#22387#0" />
+            <element signature="e#22393#22966#0" />
+            <element signature="e#22972#23658#0" />
+            <element signature="e#23664#28217#0" />
+            <element signature="e#0#104#1" />
+            <element signature="e#28223#29836#0" />
+            <element signature="e#29842#32655#0" />
+            <element signature="e#0#99#1" />
+            <element signature="e#0#51#1" />
+            <element signature="e#0#51#1" />
+            <element signature="e#32661#33854#0" />
+            <element signature="e#33860#36049#0" />
+            <element signature="e#0#70#1" />
+            <element signature="e#0#51#1" />
+            <element signature="e#36055#38169#0" />
+            <element signature="e#38192#45235#0" />
+            <element signature="e#0#53#1" />
+            <element signature="e#0#105#1" />
+            <element signature="e#0#42#1" />
+            <element signature="e#0#151#1" />
+            <element signature="e#45241#45858#0" />
+            <element signature="e#45864#46562#0" />
+            <element signature="e#46568#47142#0" />
+            <element signature="e#0#46#1" />
+            <element signature="e#47148#48060#0" />
+            <element signature="e#48066#49557#0" />
+            <element signature="e#49563#53442#0" />
+            <element signature="e#0#52#1" />
+            <element signature="e#0#174#1" />
+            <element signature="e#0#209#1" />
+            <element signature="e#0#204#1" />
+            <element signature="e#0#229#1" />
+            <element signature="e#53448#55654#0" />
+            <element signature="e#0#47#1" />
+            <element signature="e#0#73#1" />
+            <element signature="e#55660#57284#0" />
+            <element signature="e#0#43#1" />
+            <element signature="e#0#71#1" />
+            <element signature="e#57290#58553#0" />
+            <element signature="e#0#48#1" />
+            <element signature="e#0#53#1" />
+            <element signature="e#58559#58753#0" />
+            <element signature="e#58559#59360#0" />
+            <element signature="e#59366#59556#0" />
+            <element signature="e#59366#59884#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/college/events/hibernate/test_data/InsertDBTestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="61" column="125" selection-start-line="61" selection-start-column="125" selection-end-line="61" selection-end-column="125" />
         </state>
       </provider>
     </entry>
@@ -2492,7 +2429,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8 (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="CEW">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.11">
+    <root id="1">
+      <ServerVersion>10.14</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP">
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <table id="13" parent="2" name="COMMENT"/>
+    <table id="14" parent="2" name="EVENTS"/>
+    <table id="15" parent="2" name="MESSAGES"/>
+    <table id="16" parent="2" name="RSO"/>
+    <table id="17" parent="2" name="RSOFOLLOWS"/>
+    <table id="18" parent="2" name="UNIVERSITIES"/>
+    <table id="19" parent="2" name="USERS"/>
+    <column id="20" parent="13" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="13" name="USER_ID">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="13" name="TITLE">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="13" name="MESSAGE">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="13" name="EVENT_ID">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="25" parent="13" name="SQL181124223037780">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="26" parent="13" name="SQL181124223037781">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+    </index>
+    <index id="27" parent="13" name="SQL181124223037782">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EVENT_ID</ColNames>
+    </index>
+    <key id="28" parent="13" name="SQL181124223037780">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="29" parent="13" name="SQL181124223037781">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL181124223037413</RefKeyName>
+      <RefColNames>USER_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="30" parent="13" name="SQL181124223037782">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EVENT_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>EVENTS</RefTableName>
+      <RefKeyName>SQL181124223037610</RefKeyName>
+      <RefColNames>EVENT_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="31" parent="14" name="EVENT_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="14" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="14" name="TYPE">
+      <Position>3</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="14" name="CATEGORY">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="14" name="DESCRIPTION">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="36" parent="14" name="TIME">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="14" name="DATE">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="14" name="LOCATION">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="39" parent="14" name="CONTACT_NAME">
+      <Position>9</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="40" parent="14" name="CONTACT_PHONE">
+      <Position>10</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="41" parent="14" name="CONTACT_EMAIL">
+      <Position>11</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="42" parent="14" name="UNI_ID">
+      <Position>12</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="14" name="RSO_ID">
+      <Position>13</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="44" parent="14" name="SQL181124223037610">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EVENT_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="45" parent="14" name="SQL181124223037611">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+    </index>
+    <index id="46" parent="14" name="SQL181124223037612">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSO_ID</ColNames>
+    </index>
+    <key id="47" parent="14" name="SQL181124223037610">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EVENT_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="14" name="SQL181124223037611">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>UNIVERSITIES</RefTableName>
+      <RefKeyName>SQL181124223037290</RefKeyName>
+      <RefColNames>UNI_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="49" parent="14" name="SQL181124223037612">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSO_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>RSO</RefTableName>
+      <RefKeyName>SQL181124223037530</RefKeyName>
+      <RefColNames>RSO_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="50" parent="15" name="ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="15" name="SUBJECT">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="52" parent="15" name="MESSAGE_TYPE">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="53" parent="15" name="MESSAGE">
+      <Position>4</Position>
+      <DataType>CLOB(512)|2005s</DataType>
+    </column>
+    <column id="54" parent="15" name="PAYLOAD">
+      <Position>5</Position>
+      <DataType>CLOB(512)|2005s</DataType>
+    </column>
+    <column id="55" parent="15" name="SENDER_ID">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="56" parent="15" name="UNI_ID">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="57" parent="15" name="SEND_DATE">
+      <Position>8</Position>
+      <DataType>VARCHAR(19)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="58" parent="15" name="SQL181124223037680">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="59" parent="15" name="SQL181124223037681">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SENDER_ID</ColNames>
+    </index>
+    <index id="60" parent="15" name="SQL181124223037682">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+    </index>
+    <key id="61" parent="15" name="SQL181124223037680">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="62" parent="15" name="SQL181124223037681">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>SENDER_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL181124223037413</RefKeyName>
+      <RefColNames>USER_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="63" parent="15" name="SQL181124223037682">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>UNIVERSITIES</RefTableName>
+      <RefKeyName>SQL181124223037290</RefKeyName>
+      <RefColNames>UNI_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="64" parent="16" name="RSO_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="16" name="ADMIN_ID">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="66" parent="16" name="NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="16" name="DESCRIPTION">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="16" name="TYPE">
+      <Position>5</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="16" name="MEMBERS">
+      <Position>6</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="70" parent="16" name="STATUS">
+      <Position>7</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="16" name="UNI_ID">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="72" parent="16" name="SQL181124223037530">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSO_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="73" parent="16" name="SQL181124223037531">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ADMIN_ID</ColNames>
+    </index>
+    <index id="74" parent="16" name="SQL181124223037532">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+    </index>
+    <key id="75" parent="16" name="SQL181124223037530">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSO_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="76" parent="16" name="SQL181124223037531">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ADMIN_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL181124223037413</RefKeyName>
+      <RefColNames>USER_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="77" parent="16" name="SQL181124223037532">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>UNIVERSITIES</RefTableName>
+      <RefKeyName>SQL181124223037290</RefKeyName>
+      <RefColNames>UNI_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="78" parent="17" name="USER_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="79" parent="17" name="RSO_ID">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="80" parent="17" name="SQL181124223037730">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+    </index>
+    <index id="81" parent="17" name="SQL181124223037731">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSO_ID</ColNames>
+    </index>
+    <foreign-key id="82" parent="17" name="SQL181124223037730">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>USERS</RefTableName>
+      <RefKeyName>SQL181124223037413</RefKeyName>
+      <RefColNames>USER_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <foreign-key id="83" parent="17" name="SQL181124223037731">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>RSO_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>RSO</RefTableName>
+      <RefKeyName>SQL181124223037530</RefKeyName>
+      <RefColNames>RSO_ID</RefColNames>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+    <column id="84" parent="18" name="UNI_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="85" parent="18" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="18" name="LOCATION">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="87" parent="18" name="DESCRITPION">
+      <Position>4</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="88" parent="18" name="STUDENTS">
+      <Position>5</Position>
+      <DataType>INTEGER|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="89" parent="18" name="SQL181124223037290">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="90" parent="18" name="SQL181124223037290">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="91" parent="19" name="USER_ID">
+      <Position>1</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="92" parent="19" name="FIRSTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="93" parent="19" name="LASTNAME">
+      <Position>3</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="94" parent="19" name="USERNAME">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="19" name="PASSWORD">
+      <Position>5</Position>
+      <DataType>CLOB(512)|2005s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="19" name="EMAIL">
+      <Position>6</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="19" name="TYPE">
+      <Position>7</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="19" name="STUDENT_ID">
+      <Position>8</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <column id="99" parent="19" name="UNI_ID">
+      <Position>9</Position>
+      <DataType>VARCHAR(255)|12s</DataType>
+    </column>
+    <index id="100" parent="19" name="SQL181124223037413">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="101" parent="19" name="SQL181124223037410">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USERNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="102" parent="19" name="SQL181124223037411">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMAIL</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="103" parent="19" name="SQL181124223037412">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>STUDENT_ID</ColNames>
+    </index>
+    <index id="104" parent="19" name="SQL181124223037414">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+    </index>
+    <key id="105" parent="19" name="SQL181124223037413">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="106" parent="19" name="SQL181124223037410">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USERNAME</ColNames>
+    </key>
+    <key id="107" parent="19" name="SQL181124223037411">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>EMAIL</ColNames>
+    </key>
+    <key id="108" parent="19" name="SQL181124223037412">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>STUDENT_ID</ColNames>
+    </key>
+    <foreign-key id="109" parent="19" name="SQL181124223037414">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>UNI_ID</ColNames>
+      <RefSchemaName>APP</RefSchemaName>
+      <RefTableName>UNIVERSITIES</RefTableName>
+      <RefKeyName>SQL181124223037290</RefKeyName>
+      <RefColNames>UNI_ID</RefColNames>
+      <OnDelete>set-null</OnDelete>
+    </foreign-key>
+  </database-model>
+</dataSource>

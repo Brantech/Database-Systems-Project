@@ -6,13 +6,10 @@ import college.events.website.client.UiManager;
 import college.events.website.client.utils.BooleanCallback;
 import college.events.website.shared.CookyKeys;
 import college.events.website.shared.ScreenEnum;
+import college.events.website.shared.messages.UniversityMessage;
 import college.events.website.shared.messages.UserInfo;
 import college.events.website.shared.rpc.GenericRPCResponse;
-import college.events.website.shared.validators.EmptyValidator;
-import college.events.website.shared.validators.MatchValidator;
-import college.events.website.shared.validators.NameValidator;
-import college.events.website.shared.validators.PasswordValidator;
-import college.events.website.shared.validators.UsernameValidator;
+import college.events.website.shared.validators.*;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.FocusHandler;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -21,10 +18,12 @@ import com.google.gwt.user.client.Cookies;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
+import gwt.material.design.addins.client.overlay.MaterialOverlay;
+import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.Display;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialColumn;
-import gwt.material.design.client.ui.MaterialTextBox;
+import gwt.material.design.client.ui.*;
+
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class HomeScreen extends Composite {
@@ -59,6 +58,12 @@ public class HomeScreen extends Composite {
     MaterialTextBox lastName;
 
     @UiField
+    MaterialButton uniButton;
+
+    @UiField
+    MaterialDropDown unis;
+
+    @UiField
     MaterialTextBox rUsername;
 
     @UiField
@@ -86,6 +91,8 @@ public class HomeScreen extends Composite {
     private static HomeScreenUiBinder uiBinder = GWT.create(HomeScreenUiBinder.class);
 
     private static CEWServiceAsync cewServiceAsync = GWT.create(CEWService.class);
+
+    private UniversityMessage selected;
 
 
     /**
@@ -122,7 +129,35 @@ public class HomeScreen extends Composite {
             });
         }
 
-        initialize();
+        MaterialLoader.loading(true, loginContainer);
+        cewServiceAsync.getUniversities(new AsyncCallback<GenericRPCResponse<ArrayList<UniversityMessage>>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(GenericRPCResponse<ArrayList<UniversityMessage>> result) {
+                MaterialLoader.loading(false, loginContainer);
+                if(result.isSuccess()) {
+                    for (UniversityMessage u : result.getPayload()) {
+                        MaterialLink link = new MaterialLink(u.getName(), u.getUniID());
+                        link.setTextColor(Color.BLACK);
+                        link.addClickHandler(e -> {
+                            uniButton.setText(u.getName());
+                            selected = u;
+                        });
+
+                        unis.add(link);
+                        if(selected == null) {
+                            selected = u;
+                            uniButton.setText(u.getName());
+                        }
+                    }
+                }
+                initialize();
+            }
+        });
     }
 
     private void initialize() {
@@ -169,8 +204,9 @@ public class HomeScreen extends Composite {
             valid &= rPassword2.validate();
             valid &= email.validate();
             valid &= email2.validate();
+            valid &= selected != null;
             if(valid) {
-                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), email.getText(), "HOOBLAH", new AsyncCallback<GenericRPCResponse<String>>() {
+                cewServiceAsync.createAccount(rUsername.getText(), rPassword.getText(), firstName.getText(), lastName.getText(), email.getText(), selected.getUniID(), new AsyncCallback<GenericRPCResponse<UserInfo>>() {
                     @Override
                     public void onFailure(Throwable caught) {
                         logger.warning("Failed to create new account");
@@ -178,9 +214,17 @@ public class HomeScreen extends Composite {
                     }
 
                     @Override
-                    public void onSuccess(GenericRPCResponse<String> result) {
+                    public void onSuccess(GenericRPCResponse<UserInfo> result) {
                         logger.warning("New user has been created");
-                        UiManager.getInstance().displayScreen(ScreenEnum.CREATE_UNIVERSITY);
+                        Cookies.setCookie(CookyKeys.AUTH_TOKEN, result.getPayload().getAuthToken());
+                        UiManager.getInstance().setUserInfo(result.getPayload());
+                        if(result.getPayload().getTYPE().equals("SUPER_ADMIN")) {
+                            UiManager.getInstance().adminMode();
+                            UiManager.getInstance().displayScreen(ScreenEnum.INBOX);
+                        } else {
+                            UiManager.getInstance().studentMode();
+                            UiManager.getInstance().displayScreen(ScreenEnum.EVENTS);
+                        }
                     }
                 });
             }

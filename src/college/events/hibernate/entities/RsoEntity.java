@@ -1,11 +1,7 @@
 package college.events.hibernate.entities;
 
+import javax.persistence.*;
 import java.util.Objects;
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "RSO", schema = "APP", catalog = "")
@@ -16,6 +12,7 @@ public class RsoEntity {
     private String description;
     private String type;
     private int members;
+    private String status;
     private String uniId;
 
     @Id
@@ -76,6 +73,16 @@ public class RsoEntity {
 
     public void setMembers(int members) {
         this.members = members;
+    }
+
+    @Basic
+    @Column(name = "STATUS", nullable = false)
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Basic

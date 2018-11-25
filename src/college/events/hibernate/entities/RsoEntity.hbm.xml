@@ -23,6 +23,9 @@
         <property name="members">
             <column name="MEMBERS" sql-type="integer"/>
         </property>
+        <property name="status">
+            <column name="STATUS" sql-type="varchar(255)"/>
+        </property>
         <property name="uniId">
             <column name="UNI_ID" sql-type="varchar(255)"/>
         </property>

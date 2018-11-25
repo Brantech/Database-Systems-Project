@@ -8,6 +8,7 @@ create table APP.RSO (
   DESCRIPTION varchar(255) not null,
   TYPE varchar(255) not null,
   MEMBERS integer not null,
+  STATUS varchar(255) not null,
   UNI_ID varchar(255) not null,
 
   primary key (RSO_ID),

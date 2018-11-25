@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="CEW_DB" uuid="84efc5c2-746e-4501-abf3-19deb160b1db">
+    <data-source name="CEW" uuid="4e50ec8e-9b65-4693-b04f-f92912375df3">
       <database-info product="Apache Derby" version="10.14.2.0 - (1828579)" jdbc-version="4.2" driver-name="Apache Derby Network Client JDBC Driver" driver-version="10.14.1.0 - (1808820)" family="DERBY" exact-version="10.14">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
-      <introspection-schemas>*:@</introspection-schemas>
+      <secret-storage>master_key</secret-storage>
+      <user-name>admin</user-name>
+      <introspection-schemas>*:APP</introspection-schemas>
     </data-source>
   </component>
 </project>

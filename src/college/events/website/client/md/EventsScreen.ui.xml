@@ -50,16 +50,16 @@
                             <m:MaterialButton ui:field="locationFilter" activates="loc" text="Location"
                                               style="background-color: black; color: #fc0; width: 100%"
                                               iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
-                            <m:MaterialDropDown activator="loc" belowOrigin="true">
-                                <m:MaterialLink textColor="BLACK" text="Any"/>
+                            <m:MaterialDropDown ui:field="locations" activator="loc" belowOrigin="true">
+                                <m:MaterialLink textColor="BLACK" text="Any" href="#Any"/>
                             </m:MaterialDropDown>
                         </m:MaterialColumn>
                         <m:MaterialColumn grid="s6" paddingRight="0">
                             <m:MaterialButton ui:field="universityFilter" activates="uni" text="University"
                                               style="background-color: black; color: #fc0; width: 100%"
                                               iconType="ARROW_DROP_DOWN" iconPosition="RIGHT"/>
-                            <m:MaterialDropDown activator="uni" belowOrigin="true">
-                                <m:MaterialLink textColor="BLACK" text="Any"/>
+                            <m:MaterialDropDown ui:field="universities" activator="uni" belowOrigin="true">
+                                <m:MaterialLink textColor="BLACK" text="Any" href="#Any"/>
                             </m:MaterialDropDown>
                         </m:MaterialColumn>
                     </m:MaterialRow>
@@ -142,15 +142,26 @@
                                            margin="0" length="255"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6">
-                        <m:MaterialDatePicker ui:field="eventDate"
+                        <m:MaterialDatePicker ui:field="eventStartDate"
                                               addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                              autoClose="true" placeholder="Date" fieldType="OUTLINED" container="BODY"
+                                              autoClose="true" placeholder="StartDate" fieldType="OUTLINED" container="BODY"
                                               format="mmmm dd yyyy"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6">
-                        <ma:timepicker.MaterialTimePicker ui:field="eventTime"
+                        <m:MaterialDatePicker ui:field="eventEndDate"
                                               addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                              autoClose="true" placeholder="Time" fieldType="OUTLINED"/>
+                                              autoClose="true" placeholder="End Date" fieldType="OUTLINED" container="BODY"
+                                              format="mmmm dd yyyy"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <ma:timepicker.MaterialTimePicker ui:field="eventStartTime"
+                                              addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                              autoClose="true" placeholder="Start Time" fieldType="OUTLINED"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <ma:timepicker.MaterialTimePicker ui:field="eventEndTime"
+                                                          addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                                          autoClose="true" placeholder="End Time" fieldType="OUTLINED"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="S12" marginBottom="20">
                         <m:MaterialLabel text="Event RSO"
@@ -257,15 +268,27 @@
                                            margin="0" length="255"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6">
-                        <m:MaterialTextBox ui:field="dateView"
+                        <m:MaterialTextBox ui:field="startDate"
                                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                           fieldType="OUTLINED" width="100%" placeholder="Date" readOnly="true"
+                                           fieldType="OUTLINED" width="100%" placeholder="Start Date" readOnly="true"
                                            margin="0" length="255"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="s6">
-                        <m:MaterialTextBox ui:field="timeView"
+                        <m:MaterialTextBox ui:field="endDate"
                                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
-                                           fieldType="OUTLINED" width="100%" placeholder="Time" readOnly="true"
+                                           fieldType="OUTLINED" width="100%" placeholder="End Date" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="startTime"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Start Time" readOnly="true"
+                                           margin="0" length="255"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s6">
+                        <m:MaterialTextBox ui:field="endTime"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="End Time" readOnly="true"
                                            margin="0" length="255"/>
                     </m:MaterialColumn>
                     <m:MaterialColumn grid="S12" marginBottom="20">
@@ -319,6 +342,28 @@
                                            addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
                                            fieldType="OUTLINED" width="100%" placeholder="Email" readOnly="true"
                                            margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="S12" marginBottom="20">
+                        <m:MaterialLabel text="Comments"
+                                         style="font-size: 1.4em; border-bottom: 1px solid black"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialLabel ui:field="commentCount" textAlign="RIGHT" text="0"/>
+                        <m:MaterialCard ui:field="commentsContainer" style="overflow-y: auto; min-height: 100px; max-height: 300px; padding: 5px;"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialTextBox ui:field="commentTitle"
+                                           addStyleNames="{style.textField_ABorder} {style.textFieldText} {style.textField_IBorder}"
+                                           fieldType="OUTLINED" width="100%" placeholder="Title"
+                                           margin="0"/>
+                        <m:MaterialTextArea ui:field="commentMessage"
+                                            addStyleNames="{style.textArea_ABorder} {style.textArea_IBorder}"
+                                            fieldType="OUTLINED" width="100%" placeholder="Comment"
+                                            margin="0"/>
+                    </m:MaterialColumn>
+                    <m:MaterialColumn grid="s12">
+                        <m:MaterialButton ui:field="addComment" text="Add Comment" iconType="ADD" iconPosition="RIGHT"
+                                          style="background-color: #fc0; color: black; float: right;" waves="DEFAULT"/>
                     </m:MaterialColumn>
                 </m:MaterialRow>
 

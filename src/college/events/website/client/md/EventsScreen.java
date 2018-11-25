@@ -3,15 +3,19 @@ package college.events.website.client.md;
 import college.events.website.client.CEWService;
 import college.events.website.client.CEWServiceAsync;
 import college.events.website.client.UiManager;
+import college.events.website.client.md.subwidgets.Comment;
 import college.events.website.client.md.subwidgets.EventItem;
 import college.events.website.shared.CookyKeys;
-import college.events.website.shared.messages.EventMessage;
 import college.events.website.shared.ScreenEnum;
+import college.events.website.shared.messages.CommentsMessage;
+import college.events.website.shared.messages.EventMessage;
 import college.events.website.shared.messages.RSOMessage;
+import college.events.website.shared.messages.UniversityMessage;
 import college.events.website.shared.rpc.GenericRPCResponse;
 import com.google.gwt.core.client.Callback;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.SelectionEvent;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -24,14 +28,8 @@ import gwt.material.design.addins.client.timepicker.MaterialTimePicker;
 import gwt.material.design.client.constants.Color;
 import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.constants.WavesType;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialCard;
-import gwt.material.design.client.ui.MaterialDatePicker;
-import gwt.material.design.client.ui.MaterialDialog;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialTextArea;
-import gwt.material.design.client.ui.MaterialTextBox;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -43,6 +41,12 @@ public class EventsScreen extends Composite {
     }
     private static EventsScreenUiBinder uiBinder = GWT.create(EventsScreenUiBinder.class);
     private static CEWServiceAsync cewServiceAsync = GWT.create(CEWService.class);
+
+    @UiField
+    MaterialButton locationFilter, universityFilter;
+
+    @UiField
+    MaterialDropDown universities, locations;
 
     @UiField
     MaterialDialog eventCreationDialog, viewEventDialog;
@@ -57,10 +61,10 @@ public class EventsScreen extends Composite {
     MaterialTextArea eventDescription;
 
     @UiField
-    MaterialDatePicker eventDate;
+    MaterialDatePicker eventStartDate, eventEndDate;
 
     @UiField
-    MaterialTimePicker eventTime;
+    MaterialTimePicker eventStartTime, eventEndTime;
 
     @UiField
     MaterialCard rsoDropDown, typesDropDown, privacyDropDown;
@@ -72,10 +76,22 @@ public class EventsScreen extends Composite {
     MaterialCard emptyState;
 
     @UiField
-    MaterialTextBox nameView, locationView, contactNameView, contactPhoneView, contactEmailView, dateView, timeView, rsoView, categoryView, privacyView;
+    MaterialTextBox nameView, locationView, contactNameView, contactPhoneView, contactEmailView, startDate, endDate, startTime, endTime, rsoView, categoryView, privacyView;
+
+    @UiField
+    MaterialLabel commentCount;
 
     @UiField
     MaterialTextArea descriptionView;
+
+    @UiField
+    MaterialCard commentsContainer;
+
+    @UiField
+    MaterialTextBox commentTitle;
+
+    @UiField
+    MaterialTextArea commentMessage;
 
     private static String[] types = {"Career", "Film", "Music", "Social", "Sports", "Tech Talk"};
 
@@ -87,10 +103,12 @@ public class EventsScreen extends Composite {
 
     private EventMessage selectedEvent;
 
+    private String uni = "Any", loc = "Any";
+
     public EventsScreen() {
         initWidget(uiBinder.createAndBindUi(this));
 
-        cewServiceAsync.getEvents(Cookies.getCookie(CookyKeys.AUTH_TOKEN), new AsyncCallback<GenericRPCResponse<ArrayList<EventMessage>>>() {
+        cewServiceAsync.getEvents(UiManager.getInstance().getUserInfo().getAuthToken(), "Any", "Any", new AsyncCallback<GenericRPCResponse<ArrayList<EventMessage>>>() {
             @Override
             public void onFailure(Throwable caught) {
                 Cookies.removeCookie(CookyKeys.AUTH_TOKEN);
@@ -127,7 +145,7 @@ public class EventsScreen extends Composite {
             }
         }));
 
-        cewServiceAsync.getUsersRSOs(UiManager.getInstance().getUserInfo(), new AsyncCallback<GenericRPCResponse<ArrayList<RSOMessage>>>() {
+        cewServiceAsync.getEventsRSOs(new AsyncCallback<GenericRPCResponse<ArrayList<RSOMessage>>>() {
             @Override
             public void onFailure(Throwable caught) {
 
@@ -169,6 +187,41 @@ public class EventsScreen extends Composite {
                 }
             }));
         }
+
+        cewServiceAsync.getLocations(new AsyncCallback<GenericRPCResponse<ArrayList<String>>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(GenericRPCResponse<ArrayList<String>> result) {
+                if(result.isSuccess()) {
+                    for(String s : result.getPayload()) {
+                        MaterialLink link = new MaterialLink(s, s);
+                        link.setTextColor(Color.BLACK);
+                        locations.add(link);
+                    }
+                }
+            }
+        });
+        cewServiceAsync.getUniversities(new AsyncCallback<GenericRPCResponse<ArrayList<UniversityMessage>>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(GenericRPCResponse<ArrayList<UniversityMessage>> result) {
+                if(result.isSuccess()) {
+                    for(UniversityMessage m : result.getPayload()) {
+                        MaterialLink link = new MaterialLink(m.getName(), m.getUniID());
+                        link.setTextColor(Color.BLACK);
+                        universities.add(link);
+                    }
+                }
+            }
+        });
 
         privacyDropDown.add(createDropDownItem("Public", new Callback<Void, Void>() {
             @Override
@@ -218,11 +271,37 @@ public class EventsScreen extends Composite {
                         contactEmailView.setText(m.getContactEmail());
                         contactNameView.setText(m.getContactName());
                         contactPhoneView.setText(m.getContactPhone());
-                        dateView.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(m.getDate()))));
-                        timeView.setText(DateTimeFormat.getFormat("H:mm").format(new Date(Long.parseLong(m.getTime()))));
+
+                        String[] times = m.getTime().split(" ");
+                        String[] dates = m.getDate().split(" ");
+
+                        startDate.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(dates[0]))));
+                        endDate.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(dates[1]))));
+                        startTime.setText(DateTimeFormat.getFormat("H:mm").format(new Date(Long.parseLong(times[0]))));
+                        endTime.setText(DateTimeFormat.getFormat("H:mm").format(new Date(Long.parseLong(times[1]))));
                         categoryView.setText(m.getCategory());
                         privacyView.setText(m.getType());
                         rsoView.setText(m.getRso());
+
+                        cewServiceAsync.getComments(m.getId(), new AsyncCallback<GenericRPCResponse<ArrayList<CommentsMessage>>>() {
+                            @Override
+                            public void onFailure(Throwable caught) {
+
+                            }
+
+                            @Override
+                            public void onSuccess(GenericRPCResponse<ArrayList<CommentsMessage>> result) {
+                                if(result.isSuccess()) {
+                                    commentCount.setText(result.getPayload().size() + "");
+                                    commentsContainer.clear();
+                                    for(CommentsMessage m : result.getPayload()) {
+                                        Comment temp = new Comment(m.getTitle(), m.getMessage(), m.getName(), m.getId());
+                                        temp.setEditable(m.getUserID().equals(UiManager.getInstance().getUserInfo().getUSER_ID()));
+                                        commentsContainer.add(temp);
+                                    }
+                                }
+                            }
+                        });
                     }
                 }));
             }
@@ -248,8 +327,8 @@ public class EventsScreen extends Composite {
         eventName.setText(null);
         eventDescription.setText(null);
         eventLocation.setText(null);
-        eventDate.reset();
-        eventTime.reset();
+        eventStartDate.reset();
+        eventStartTime.reset();
         eventRSO.setText("(none)");
         eventPrivacy.setText("Public");
         contactName.setText(null);
@@ -261,14 +340,166 @@ public class EventsScreen extends Composite {
         nameView.setText("");
         descriptionView.setText("");
         locationView.setText("");
-        dateView.setText("");
-        timeView.setText("");
+        startDate.setText("");
+        startTime.setText("");
         rsoView.setText("");
         categoryView.setText("");
         privacyView.setText("");
         contactEmailView.setText("");
         contactNameView.setText("");
         contactPhoneView.setText("");
+    }
+
+    @UiHandler("locations")
+    void onLocationSelect(SelectionEvent<Widget> event) {
+        MaterialLink link = (MaterialLink) event.getSelectedItem();
+        locationFilter.setText(link.getText());
+
+        cewServiceAsync.getEvents(UiManager.getInstance().getUserInfo().getAuthToken(), uni, link.getText(), new AsyncCallback<GenericRPCResponse<ArrayList<EventMessage>>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(GenericRPCResponse<ArrayList<EventMessage>> result) {
+                if(result.isSuccess()) {
+                    events = result.getPayload();
+                    loc = link.getText();
+                    if(events != null && !events.isEmpty()) {
+                        emptyState.setDisplay(Display.NONE);
+                        eventsContainer.setDisplay(Display.BLOCK);
+                        eventsContainer.clear();
+                        for(EventMessage m : events) {
+                            eventsContainer.add(new EventItem(m, new Callback<Void, Void>() {
+                                @Override
+                                public void onFailure(Void reason) {
+
+                                }
+
+                                @Override
+                                public void onSuccess(Void result) {
+                                    resetEventViewDialog();
+                                    selectedEvent = m;
+                                    viewEventDialog.open();
+
+                                    nameView.setText(m.getName());
+                                    descriptionView.setText(m.getDescription());
+                                    locationView.setText(m.getLocation());
+                                    contactEmailView.setText(m.getContactEmail());
+                                    contactNameView.setText(m.getContactName());
+                                    contactPhoneView.setText(m.getContactPhone());
+                                    startDate.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(m.getDate()))));
+                                    startTime.setText(DateTimeFormat.getFormat("H:mm").format(new Date(Long.parseLong(m.getTime()))));
+                                    categoryView.setText(m.getCategory());
+                                    privacyView.setText(m.getType());
+                                    rsoView.setText(m.getRso());
+
+                                    cewServiceAsync.getComments(m.getId(), new AsyncCallback<GenericRPCResponse<ArrayList<CommentsMessage>>>() {
+                                        @Override
+                                        public void onFailure(Throwable caught) {
+
+                                        }
+
+                                        @Override
+                                        public void onSuccess(GenericRPCResponse<ArrayList<CommentsMessage>> result) {
+                                            if(result.isSuccess()) {
+                                                commentCount.setText(result.getPayload().size() + "");
+                                                commentsContainer.clear();
+                                                for(CommentsMessage m : result.getPayload()) {
+                                                    Comment temp = new Comment(m.getTitle(), m.getMessage(), m.getName(), m.getId());
+                                                    temp.setEditable(m.getUserID().equals(UiManager.getInstance().getUserInfo().getUSER_ID()));
+                                                    commentsContainer.add(temp);
+                                                }
+                                            }
+                                        }
+                                    });
+                                }
+                            }));
+                        }
+                    } else {
+                        emptyState.setDisplay(Display.FLEX);
+                        eventsContainer.setDisplay(Display.NONE);
+                    }
+                }
+            }
+        });
+    }
+
+    @UiHandler("universities")
+    void onUniversitySelect(SelectionEvent<Widget> event) {
+        MaterialLink link = (MaterialLink) event.getSelectedItem();
+        universityFilter.setText(link.getText());
+
+        cewServiceAsync.getEvents(UiManager.getInstance().getUserInfo().getAuthToken(), link.getHref().substring(1), loc, new AsyncCallback<GenericRPCResponse<ArrayList<EventMessage>>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(GenericRPCResponse<ArrayList<EventMessage>> result) {
+                if(result.isSuccess()) {
+                    events = result.getPayload();
+                    uni = link.getHref().substring(1);
+                    if(events != null && !events.isEmpty()) {
+                        emptyState.setDisplay(Display.NONE);
+                        eventsContainer.setDisplay(Display.BLOCK);
+                        eventsContainer.clear();
+                        for(EventMessage m : events) {
+                            eventsContainer.add(new EventItem(m, new Callback<Void, Void>() {
+                                @Override
+                                public void onFailure(Void reason) {
+
+                                }
+
+                                @Override
+                                public void onSuccess(Void result) {
+                                    resetEventViewDialog();
+                                    selectedEvent = m;
+                                    viewEventDialog.open();
+
+                                    nameView.setText(m.getName());
+                                    descriptionView.setText(m.getDescription());
+                                    locationView.setText(m.getLocation());
+                                    contactEmailView.setText(m.getContactEmail());
+                                    contactNameView.setText(m.getContactName());
+                                    contactPhoneView.setText(m.getContactPhone());
+                                    startDate.setText(DateTimeFormat.getFormat("MM/dd/yyyy").format(new Date(Long.parseLong(m.getDate()))));
+                                    startTime.setText(DateTimeFormat.getFormat("H:mm").format(new Date(Long.parseLong(m.getTime()))));
+                                    categoryView.setText(m.getCategory());
+                                    privacyView.setText(m.getType());
+                                    rsoView.setText(m.getRso());
+
+                                    cewServiceAsync.getComments(m.getId(), new AsyncCallback<GenericRPCResponse<ArrayList<CommentsMessage>>>() {
+                                        @Override
+                                        public void onFailure(Throwable caught) {
+
+                                        }
+
+                                        @Override
+                                        public void onSuccess(GenericRPCResponse<ArrayList<CommentsMessage>> result) {
+                                            if(result.isSuccess()) {
+                                                commentCount.setText(result.getPayload().size() + "");
+                                                commentsContainer.clear();
+                                                for(CommentsMessage m : result.getPayload()) {
+                                                    Comment temp = new Comment(m.getTitle(), m.getMessage(), m.getName(), m.getId());
+                                                    temp.setEditable(m.getUserID().equals(UiManager.getInstance().getUserInfo().getUSER_ID()));
+                                                    commentsContainer.add(temp);
+                                                }
+                                            }
+                                        }
+                                    });
+                                }
+                            }));
+                        }
+                    } else {
+                        emptyState.setDisplay(Display.FLEX);
+                        eventsContainer.setDisplay(Display.NONE);
+                    }
+                }
+            }
+        });
     }
 
     @UiHandler("eventRSO")
@@ -305,13 +536,23 @@ public class EventsScreen extends Composite {
             return;
         }
 
-        if(eventDate.getDate() == null) {
-            MaterialToast.fireToast("Event date cannot be empty");
+        if(eventStartDate.getDate() == null) {
+            MaterialToast.fireToast("Event start date cannot be empty");
             return;
         }
 
-        if(eventTime.getValue() == null) {
-            MaterialToast.fireToast("Event time cannot be empty");
+        if(eventEndDate.getDate() == null) {
+            MaterialToast.fireToast("Event end date cannot be empty");
+            return;
+        }
+
+        if(eventStartTime.getValue() == null) {
+            MaterialToast.fireToast("Event start time cannot be empty");
+            return;
+        }
+
+        if(eventEndTime.getValue() == null) {
+            MaterialToast.fireToast("Event end time cannot be empty.");
             return;
         }
 
@@ -330,22 +571,29 @@ public class EventsScreen extends Composite {
             return;
         }
 
+
+
         String rsoID = selectedRSO == null ? null : selectedRSO.getRSO_ID();
 
+        String date = Long.toString(eventStartDate.getDate().getTime()) + " " + eventEndDate.getDate().getTime();
+        String time = Long.toString(eventStartTime.getValue().getTime()) + " " + eventEndTime.getValue().getTime();
+
         cewServiceAsync.createEvent(UiManager.getInstance().getUserInfo().getAuthToken(), eventName.getText(), eventDescription.getText(), eventLocation.getText(),
-                Long.toString(eventDate.getDate().getTime()), Long.toString(eventTime.getValue().getTime()), rsoID, eventTypeButton.getText(),
-                eventPrivacy.getText(), contactName.getText(), contactPhone.getText(), contactEmail.getText(), new AsyncCallback<GenericRPCResponse<String>>() {
+                date, time, rsoID, eventTypeButton.getText(), eventPrivacy.getText(), contactName.getText(), contactPhone.getText(), contactEmail.getText(),
+                new AsyncCallback<GenericRPCResponse<String>>() {
                     @Override
                     public void onFailure(Throwable caught) {
-
+                        logger.severe(caught.toString());
                     }
 
                     @Override
                     public void onSuccess(GenericRPCResponse<String> result) {
-                        eventCreationDialog.close();
                         if(result.isSuccess()) {
+                            eventCreationDialog.close();
                             MaterialToast.fireToast(result.getPayload(), 3000);
                             resetEventCreator();
+                        } else {
+                            MaterialToast.fireToast(result.getPayload(), 4000);
                         }
                     }
                 });
@@ -355,5 +603,25 @@ public class EventsScreen extends Composite {
     void onCloseClick(ClickEvent e) {
         viewEventDialog.close();
         resetEventViewDialog();
+    }
+
+    @UiHandler("addComment")
+    void onAddCommentClick(ClickEvent e) {
+        cewServiceAsync.writeComment(UiManager.getInstance().getUserInfo().getAuthToken(), commentTitle.getText(), commentMessage.getText(), selectedEvent.getId(), new AsyncCallback<GenericRPCResponse<String>>() {
+            @Override
+            public void onFailure(Throwable caught) {
+
+            }
+
+            @Override
+            public void onSuccess(GenericRPCResponse<String> result) {
+                if(result.isSuccess()) {
+                    commentMessage.setText(null);
+                    commentTitle.setText(null);
+                }
+
+                MaterialToast.fireToast(result.getPayload());
+            }
+        });
     }
 }

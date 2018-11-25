@@ -1,5 +1,6 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:m='urn:import:gwt.material.design.client.ui'>
+             xmlns:m='urn:import:gwt.material.design.client.ui'
+             xmlns:ma="urn:import:gwt.material.design.addins.client">
 
     <ui:style>
 
@@ -74,6 +75,12 @@
                     </m:MaterialRow>
 
                     <m:MaterialPanel margin="0" padding="0" overflow="AUTO" height="90%">
+                        <m:MaterialRow margin="0" marginTop="10">
+                            <m:MaterialColumn grid="s12">
+                                <m:MaterialButton ui:field="uniButton" activates="unis" text="University" iconPosition="RIGHT" iconType="ARROW_DROP_DOWN" style="color: black; background-color: #fc0; width: 100%;"/>
+                                <m:MaterialDropDown ui:field="unis" activator="unis" belowOrigin="true"/>
+                            </m:MaterialColumn>
+                        </m:MaterialRow>
                         <m:MaterialRow margin="0">
                             <m:MaterialColumn grid="s6">
                                 <m:MaterialTextBox ui:field="firstName"

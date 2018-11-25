@@ -1,35 +1,29 @@
 package college.events.hibernate;
 
-import college.events.hibernate.entities.EventsEntity;
-import college.events.hibernate.entities.MessagesEntity;
-import college.events.hibernate.entities.RsoEntity;
-import college.events.hibernate.entities.RsofollowsEntity;
-import college.events.hibernate.entities.UniversitiesEntity;
-import college.events.hibernate.entities.UsersEntity;
+import college.events.hibernate.entities.*;
 import college.events.hibernate.security.EncryptionService;
 import college.events.hibernate.test_data.InsertDBTestData;
+import college.events.website.shared.messages.CommentsMessage;
 import college.events.website.shared.messages.RSOMessage;
-import college.events.website.shared.messages.SuperAdminMessage;
 import college.events.website.shared.messages.UserInfo;
 import com.google.gson.Gson;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-import java.util.stream.Collectors;
-import javax.persistence.Query;
 import org.apache.derby.drda.NetworkServerControl;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.exception.GenericJDBCException;
+import org.hibernate.query.NativeQuery;
+
+import javax.persistence.Query;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Class used by the server to talk to the database
@@ -105,6 +99,7 @@ public class DbManager {
     private static final String CREATE_RSO_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/RSO.table.create.sql";
     private static final String CREATE_MESSAGES_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/Messages.table.create.sql";
     private static final String CREATE_RSOFOLLOWS_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/RSOFollows.table.create.sql";
+    private static final String CREATE_COMMENTS_TABLE = "webapps/root/WEB-INF/classes/college/events/hibernate/sql/Comments.table.create.sql";
 
     /**
      * Constructor preventing outside instantiation
@@ -213,6 +208,7 @@ public class DbManager {
             executeSQLFromFile(CREATE_EVENTS_TABLE, session);
             executeSQLFromFile(CREATE_MESSAGES_TABLE, session);
             executeSQLFromFile(CREATE_RSOFOLLOWS_TABLE, session);
+            executeSQLFromFile(CREATE_COMMENTS_TABLE, session);
 
             t.commit();
             InsertDBTestData.insertTestData(this);
@@ -512,6 +508,7 @@ public class DbManager {
             transaction.commit();
             session.close();
 
+            return new QueryResponse(true, EncryptionService.createToken(username, password), user);
         } catch (Exception e) {
             if(transaction != null) {
                 transaction.rollback();
@@ -519,8 +516,6 @@ public class DbManager {
             session.close();
             return new QueryResponse(false, e.toString());
         }
-
-        return new QueryResponse(true, EncryptionService.createToken(username, password));
     }
 
     /**
@@ -627,12 +622,12 @@ public class DbManager {
         }
 
         try {
-            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.uniId=:id");
+            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.uniId=:id AND r.status='ACTIVE'");
             query.setParameter("id", info.getUNI_ID());
 
             List<RsoEntity> results = query.getResultList();
 
-            query = session.createQuery("SELECT f.rsoId FROM RsofollowsEntity f WHERE f.userId=:id");
+            query = session.createQuery("SELECT f.rsoId FROM RsofollowsEntity f, RsoEntity r WHERE f.userId=:id AND f.rsoId=r.rsoId AND r.status='ACTIVE'");
             query.setParameter("id", info.getUSER_ID());
 
             List<String> follows = query.getResultList();
@@ -649,10 +644,7 @@ public class DbManager {
         }
     }
 
-    public QueryResponse getUsersRSOs(UserInfo info) {
-        if(info == null) {
-            return new QueryResponse(false);
-        }
+    public QueryResponse getRSOs() {
 
         Session session = sessionFactory.openSession();
         if(session == null) {
@@ -660,14 +652,8 @@ public class DbManager {
         }
 
         try {
-            QueryResponse login = login(info.getAuthToken());
-            if(!login.getSuccess()) {
-                return new QueryResponse(false, "Authentication error");
-            }
-            UsersEntity admin = (UsersEntity) login.getPayload();
 
-            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.adminId=:id");
-            query.setParameter("id", admin.getUserId());
+            Query query = session.createQuery("SELECT r FROM RsoEntity r");
 
             List<RsoEntity> results = query.getResultList();
 
@@ -686,7 +672,7 @@ public class DbManager {
         }
 
         try {
-            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.rsoId=:id");
+            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.rsoId=:id AND r.status='ACTIVE'");
             query.setParameter("id", rsoID);
 
             RsoEntity rso = (RsoEntity) query.getSingleResult();
@@ -780,7 +766,18 @@ public class DbManager {
             request.setSendDate(Long.toString(System.currentTimeMillis()));
             request.setPayload(gson.toJson(payload));
 
-            session.persist(request);
+            session.createSQLQuery("INSERT INTO APP.MESSAGES VALUES(:id, :subject, :mType, :message, :payload, :senderID, :uniID, :sendDate)")
+                    .setParameter("id", UUID.randomUUID().toString())
+                    .setParameter("subject", "RSO Creation Request")
+                    .setParameter("mType", MessageType.RSO_REQUEST.value)
+                    .setParameter("message", String.format("%s wants to create the RSO named \"%s\"", admin.getEmail(), rsoName))
+                    .setParameter("payload", gson.toJson(payload))
+                    .setParameter("senderID", admin.getUserId())
+                    .setParameter("uniID", uniID)
+                    .setParameter("sendDate", Long.toString(System.currentTimeMillis()))
+                    .executeUpdate();
+
+            //session.persist(request);
             transaction.commit();
 
             session.close();
@@ -788,6 +785,31 @@ public class DbManager {
         } catch (Exception e) {
             session.close();
             return new QueryResponse(false);
+        }
+    }
+
+    public void createDemoRSO(String rsoName, String description, String type, String[] members, String uniID) {
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return;
+        }
+
+        try {
+            session.beginTransaction();
+
+            session.createSQLQuery("INSERT INTO APP.RSO VALUES (:id, :adminID, :name, :description, :type, :members, :status, :uniID)")
+                    .setParameter("id", UUID.randomUUID().toString())
+                    .setParameter("adminID", members[0])
+                    .setParameter("name", rsoName)
+                    .setParameter("description", description)
+                    .setParameter("type", type)
+                    .setParameter("members", 5)
+                    .setParameter("status", "ACTIVE")
+                    .setParameter("uniID", uniID)
+                    .executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.close();
         }
     }
 
@@ -869,20 +891,28 @@ public class DbManager {
             List<String> userIDs = (List<String>) payload.get(0);
             RsoEntity rso = gson.fromJson((String) payload.get(1), RsoEntity.class);
 
-            session.persist(rso);
+            session.createSQLQuery("INSERT INTO APP.RSO VALUES (:id, :adminID, :rName, :description, :rType, :members, :status, :uniID)")
+                    .setParameter("id", rso.getRsoId())
+                    .setParameter("adminID", rso.getAdminId())
+                    .setParameter("rName", rso.getName())
+                    .setParameter("description", rso.getDescription())
+                    .setParameter("rType", rso.getType())
+                    .setParameter("members", rso.getMembers())
+                    .setParameter("status", "ACTIVE")
+                    .setParameter("uniID", rso.getUniId())
+                    .executeUpdate();
 
             for(String s : userIDs) {
-                RsofollowsEntity follow = new RsofollowsEntity();
-                follow.setRsoId(rso.getRsoId());
-                follow.setUserId(s);
-
-                session.persist(follow);
+                session.createSQLQuery("INSERT INTO APP.RSOFOLLOWS VALUES (:userID, :rsoID)")
+                        .setParameter("userID", s)
+                        .setParameter("rsoID", rso.getRsoId())
+                        .executeUpdate();
             }
 
-            RsofollowsEntity follow = new RsofollowsEntity();
-            follow.setUserId(rso.getAdminId());
-            follow.setRsoId(rso.getRsoId());
-            session.persist(follow);
+            session.createSQLQuery("INSERT INTO APP.RSOFOLLOWS VALUES (:userID, :rsoID)")
+                    .setParameter("userID", rso.getAdminId())
+                    .setParameter("rsoID", rso.getRsoId())
+                    .executeUpdate();
 
             session.delete(m);
 
@@ -972,13 +1002,16 @@ public class DbManager {
                 return new QueryResponse(false);
             }
 
-            rso.setMembers(rso.getMembers() + 1);
-            session.update(rso);
+            session.createSQLQuery("UPDATE APP.RSO r SET MEMBERS=:count, STATUS=:status WHERE r.RSO_ID=:id")
+                    .setParameter("count", rso.getMembers() + 1)
+                    .setParameter("id", rso.getRsoId())
+                    .setParameter("status", rso.getMembers() + 1 >= 5 ? "ACTIVE" : "INACTIVE")
+                    .executeUpdate();
 
-            RsofollowsEntity follow = new RsofollowsEntity();
-            follow.setRsoId(rso.getRsoId());
-            follow.setUserId(user.getUserId());
-            session.persist(follow);
+            session.createSQLQuery("INSERT INTO APP.RSOFOLLOWS VALUES (:userID, :rsoID)")
+                    .setParameter("userID", user.getUserId())
+                    .setParameter("rsoID", rso.getRsoId())
+                    .executeUpdate();
 
             transaction.commit();
             session.close();
@@ -1027,6 +1060,10 @@ public class DbManager {
                 return new QueryResponse(false);
             }
             rso.setMembers(rso.getMembers() - 1);
+
+            if(rso.getMembers() < 5) {
+                rso.setStatus("INACTIVE");
+            }
             session.update(rso);
 
             query = session.createQuery("SELECT f FROM RsofollowsEntity f WHERE f.rsoId=:rsoID AND f.userId=:userID");
@@ -1049,63 +1086,6 @@ public class DbManager {
     }
 
     //endregion
-
-    /**
-     * Create a new message for the super admins of the university the student is affiliated with
-     *
-     * @param authToken Token containing the username and password
-     * @return
-     */
-    public QueryResponse createMessage(String subject, String message, String type, String authToken) {
-        if(authToken == null || authToken.isEmpty()) {
-            return new QueryResponse(false, "Invalid authentication");
-        }
-
-        if(sessionFactory == null) {
-            return new QueryResponse(false, "Server could not connect to the database");
-        }
-
-        Session session = sessionFactory.openSession();
-        if(session == null) {
-            return new QueryResponse(false, "Could not create a database session.");
-        }
-
-        Transaction transaction = null;
-        try {
-            transaction = session.beginTransaction();
-
-            Map<String, String> decoded = (Map<String, String>) gson.fromJson(EncryptionService.decrypt(authToken), Map.class);
-            Query query = session.createQuery("SELECT u FROM UsersEntity u WHERE u.username=:userName", UsersEntity.class);
-            query.setParameter("userName", decoded.get("username"));
-
-            UsersEntity u = (UsersEntity) query.getSingleResult();
-            if(!EncryptionService.authenticate(decoded.get("password"), u.getPassword())) {
-                return new QueryResponse(false, "password error");
-            }
-
-            MessagesEntity m = new MessagesEntity();
-            m.setId(UUID.randomUUID().toString());
-            m.setSubject(subject);
-            m.setMessageType(type);
-            m.setMessage(message);
-            m.setSendDate(Long.toString(System.currentTimeMillis()));
-            m.setSenderId(u.getUserId());
-            m.setUniId(u.getUniId());
-
-            session.persist(m);
-
-            transaction.commit();
-            session.close();
-        } catch (Exception e) {
-            if(transaction != null) {
-                transaction.rollback();
-            }
-            session.close();
-            return new QueryResponse(false, e.toString());
-        }
-
-        return new QueryResponse(true);
-    }
 
     public QueryResponse createEvent(String authToken, String eventName, String description, String location, String date, String time, String rsoID, String category, String privacy, String contactName, String contactPhone, String contactEmail) {
         if(authToken == null || eventName == null || location == null || date == null || time == null || category == null || privacy == null || contactName == null || contactPhone == null || contactEmail == null) {
@@ -1135,49 +1115,98 @@ public class DbManager {
             }
             UsersEntity user = (UsersEntity) login.getPayload();
 
-            EventsEntity event = new EventsEntity();
-            event.setEventId(UUID.randomUUID().toString());
-            event.setName(eventName);
-            event.setType(privacy);
-            event.setCategory(category);
-            event.setDescription(description);
-            event.setTime(time);
-            event.setDate(date);
-            event.setLocation(location);
-            event.setContactName(contactName);
-            event.setContactPhone(contactPhone);
-            event.setContactEmail(contactEmail);
-            event.setUniId(user.getUniId());
+            String[] newTimes = time.split(" ");
+            String[] newDates = date.split(" ");
+
+            List<EventsEntity> conflicts = session.createSQLQuery("SELECT * FROM APP.EVENTS e WHERE e.LOCATION=:location")
+                                                .setParameter("location", location)
+                                                .addEntity(EventsEntity.class)
+                                                .getResultList();
+
+            for(EventsEntity e : conflicts) {
+                String[] dates = e.getDate().split(" ");
+                String[] times = e.getTime().split(" ");
+
+                if(
+                        (newDates[0].compareTo(dates[0]) >= 0 && newDates[0].compareTo(dates[1]) <= 0) || // Start date is during another event
+                        (newDates[1].compareTo(dates[0]) >= 0 && newDates[1].compareTo(dates[1]) <= 0) // End date is during another event
+                ) {
+                    if(
+                            (newTimes[0].compareTo(times[0]) >= 0 && newTimes[0].compareTo(times[1]) <= 0) || // Start time is during another event
+                            (newTimes[1].compareTo(times[0]) >= 0 && newTimes[1].compareTo(times[1]) <= 0) // End time is during another event
+                    ) {
+                        session.close();
+                        return new QueryResponse(false,
+                                String.format("Could not create the event. %s is happening from %s to %s, %s to %s in the same location",
+                                        e.getName(),
+                                        new SimpleDateFormat("H:mm").format(new Date(Long.parseLong(times[0]))),
+                                        new SimpleDateFormat("H:mm").format(new Date(Long.parseLong(times[1]))),
+                                        new SimpleDateFormat("MM/dd/yyyy").format(new Date(Long.parseLong(dates[0]))),
+                                        new SimpleDateFormat("MM/dd/yyyy").format(new Date(Long.parseLong(dates[1])))
+                                )
+                        );
+                    }
+                }
+            }
+
 
             if(rsoID == null || rsoID.isEmpty()) {
-                MessagesEntity request = new MessagesEntity();
-                request.setId(UUID.randomUUID().toString());
-                request.setSubject("Event Creation Request");
-                request.setMessageType("Event");
-                request.setMessage(user.getEmail() + " wants to create a " + privacy + " event named " + eventName);
-                request.setPayload(gson.toJson(event, EventsEntity.class));
-                request.setSenderId(user.getUserId());
-                request.setUniId(user.getUniId());
-                request.setSendDate(System.currentTimeMillis() + "");
 
-                session.persist(request);
+                EventsEntity event = new EventsEntity();
+                event.setEventId(UUID.randomUUID().toString());
+                event.setName(eventName);
+                event.setType(privacy);
+                event.setCategory(category);
+                event.setDescription(description);
+                event.setTime(time);
+                event.setDate(date);
+                event.setLocation(location);
+                event.setContactName(contactName);
+                event.setContactPhone(contactPhone);
+                event.setContactEmail(contactEmail);
+                event.setUniId(user.getUniId());
+
+                session.createSQLQuery("INSERT INTO APP.MESSAGES VALUES (:id, :subject, :mType, :message, :payload, :senderID, :uniID, :sendDate)")
+                        .setParameter("id", UUID.randomUUID().toString())
+                        .setParameter("subject", "Event Creation Request")
+                        .setParameter("mType", "Event")
+                        .setParameter("payload", gson.toJson(event, EventsEntity.class))
+                        .setParameter("senderID", user.getUserId())
+                        .setParameter("uniID", user.getUniId())
+                        .setParameter("sendDate", System.currentTimeMillis() + "")
+                        .executeUpdate();
+
                 transaction.commit();
                 session.close();
                 return new QueryResponse(true, "EventMessage without an RSO must be approved by an administrator. A request has been made");
             }
 
-            Query query = session.createQuery("SELECT r FROM RsoEntity r WHERE r.rsoId=:id");
-            query.setParameter("id", rsoID);
-
-            RsoEntity rso = (RsoEntity) query.getSingleResult();
+            RsoEntity rso = (RsoEntity) session.createSQLQuery("SELECT * FROM APP.RSO r WHERE r.RSO_ID=:id")
+                                    .setParameter("id", rsoID)
+                                    .addEntity(RsoEntity.class)
+                                    .getSingleResult();
 
             if(!rso.getAdminId().equals(user.getUserId())) {
-                return new QueryResponse(false, "Insufficient premissions");
+                return new QueryResponse(false, "You cannot create an event for this RSO as you are not its admin.");
             }
 
-            event.setRsoId(rsoID);
+            session.createSQLQuery("INSERT INTO APP.EVENTS VALUES (:eventID, :eName, :eType, :category, :description, :eTime, :eDate, :eLocation, :cName, :cPhone, :cEmail, :uniID, :rsoID)")
+                    .setParameter("eventID", UUID.randomUUID().toString())
+                    .setParameter("eName", eventName)
+                    .setParameter("eType", privacy)
+                    .setParameter("category", category)
+                    .setParameter("description", description)
+                    .setParameter("eTime", time)
+                    .setParameter("eDate", date)
+                    .setParameter("eLocation", location)
+                    .setParameter("cName", contactName)
+                    .setParameter("cPhone", contactPhone)
+                    .setParameter("cEmail", contactEmail)
+                    .setParameter("uniID", user.getUniId())
+                    .setParameter("rsoID", rsoID)
+                    .executeUpdate();
 
-            session.persist(event);
+
             transaction.commit();
             session.close();
 
@@ -1229,6 +1258,22 @@ public class DbManager {
         } catch (Exception e) {
             session.close();
             return new QueryResponse(false, "");
+        }
+    }
+
+    public QueryResponse getEventLocations() {
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            List<String> ret = (List<String>) session.createSQLQuery("SELECT DISTINCT (e.LOCATION) FROM APP.EVENTS e").getResultList();
+            session.close();
+            return new QueryResponse(true, ret);
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false);
         }
     }
 
@@ -1303,7 +1348,7 @@ public class DbManager {
         }
     }
 
-    public QueryResponse getEvents(String authToken) {
+    public QueryResponse getEvents(String authToken, String uniID, String location) {
         if(authToken == null || authToken.isEmpty()) {
             return new QueryResponse(false);
         }
@@ -1316,35 +1361,176 @@ public class DbManager {
         try {
 
             Map<String, String> decoded = (Map<String, String>) gson.fromJson(EncryptionService.decrypt(authToken), Map.class);
-            Query query = session.createQuery("SELECT u FROM UsersEntity u WHERE u.username=:userName", UsersEntity.class);
-            query.setParameter("userName", decoded.get("username"));
+            UsersEntity u = (UsersEntity) session.createSQLQuery("SELECT * FROM APP.USERS u WHERE u.USERNAME=:userName")
+                            .addEntity(UsersEntity.class)
+                            .setParameter("userName", decoded.get("username"))
+                            .getSingleResult();
 
-            UsersEntity u = (UsersEntity) query.getSingleResult();
             if(!EncryptionService.authenticate(decoded.get("password"), u.getPassword())) {
                 return new QueryResponse(false, "authentication error");
             }
 
-            query = session.createQuery("SELECT e FROM EventsEntity e WHERE e.type=:type OR e.uniId=:id");
-            query.setParameter("type", "public");
-            query.setParameter("id", u.getUniId());
 
-            List<EventsEntity> events = query.getResultList();
-
-            query = session.createQuery("SELECT f FROM RsofollowsEntity f WHERE f.userId=:id");
-            query.setParameter("id", u.getUserId());
-
-            for(RsofollowsEntity i : (List<RsofollowsEntity>) query.getResultList()) {
-                query = session.createQuery("SELECT e FROM EventsEntity e WHERE e.rsoId=:id");
-                query.setParameter("id", i.getRsoId());
-
-                events.addAll(query.getResultList());
+            List<EventsEntity> events;
+            if(uniID.equals("Any") && location.equals("Any")) {
+                events = session.createSQLQuery("SELECT * FROM APP.EVENTS e, APP.RSOFOLLOWS r " +
+                                                    "WHERE e.TYPE='Public' OR (e.UNI_ID=:uniID AND  r.RSO_ID IS NULL) OR (e.UNI_ID=:uniID AND r.USER_ID=:userID AND r.RSO_ID=e.RSO_ID)")
+                        .addEntity(EventsEntity.class)
+                        .setParameter("uniID", u.getUniId())
+                        .setParameter("userID", u.getUserId())
+                        .getResultList();
+            } else if(uniID.equals("Any")) {
+                events = session.createSQLQuery("SELECT * FROM APP.EVENTS e, APP.RSOFOLLOWS r WHERE e.LOCATION=:location " +
+                                                    "AND (e.TYPE='Public' OR (e.UNI_ID=:userUniID AND  r.RSO_ID IS NULL) OR (e.UNI_ID=:userUniID AND r.USER_ID=:userID AND r.RSO_ID=e.RSO_ID))")
+                        .addEntity(EventsEntity.class)
+                        .setParameter("location", location)
+                        .setParameter("userUniID", u.getUniId())
+                        .setParameter("userID", u.getUserId())
+                        .getResultList();
+            } else if(location.equals("Any")){
+                events = session.createSQLQuery("SELECT * FROM APP.EVENTS e, APP.RSOFOLLOWS r WHERE e.UNI_ID=:uniID " +
+                                                    "AND (e.TYPE='Public' OR (e.UNI_ID=:userUniID AND  r.RSO_ID IS NULL) OR (e.UNI_ID=:userUniID AND r.USER_ID=:userID AND r.RSO_ID=e.RSO_ID))")
+                        .addEntity(EventsEntity.class)
+                        .setParameter("uniID", uniID)
+                        .setParameter("userUniID", u.getUniId())
+                        .setParameter("userID", u.getUserId())
+                        .getResultList();
+            } else {
+                events = session.createSQLQuery("SELECT * FROM APP.EVENTS e, APP.RSOFOLLOWS r WHERE e.UNI_ID=:uniID AND e.LOCATION=:location " +
+                                                    "AND (e.TYPE='Public' OR (e.UNI_ID=:userUniID AND  r.RSO_ID IS NULL) OR (e.UNI_ID=:userUniID AND r.USER_ID=:userID AND r.RSO_ID=e.RSO_ID))")
+                        .addEntity(EventsEntity.class)
+                        .setParameter("uniID", uniID)
+                        .setParameter("location", location)
+                        .setParameter("userUniID", u.getUniId())
+                        .setParameter("userID", u.getUserId())
+                        .getResultList();
             }
+
             events = events.stream().distinct().collect(Collectors.toList());
 
             return new QueryResponse(true, events);
         } catch (Exception e) {
             session.close();
             return new QueryResponse(false, e.toString());
+        }
+    }
+
+    public QueryResponse writeComment(String authToken, String title, String message, String eventID) {
+        if(authToken == null || title == null || message == null || eventID == null) {
+            return new QueryResponse(false, "Failed to create a new comment");
+        }
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            session.beginTransaction();
+            QueryResponse login = login(authToken);
+            if (!login.getSuccess()) {
+                session.close();
+                return new QueryResponse(false, "Authentication error");
+            }
+            UsersEntity user = (UsersEntity) login.getPayload();
+
+            EventsEntity event = (EventsEntity) session.createSQLQuery("SELECT * FROM APP.EVENTS e WHERE e.EVENT_ID=:id")
+                                                        .setParameter("id", eventID)
+                                                        .addEntity(EventsEntity.class)
+                                                        .getSingleResult();
+            if(event == null) {
+                session.close();
+                return new QueryResponse(false, "Event not found");
+            }
+
+            if((!event.getUniId().equals(user.getUniId()) && !event.getType().equals("Public"))) {
+                return new QueryResponse(false, "You do not have permission to comment on this event");
+            }
+
+            session.createSQLQuery("INSERT INTO APP.COMMENT VALUES (:id, :userID, :title, :message, :eventID)")
+                    .setParameter("id", UUID.randomUUID().toString())
+                    .setParameter("userID", user.getUserId())
+                    .setParameter("title", title)
+                    .setParameter("message", message)
+                    .setParameter("eventID", eventID)
+                    .executeUpdate();
+
+            session.close();
+            return new QueryResponse(true, "Comment Added");
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false, "Failed to create comment");
+        }
+    }
+
+    public QueryResponse editComment(String authToken, String title, String message, String mID) {
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            session.beginTransaction();
+
+            QueryResponse login = login(authToken);
+            if (!login.getSuccess()) {
+                session.close();
+                return new QueryResponse(false, "Authentication error");
+            }
+            UsersEntity user = (UsersEntity) login.getPayload();
+
+            CommentEntity comment = (CommentEntity) session.createSQLQuery("SELECT * FROM APP.COMMENT c WHERE c.ID=:mID").setParameter("mID", mID)
+                                                            .addEntity(CommentEntity.class)
+                                                            .getSingleResult();
+
+            if(!user.getUserId().equals(comment.getUserID())) {
+                session.close();
+                return new QueryResponse(false, "This is not your comment");
+            }
+
+            session.createSQLQuery("UPDATE APP.COMMENT c SET TITLE=:title, MESSAGE=:message WHERE c.ID=:mID")
+                    .setParameter("title", title)
+                    .setParameter("message", message)
+                    .setParameter("mID", comment.getId())
+                    .executeUpdate();
+
+            session.close();
+            return new QueryResponse(true);
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false);
+        }
+    }
+
+    public QueryResponse getComments(String eventID) {
+        if(eventID == null) {
+            return new QueryResponse(false, "Event id cannot be null");
+        }
+
+        Session session = sessionFactory.openSession();
+        if(session == null) {
+            return new QueryResponse(false, "Server could not connect to database");
+        }
+
+        try {
+            Query query = session.createSQLQuery("SELECT * FROM APP.COMMENT c WHERE c.EVENT_ID=:id");
+            ((NativeQuery) query).addEntity(CommentEntity.class);
+            query.setParameter("id", eventID);
+
+            List<CommentEntity> comments = query.getResultList();
+
+            List<CommentsMessage> ret = new ArrayList<>();
+            for(CommentEntity c : comments) {
+                String name = (String) session.createSQLQuery("SELECT FIRSTNAME FROM APP.USERS u WHERE u.USER_ID=:id")
+                        .setParameter("id", c.getUserID())
+                        .getSingleResult();
+                ret.add(new CommentsMessage(c.getId(), c.getTitle(), c.getMessage(), name, c.getUserID()));
+            }
+            return new QueryResponse(false, ret);
+        } catch (Exception e) {
+            session.close();
+            return new QueryResponse(false);
         }
     }
 

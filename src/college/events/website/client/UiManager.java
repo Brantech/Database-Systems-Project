@@ -1,11 +1,6 @@
 package college.events.website.client;
 
-import college.events.website.client.md.CreateUniversity;
-import college.events.website.client.md.EventsScreen;
-import college.events.website.client.md.HomeScreen;
-import college.events.website.client.md.Inbox;
-import college.events.website.client.md.MainContainer;
-import college.events.website.client.md.RSOScreen;
+import college.events.website.client.md.*;
 import college.events.website.shared.ScreenEnum;
 import college.events.website.shared.messages.UserInfo;
 import com.google.gwt.user.client.ui.RootPanel;

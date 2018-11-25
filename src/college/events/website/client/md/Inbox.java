@@ -22,6 +22,7 @@ import gwt.material.design.client.ui.MaterialColumn;
 import gwt.material.design.client.ui.MaterialDialog;
 import gwt.material.design.client.ui.MaterialTextArea;
 import gwt.material.design.client.ui.MaterialTextBox;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;

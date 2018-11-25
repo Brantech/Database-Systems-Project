@@ -15,11 +15,9 @@ import gwt.material.design.client.constants.Display;
 import gwt.material.design.client.ui.MaterialLink;
 import gwt.material.design.client.ui.MaterialNavBar;
 import gwt.material.design.client.ui.MaterialPanel;
-
 import gwt.material.design.client.ui.MaterialSideNavPush;
-import java.util.logging.Logger;
 
-import static gwt.material.design.jquery.client.api.JQuery.$;
+import java.util.logging.Logger;
 
 /**
  * Header and side nav shared across every screen
@@ -42,7 +40,7 @@ public class MainContainer extends Composite {
     MaterialSideNavPush sideNav;
 
     @UiField
-    MaterialLink inbox, events, rso;
+    MaterialLink inbox, events, rso, createUni;
 
     /**
      * Default constructor
@@ -63,20 +61,27 @@ public class MainContainer extends Composite {
     }
 
     public void adminMode() {
-        inbox.setDisplay(Display.BLOCK);
+        inbox.setDisplay(Display.FLEX);
+        createUni.setDisplay(Display.FLEX);
         events.setDisplay(Display.NONE);
         rso.setDisplay(Display.NONE);
     }
 
     public void studentMode() {
         inbox.setDisplay(Display.NONE);
-        events.setDisplay(Display.BLOCK);
-        rso.setDisplay(Display.BLOCK);
+        createUni.setDisplay(Display.NONE);
+        events.setDisplay(Display.FLEX);
+        rso.setDisplay(Display.FLEX);
     }
 
     @UiHandler("inbox")
     void onInboxClick(ClickEvent event) {
         UiManager.getInstance().displayScreen(ScreenEnum.INBOX);
+    }
+
+    @UiHandler("createUni")
+    void onUniClick(ClickEvent event) {
+        UiManager.getInstance().displayScreen(ScreenEnum.CREATE_UNIVERSITY);
     }
 
     @UiHandler("events")

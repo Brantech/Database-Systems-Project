@@ -19,14 +19,8 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.Widget;
 import gwt.material.design.client.constants.Display;
-import gwt.material.design.client.ui.MaterialButton;
-import gwt.material.design.client.ui.MaterialCard;
-import gwt.material.design.client.ui.MaterialDialog;
-import gwt.material.design.client.ui.MaterialLabel;
-import gwt.material.design.client.ui.MaterialLink;
-import gwt.material.design.client.ui.MaterialTextArea;
-import gwt.material.design.client.ui.MaterialTextBox;
-import gwt.material.design.client.ui.MaterialToast;
+import gwt.material.design.client.ui.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
@@ -114,6 +108,10 @@ public class RSOScreen extends Composite {
     }
 
     public void viewRSO(RSOMessage rso) {
+        leave.setDisplay(Display.NONE);
+        join.setDisplay(Display.NONE);
+
+
         if(follows.contains(rso.getRSO_ID())) {
             join.setDisplay(Display.NONE);
             leave.setDisplay(Display.BLOCK);

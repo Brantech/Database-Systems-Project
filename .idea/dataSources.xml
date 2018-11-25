@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="CEW_DB" uuid="84efc5c2-746e-4501-abf3-19deb160b1db">
+    <data-source source="LOCAL" name="CEW" uuid="4e50ec8e-9b65-4693-b04f-f92912375df3">
       <driver-ref>derby.remote</driver-ref>
       <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
       <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
       <jdbc-url>jdbc:derby://localhost:1527/$PROJECT_DIR$/data</jdbc-url>
     </data-source>
